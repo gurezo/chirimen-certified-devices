@@ -203,6 +203,26 @@ generated/devices.json
 
 今後、`partslist.csv` に登録済みのデバイスを順次追加します。
 
+## 開発環境
+
+このリポジトリの開発環境は pnpm を主に使用します。
+
+依存パッケージをインストールします。
+
+```sh
+pnpm install
+```
+
+主な検証コマンドは以下です。
+
+```sh
+pnpm lint
+pnpm typecheck
+pnpm test
+```
+
+`pnpm test` は Vitest を実行します。テストファイルがまだ存在しない場合も、初期開発環境の検証として成功する設定です。
+
 ## 編集方針
 
 このリポジトリでは、Markdown での参加を優先します。
