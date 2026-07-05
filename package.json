@@ -1,0 +1,10 @@
+{
+  "name": "chirimen-certified-devices",
+  "version": "0.1.0",
+  "description": "CHIRIMEN community certified devices metadata repository",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "scripts": {}
+}
