@@ -1,12 +1,6 @@
-# CHIRIMEN Certified Devices
+# CHIRIMEN コミュニティ 認定デバイスリポジトリ
 
-CHIRIMEN 関連の認定デバイス情報、Example、ドライバー、画像、回路図、関連資料の所在を整理するためのリポジトリです。
-
-## 目的
-
-現在、CHIRIMEN 関連のデバイス情報、Example、ドライバー、画像、回路図は複数のリポジトリに分散しています。
-
-このリポジトリでは、それらの情報をデバイス単位で整理し、探しやすく・更新しやすくすることを目的とします。
+CHIRIMEN 関連の認定デバイス情報、Example、ドライバー、画像、回路図、関連資料の所在を、デバイス単位で整理するためのリポジトリです。
 
 ## 認定デバイスの定義
 
@@ -14,12 +8,12 @@ CHIRIMEN 関連の認定デバイス情報、Example、ドライバー、画像�
 
 > `chirimen.org/_data/partslist.csv` に登録されているデバイス
 
-このリポジトリは、`partslist.csv` を置き換えるものではありません。
+このリポジトリは、`partslist.csv` を置き換えるものではありません。  
 `partslist.csv` を認定デバイスの一次情報として参照し、各デバイスに対応する Example、ドライバー、画像、回路図、補足情報を整理します。
 
-## 基本方針
+## 管理方針
 
-このリポジトリでは、各デバイスの情報を `README.md` と `meta.yml` のセットで管理します。
+各デバイスの情報は、`README.md` と `meta.yml` のセットで管理します。
 
 ```text
 devices/<型番>/
@@ -27,15 +21,60 @@ devices/<型番>/
   └── meta.yml
 ```
 
+### README.md
+
 `README.md` は、人間が読むための説明です。
-デバイス概要、使い方、Example、画像、回路図、注意点などを Markdown で記載します。
+
+主に以下を記載します。
+
+- デバイス概要
+- 使用するインターフェース
+- 使用するパッケージ
+- Example へのリンク
+- 画像
+- 回路図
+- 注意点
+- 備考
+
+画像や回路図は、Markdown で直接表示します。
+
+例:
+
+```md
+![ADS1015](https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ADS1015.jpg)
+```
+
+回路図の例:
+
+```md
+![ADS1015 回路図](https://raw.githubusercontent.com/chirimen-oh/chirimen/master/gc/i2c/i2c-ADS1015/schematic.png)
+```
+
+### meta.yml
 
 `meta.yml` は、一覧生成や JSON 生成に使う機械処理向けのメタデータです。
-Example の詳細、元リポジトリのパス、画像 URL、回路図 URL、使用パッケージなどを記載します。
 
-通常の修正では、まず `README.md` を編集してください。
-`meta.yml` の編集が不安な場合は、`README.md` だけ修正して Pull Request を作成してください。
-メタデータの調整はメンテナが行います。
+主に以下を記載します。
+
+- デバイス ID
+- 型番
+- tag
+- category
+- description
+- image URL
+- product URL
+- Example 情報
+- 回路図 URL
+- datasheet URL
+- reference URL
+- 使用パッケージ
+- 元リポジトリのパス
+- platform
+- status
+- verified
+
+`meta.yml` の編集が不安な場合は、`README.md` だけ修正して Pull Request を作成してください。  
+必要なメタデータ調整はメンテナが対応します。
 
 ## ディレクトリ名のルール
 
@@ -126,63 +165,21 @@ chirimen-certified-devices
 | `schema/`                | front matter / meta.yml の検証用                   |
 | `tools/`                 | 生成・検証スクリプト                               |
 
-## README.md と meta.yml の役割
+## Example の状態
 
-### README.md
+Example は、環境や履歴に応じて状態を分けます。
 
-`README.md` は、人間向けの説明を記載します。
-
-主に以下を記載します。
-
-- デバイス概要
-- 使用するインターフェース
-- 使用するパッケージ
-- Example へのリンク
-- 画像
-- 回路図
-- 注意点
-- 備考
-
-画像や回路図は、Markdown で直接表示します。
-
-例:
-
-```md
-![ADS1015](https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ADS1015.jpg)
-```
-
-回路図の例:
-
-```md
-![ADS1015 回路図](https://raw.githubusercontent.com/chirimen-oh/chirimen/master/gc/i2c/i2c-ADS1015/schematic.png)
-```
-
-### meta.yml
-
-`meta.yml` は、機械処理向けのメタデータを記載します。
-
-主に以下を記載します。
-
-- デバイス ID
-- 型番
-- tag
-- category
-- description
-- image URL
-- product URL
-- Example 情報
-- 回路図 URL
-- datasheet URL
-- reference URL
-- 使用パッケージ
-- 元リポジトリのパス
-- platform
-- status
-- verified
+| status      | 意味                                 |
+| ----------- | ------------------------------------ |
+| `primary`   | 現在の主な Example                   |
+| `archive`   | 旧構成・参照用 Example               |
+| `legacy`    | 過去の構成だが参照価値がある Example |
+| `incubator` | 取り込み中・確認中の Example         |
+| `special`   | 特殊な用途・環境の Example           |
 
 ## 生成物について
 
-`generated/` 以下のファイルは自動生成物です。
+`generated/` 以下のファイルは自動生成物です。  
 直接編集しないでください。
 
 デバイス情報を修正する場合は、以下を編集してください。
@@ -191,12 +188,18 @@ chirimen-certified-devices
 - `devices/**/meta.yml`
 - `data/*.yml`
 
+将来的には、`README.md`、`meta.yml`、`data/*.yml`、`partslist.csv` を元に、以下の JSON を生成することを想定しています。
+
+```text
+generated/devices.json
+```
+
 ## 初期対象
 
 初期段階では、以下を対象にします。
 
-- ADS1015
-- PCA9685 + MX1508
+- `devices/ADS1015/`
+- `devices/PCA9685_MX1508/`
 
 今後、`partslist.csv` に登録済みのデバイスを順次追加します。
 
@@ -204,15 +207,5 @@ chirimen-certified-devices
 
 このリポジトリでは、Markdown での参加を優先します。
 
-`meta.yml` の編集に不安がある場合は、`README.md` 本文だけを修正してください。
+`meta.yml` の編集に不安がある場合は、`README.md` 本文だけを修正してください。  
 必要なメタデータ調整はメンテナが対応します。
-
-## 将来の生成対象
-
-将来的には、`README.md`、`meta.yml`、`data/*.yml`、`partslist.csv` を元に、以下のような JSON を生成することを想定しています。
-
-```text
-generated/devices.json
-```
-
-この JSON は、デバイス一覧や dashboard 表示などで利用できる形式にする予定です。
