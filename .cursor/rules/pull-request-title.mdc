@@ -1,0 +1,47 @@
+---
+description: Pull request title rules (Conventional Commits).
+globs:
+  - "**/*"
+alwaysApply: false
+---
+
+# Pull Request Title Rules
+
+PR タイトルは Conventional Commits に統一する。GitHub Actions の `commitlint` ワークフローは PR に含まれる全コミットを検証するが、PR タイトル自体も同じ形式で揃える。
+
+## 形式
+
+```
+<type>(<scope>): <summary>
+```
+
+- 小文字の `type` / `scope`。
+- `summary` は英語、命令形、末尾ピリオドなし（日本語 PR タイトルを使う場合はプロジェクト方針に従う）。
+- 複数の変更を含む PR では代表的な type / scope を選ぶ。
+
+## 良い例
+
+```
+feat(tools): add device validation script
+fix(devices): correct ADS1015 meta.yml category
+docs(workspace): update readme quick start
+test(tools): add validate-devices unit tests
+ci(ci): add commitlint workflow
+build(workspace): add commitlint and husky
+```
+
+## 悪い例
+
+```
+update files
+fix issue
+WIP
+Added new component
+feat: Added New Feature.
+```
+
+## 参照
+
+- `.cursor/rules/conventional-commits.mdc`
+- `.cursor/skills/conventional-commits/scopes.md`
+- `CONTRIBUTING.md`

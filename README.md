@@ -223,6 +223,10 @@ pnpm test
 
 `pnpm test` は Vitest を実行します。テストファイルがまだ存在しない場合も、初期開発環境の検証として成功する設定です。
 
+### コミットメッセージ
+
+コミットメッセージと PR タイトルは [Conventional Commits](https://www.conventionalcommits.org/) に準拠します。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
+
 ## 編集方針
 
 このリポジトリでは、Markdown での参加を優先します。
