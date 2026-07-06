@@ -5,7 +5,8 @@ packages:
 minimumReleaseAgeStrict: false
 
 minimumReleaseAgeExclude:
-  # 公開から 7 日未満の依存も許可 (ツールチェーン向け)
+  # ツールチェーン向け (devDependencies および主要な scoped パッケージ)
+  - "@commitlint/*"
   - "@eslint/*"
   - "@oxc-project/*"
   - "@rolldown/*"
@@ -13,12 +14,11 @@ minimumReleaseAgeExclude:
   - "@typescript-eslint/*"
   - "@vitest/*"
   - ajv
-  - brace-expansion
   - es-module-lexer
   - esbuild
   - eslint
+  - husky
   - picomatch
-  - postcss
   - rolldown
   - tsx
   - typescript
@@ -26,21 +26,6 @@ minimumReleaseAgeExclude:
   - vite
   - vitest
   - yaml
-  - '@commitlint/cli@21.2.0'
-  - '@commitlint/config-conventional@21.2.0'
-  - '@commitlint/config-validator@21.2.0'
-  - '@commitlint/ensure@21.2.0'
-  - '@commitlint/format@21.2.0'
-  - '@commitlint/is-ignored@21.2.0'
-  - '@commitlint/lint@21.2.0'
-  - '@commitlint/load@21.2.0'
-  - '@commitlint/message@21.2.0'
-  - '@commitlint/parse@21.2.0'
-  - '@commitlint/read@21.2.0'
-  - '@commitlint/resolve-extends@21.2.0'
-  - '@commitlint/rules@21.2.0'
-  - '@commitlint/top-level@21.2.0'
-  - '@commitlint/types@21.2.0'
 
 # 悪意のあるリリースは1週間以内に発見され、レジストリから削除される為
 # config = 7 day x 24h x 60 min
