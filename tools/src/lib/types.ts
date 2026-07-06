@@ -132,3 +132,38 @@ export interface MetaYamlContent {
   status: ExampleStatus;
   verified: boolean;
 }
+
+export interface ReadmeFrontmatter {
+  title?: string;
+  model?: string;
+  category?: string;
+  description?: string;
+}
+
+export interface GeneratedMetaExample extends MetaExample {
+  platformLabel: string;
+}
+
+export interface GeneratedMeta extends Omit<MetaYamlContent, "examples"> {
+  examples: GeneratedMetaExample[];
+}
+
+export interface GeneratedReadme {
+  path: string;
+  frontmatter: ReadmeFrontmatter | null;
+}
+
+export interface GeneratedDevice {
+  id: string;
+  directory: string;
+  meta: GeneratedMeta;
+  readme: GeneratedReadme;
+}
+
+export interface DevicesJson {
+  version: 1;
+  generatedAt: string;
+  platforms: PlatformsConfig;
+  aliases: AliasesConfig;
+  devices: GeneratedDevice[];
+}
