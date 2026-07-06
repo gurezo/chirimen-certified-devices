@@ -6,6 +6,13 @@ description: Tower Pro 製の小型サーボモータ　SG90と同サイズで�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MG90S.jpg
 productUrl: https://akizukidenshi.com/catalog/g/g113227/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/pca9685
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685
+    circuitUrl: null
+    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -16,7 +23,8 @@ examples:
 circuit: null
 datasheet: https://www.towerpro.com.tw/product/mg90s-3/
 reference: null
-packages: []
-platform: legacy-gc-i2c
-status: archive
+packages:
+  - "@chirimen/pca9685"
+platform: pizero-esm
+status: primary
 verified: false

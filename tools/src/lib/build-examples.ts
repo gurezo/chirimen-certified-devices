@@ -39,6 +39,36 @@ function findExampleAlias(
   return undefined;
 }
 
+function exampleDeviceIdFromPiZeroUrl(url: string): string | null {
+  const fragment = extractUrlFragment(url);
+  if (!fragment) return null;
+
+  const stripped = fragment.replace(/^(I2C|GPIO|Analog|Actuator)_/i, "");
+  const normalized = stripped.toLowerCase().replace(/[^a-z0-9_-]/g, "");
+  return normalized || null;
+}
+
+function exampleDeviceIdFromModel(model: string): string | null {
+  const normalized = model.toLowerCase().replace(/[^a-z0-9_-]/g, "");
+  return normalized || null;
+}
+
+export function deriveExampleDeviceId(
+  device: SyncDeviceEntry,
+  aliases: AliasesConfig,
+): string | undefined {
+  const alias = findExampleAlias(device, aliases);
+  if (alias?.exampleDeviceId) return alias.exampleDeviceId;
+
+  const piZeroUrl = device.rawExampleUrls.piZero;
+  if (piZeroUrl) {
+    const fromPiZero = exampleDeviceIdFromPiZeroUrl(piZeroUrl);
+    if (fromPiZero) return fromPiZero;
+  }
+
+  return exampleDeviceIdFromModel(device.model) ?? undefined;
+}
+
 function extractUrlFragment(url: string): string | null {
   const hashIndex = url.indexOf("#");
   if (hashIndex === -1) return null;
@@ -121,8 +151,7 @@ export function buildMetaExamples(
   platforms: PlatformsConfig,
   aliases: AliasesConfig,
 ): MetaExample[] {
-  const alias = findExampleAlias(device, aliases);
-  const exampleDeviceId = alias?.exampleDeviceId;
+  const exampleDeviceId = deriveExampleDeviceId(device, aliases);
   const circuitUrl = device.circuitUrl ?? null;
 
   const classified = classifyExampleUrls(device.rawExampleUrls, platforms);
@@ -178,12 +207,12 @@ export function buildPackages(
   device: SyncDeviceEntry,
   aliases: AliasesConfig,
 ): string[] {
-  const alias = findExampleAlias(device, aliases);
-  if (!alias?.exampleDeviceId) return [];
+  const exampleDeviceId = deriveExampleDeviceId(device, aliases);
+  if (!exampleDeviceId) return [];
 
-  const packageId = alias.exampleDeviceId.includes("_")
-    ? alias.exampleDeviceId.split("_")[0]
-    : alias.exampleDeviceId;
+  const packageId = exampleDeviceId.includes("_")
+    ? exampleDeviceId.split("_")[0]
+    : exampleDeviceId;
 
   return [`@chirimen/${packageId}`];
 }

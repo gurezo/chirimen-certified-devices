@@ -13,8 +13,13 @@ description: "3軸の加速度に加え、ジャイロの測定も可能な複�
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/mpu6050`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/mpu6050](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu6050)
 - **micro:bit** (incubator): [microbit-examples/I2C_MPU6050](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU6050)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-MPU6050](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU6050)
 

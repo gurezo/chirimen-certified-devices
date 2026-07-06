@@ -13,8 +13,13 @@ description: "バイポーラステッピングモータを制御するドライ
 
 GPIO
 
+## 使用パッケージ
+
+- `@chirimen/a4988`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/a4988](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/a4988)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/gpio-A4988](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-A4988)
 
 ## 画像

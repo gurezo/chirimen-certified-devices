@@ -1,0 +1,23 @@
+id: GY-GPS6MV2
+model: GY-GPS6MV2
+tag: Other
+category: GPSレシーバ
+description: NEO6Mモジュールを使用した、シリアル接続のGPSレシーバです。
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/GY-GPS6MV2.jpg
+productUrl: https://electronicwork.shop/items/625c1ca99fe3d707d725cbe1
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/serial_gps
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/serial_gps
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf
+reference: null
+packages:
+  - "@chirimen/serial"
+platform: pizero-esm
+status: primary
+verified: false

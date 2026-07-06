@@ -13,8 +13,13 @@ Tower Pro 製の小型サーボモータ　SG90と同サイズですがメタル
 
 Actuator
 
+## 使用パッケージ
+
+- `@chirimen/pca9685`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/pca9685](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-PCA9685](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685)
 
 ## 画像

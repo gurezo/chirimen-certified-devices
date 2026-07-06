@@ -13,8 +13,13 @@ description: "センサから見て上下左右のおよそ 60 度の範囲を 8
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/amg8833`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/amg8833](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/amg8833)
 - **micro:bit** (incubator): [microbit-examples/I2C_AMG8833](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_AMG8833)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-AMG8833](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-AMG8833)
 

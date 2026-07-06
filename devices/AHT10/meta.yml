@@ -1,0 +1,23 @@
+id: AHT10
+model: AHT10
+tag: I2C
+category: 温湿度複合センサ
+description: 温度と湿度の両方が測定可能なセンサ
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/AHT10.jpg
+productUrl: https://www.amazon.co.jp/gp/product/B09PR278XN
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/aht10
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/aht10
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages:
+  - "@chirimen/aht10"
+platform: pizero-esm
+status: primary
+verified: false

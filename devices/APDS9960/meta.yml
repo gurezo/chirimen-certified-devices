@@ -16,7 +16,8 @@ examples:
 circuit: null
 datasheet: null
 reference: null
-packages: []
+packages:
+  - "@chirimen/apds9960"
 platform: legacy-gc-i2c
 status: archive
 verified: false

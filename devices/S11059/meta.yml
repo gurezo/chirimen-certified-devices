@@ -6,6 +6,13 @@ description: RGB 各色と赤外線の強度を測定するセンサです
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/S11059.jpg
 productUrl: https://akizukidenshi.com/catalog/g/g108316/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/s11059
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/s11059
+    circuitUrl: null
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -23,7 +30,8 @@ examples:
 circuit: null
 datasheet: http://akizukidenshi.com/download/ds/hamamatsu/s11059-02dt.pdf
 reference: null
-packages: []
-platform: microbit-driver
-status: incubator
+packages:
+  - "@chirimen/s11059"
+platform: pizero-esm
+status: primary
 verified: false

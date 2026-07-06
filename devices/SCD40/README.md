@@ -13,8 +13,13 @@ CO2センサ(CO2濃度がPPM値で高精度に計測できるセンサーです)
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/scd40`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/scd40](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/scd40)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-SCD40](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-SCD40)
 
 ## 画像

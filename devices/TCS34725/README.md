@@ -13,6 +13,10 @@ I2C接続の色センサー
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/tcs34725`
+
 ## Example
 
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-TCS34725](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-TCS34725)

@@ -23,7 +23,8 @@ examples:
 circuit: null
 datasheet: null
 reference: null
-packages: []
+packages:
+  - "@chirimen/bme680"
 platform: microbit-driver
 status: incubator
 verified: false

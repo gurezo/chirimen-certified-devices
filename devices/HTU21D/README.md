@@ -13,8 +13,13 @@ description: "温度と湿度の両方が測定可能なセンサ"
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/htu21d`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/htu21d](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/htu21d)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-HTU21D](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HTU21D)
 
 ## 画像

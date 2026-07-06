@@ -1,0 +1,23 @@
+id: MAX30102
+model: MAX30102
+tag: I2C
+category: 心拍センサー
+description: 心拍を測定するセンサー
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/max30102.webp
+productUrl: https://www.amazon.co.jp/s?k=MAX30102
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/max30102
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/max30102
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://www.analog.com/media/en/technical-documentation/data-sheets/MAX30102.pdf
+reference: null
+packages:
+  - "@chirimen/max30102"
+platform: pizero-esm
+status: primary
+verified: false

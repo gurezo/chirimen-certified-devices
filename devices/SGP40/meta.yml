@@ -1,0 +1,23 @@
+id: SGP40
+model: SGP40
+tag: I2C
+category: VOC(ガス)センサ
+description: 揮発性有機化合物（VOC）センサ
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/SGP40.jpg
+productUrl: https://www.switch-science.com/products/7287
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/sgp40
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sgp40
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://docs.rs-online.com/1956/A700000007055193.pdf
+reference: https://sensirion.com/products/catalog/SGP40
+packages:
+  - "@chirimen/sgp40"
+platform: pizero-esm
+status: primary
+verified: false

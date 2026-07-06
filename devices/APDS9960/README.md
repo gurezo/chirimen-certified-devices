@@ -13,6 +13,10 @@ description: "近接・環境光・ジェスチャーを読み取るセンサー
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/apds9960`
+
 ## Example
 
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-APDS9960](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-APDS9960)

@@ -13,8 +13,13 @@ description: "指などの接触を検出するセンサです"
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/mpr121`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/mpr121](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpr121)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-Grove-Touch](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Touch)
 
 ## 画像

@@ -13,8 +13,13 @@ description: "紫外線の強度を測定できるセンサです"
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/veml6070`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/veml6070](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/veml6070)
 - **micro:bit** (incubator): [microbit-examples/I2C_VEML6070](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VEML6070)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-VEML6070](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VEML6070)
 

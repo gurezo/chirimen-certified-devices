@@ -13,8 +13,13 @@ description: "3軸の加速度を検出できるセンサです"
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/adxl345`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/adxl345](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adxl345)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-Grove-Accelerometer](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Accelerometer)
 
 ## 画像

@@ -13,8 +13,13 @@ ADC と DAC が一つになった部品です(デジタル側は 8bit)
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/pcf8591`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/pcf8591](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pcf8591)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-PCF8591](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCF8591)
 
 ## 画像

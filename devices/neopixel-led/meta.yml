@@ -6,6 +6,13 @@ description: 多数のフルカラー LED を個々に制御可能なコント�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/neopixelI2c.jpg
 productUrl: https://chirimen.org/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/neopixel-i2c
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c
+    circuitUrl: null
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -23,7 +30,8 @@ examples:
 circuit: null
 datasheet: null
 reference: null
-packages: []
-platform: microbit-driver
-status: incubator
+packages:
+  - "@chirimen/neopixel-i2c"
+platform: pizero-esm
+status: primary
 verified: false

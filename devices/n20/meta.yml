@@ -1,0 +1,23 @@
+id: n20
+model: N20マイクロギヤモータ
+tag: Actuator
+category: ギヤードモータ
+description: 小型のギヤードモータです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/N20_GearMotor.jpg
+productUrl: https://akizukidenshi.com/catalog/g/gM-15143/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/gpio-2
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-2
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://akizukidenshi.com/download/ds/mercurymotor/MG1012-0669-150L.pdf
+reference: null
+packages:
+  - "@chirimen/gpio-2"
+platform: pizero-esm
+status: primary
+verified: false

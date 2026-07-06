@@ -13,8 +13,13 @@ description: "多数のフルカラー LED を個々に制御可能なコント�
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/neopixel-i2c`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/neopixel-i2c](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c)
 - **micro:bit** (incubator): [microbit-examples/I2C5_NEOPIXEL](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C5_NEOPIXEL)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-NEOPIXEL_I2C](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-NEOPIXEL_I2C)
 

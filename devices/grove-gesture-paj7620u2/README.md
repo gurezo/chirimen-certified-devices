@@ -13,8 +13,13 @@ description: "手を「上、下、左、右、遠ざかる、近づく、時計
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/paj7620`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/paj7620](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/paj7620)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-Grove-Gesture](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Gesture)
 
 ## 画像

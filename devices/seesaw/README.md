@@ -13,6 +13,10 @@ description: "デジタル・アナログ入力・PWM出力・NeopixelLEDドラ�
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/seesaw`
+
 ## Example
 
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-seesaw](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-seesaw)

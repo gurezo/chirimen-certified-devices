@@ -13,8 +13,13 @@ description: "3軸の加速度、ジャイロのほか、磁気も測定可能�
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/mpu9250`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/mpu9250](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu9250)
 - **micro:bit** (incubator): [microbit-examples/I2C_MPU9250](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU9250)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-MPU9250](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU9250)
 

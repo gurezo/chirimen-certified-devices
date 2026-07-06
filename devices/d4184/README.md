@@ -13,8 +13,13 @@ description: "上のFETを利用したモーター制御と同等の回路が組
 
 GPIO
 
+## 使用パッケージ
+
+- `@chirimen/hello-real-world`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/hello-real-world](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world)
 - **micro:bit** (incubator): [microbit-examples/GPIO3](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO3)
 - **Legacy CHIRIMEN GC (GPIO)** (archive): [gc/gpio/section-9](https://github.com/chirimen-oh/chirimen/tree/master/gc/gpio/section-9)
 

@@ -3,6 +3,7 @@ import {
   buildMetaExamples,
   buildMetaYamlContent,
   buildPackages,
+  deriveExampleDeviceId,
   pickPrimaryExample,
 } from "./build-examples.js";
 import type { AliasesConfig, PlatformsConfig, SyncDeviceEntry } from "./types.js";
@@ -81,7 +82,52 @@ function makeDevice(overrides: Partial<SyncDeviceEntry> = {}): SyncDeviceEntry {
   };
 }
 
+describe("deriveExampleDeviceId", () => {
+  it("derives adt7410 from piZero url when alias is missing", () => {
+    expect(
+      deriveExampleDeviceId(
+        makeDevice({
+          id: "ADT7410",
+          model: "ADT7410",
+          rawExampleUrls: {
+            piZero: "https://tutorial.chirimen.org/pizero/esm-examples/#I2C_adt7410",
+          },
+        }),
+        aliases,
+      ),
+    ).toBe("adt7410");
+  });
+
+  it("prefers alias exampleDeviceId over piZero url", () => {
+    expect(deriveExampleDeviceId(makeDevice(), aliases)).toBe("ads1015");
+  });
+});
+
 describe("buildMetaExamples", () => {
+  it("builds pizero-esm for ADT7410 without alias entry", () => {
+    const examples = buildMetaExamples(
+      makeDevice({
+        id: "ADT7410",
+        model: "ADT7410",
+        rawExampleUrls: {
+          chirimen: "https://r.chirimen.org/examples/#I2C-ADT7410",
+          microbit: "https://chirimen.org/chirimen-micro-bit/examples/#I2C1_ADT7410",
+          piZero: "https://tutorial.chirimen.org/pizero/esm-examples/#I2C_adt7410",
+        },
+      }),
+      platforms,
+      aliases,
+    );
+
+    const pizero = examples.find((example) => example.platform === "pizero-esm");
+    expect(pizero).toMatchObject({
+      platform: "pizero-esm",
+      status: "primary",
+      upstreamPath: "pizero/src/esm-examples/adt7410",
+    });
+    expect(examples).toHaveLength(3);
+  });
+
   it("builds pizero-esm and legacy-gc-i2c examples for ADS1015", () => {
     const examples = buildMetaExamples(makeDevice(), platforms, aliases);
 
@@ -147,9 +193,16 @@ describe("buildPackages", () => {
     ).toEqual(["@chirimen/pca9685"]);
   });
 
-  it("returns empty array when no alias exists", () => {
+  it("returns empty array when example device id cannot be derived", () => {
     expect(
-      buildPackages(makeDevice({ id: "UNKNOWN", model: "UNKNOWN" }), aliases),
+      buildPackages(
+        makeDevice({
+          id: "UNKNOWN",
+          model: "日本語のみ",
+          rawExampleUrls: {},
+        }),
+        aliases,
+      ),
     ).toEqual([]);
   });
 });

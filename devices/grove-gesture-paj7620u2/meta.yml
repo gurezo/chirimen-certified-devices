@@ -6,6 +6,13 @@ description: 手を「上、下、左、右、遠ざかる、近づく、時計�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/Grove-Gesture.jpg
 productUrl: https://www.switch-science.com/catalog/2645/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/paj7620
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/paj7620
+    circuitUrl: https://github.com/SeeedDocument/Grove_Gesture_V_1.0/raw/master/res/Grove_-_Gesture_v1.0_sch_pcb.zip
+    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -16,7 +23,8 @@ examples:
 circuit: https://github.com/SeeedDocument/Grove_Gesture_V_1.0/raw/master/res/Grove_-_Gesture_v1.0_sch_pcb.zip
 datasheet: https://github.com/SeeedDocument/Grove_Gesture_V_1.0/raw/master/res/PAJ7620U2_Datasheet_V0.8_20140611.pdf
 reference: http://wiki.seeedstudio.com/Grove-Gesture_v1.0/
-packages: []
-platform: legacy-gc-i2c
-status: archive
+packages:
+  - "@chirimen/paj7620"
+platform: pizero-esm
+status: primary
 verified: false

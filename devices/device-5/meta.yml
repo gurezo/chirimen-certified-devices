@@ -6,6 +6,13 @@ description: 通電すると光る部品です(必ず抵抗を挟んで利用し
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/M-18009.jpg
 productUrl: https://akizukidenshi.com/catalog/g/g118009/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/hello-real-world
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world
+    circuitUrl: null
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -23,7 +30,8 @@ examples:
 circuit: null
 datasheet: null
 reference: null
-packages: []
-platform: microbit-driver
-status: incubator
+packages:
+  - "@chirimen/hello-real-world"
+platform: pizero-esm
+status: primary
 verified: false

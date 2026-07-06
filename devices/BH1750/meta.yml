@@ -6,6 +6,13 @@ description: 照度センサー
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/BH1750.jpg
 productUrl: https://www.amazon.co.jp/dp/B011IGZD7E
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/bh1750
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bh1750
+    circuitUrl: null
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -23,7 +30,8 @@ examples:
 circuit: null
 datasheet: null
 reference: null
-packages: []
-platform: microbit-driver
-status: incubator
+packages:
+  - "@chirimen/bh1750"
+platform: pizero-esm
+status: primary
 verified: false

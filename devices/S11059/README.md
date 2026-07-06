@@ -13,8 +13,13 @@ RGB 各色と赤外線の強度を測定するセンサです
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/s11059`
+
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/s11059](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/s11059)
 - **micro:bit** (incubator): [microbit-examples/I2C4_S11059](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C4_S11059)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-S11059](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-S11059)
 

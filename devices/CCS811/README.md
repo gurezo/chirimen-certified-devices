@@ -13,6 +13,10 @@ CO2+TVOCセンサ
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/ccs811`
+
 ## Example
 
 - **micro:bit** (incubator): [microbit-examples/I2C_CCS811](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_CCS811)

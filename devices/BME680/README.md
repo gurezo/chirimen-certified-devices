@@ -13,6 +13,10 @@ description: "温度、湿度、気圧さらにガスが測れる複合センサ
 
 I2C
 
+## 使用パッケージ
+
+- `@chirimen/bme680`
+
 ## Example
 
 - **micro:bit** (incubator): [microbit-examples/I2C_BME680](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BME680)

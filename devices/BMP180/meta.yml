@@ -6,6 +6,13 @@ description: 温度と気圧の測定ができる複合センサです
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/BMP180.jpg
 productUrl: http://www.aitendo.com/product/10760
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/bmp180
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bmp180
+    circuitUrl: null
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -23,7 +30,8 @@ examples:
 circuit: null
 datasheet: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/BMP180/BMP180.pdf
 reference: null
-packages: []
-platform: microbit-driver
-status: incubator
+packages:
+  - "@chirimen/bmp180"
+platform: pizero-esm
+status: primary
 verified: false
