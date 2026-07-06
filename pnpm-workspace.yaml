@@ -45,3 +45,6 @@ minimumReleaseAgeExclude:
 # 悪意のあるリリースは1週間以内に発見され、レジストリから削除される為
 # config = 7 day x 24h x 60 min
 minimumReleaseAge: 10080
+
+allowBuilds:
+  esbuild: true
