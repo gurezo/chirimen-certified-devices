@@ -11,7 +11,10 @@
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:devices": "tsx tools/src/sync-devices.ts",
+    "validate:devices": "tsx tools/src/validate-devices.ts",
+    "generate:devices": "tsx tools/src/generate-devices.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.0",

@@ -219,7 +219,12 @@ pnpm install
 pnpm lint
 pnpm typecheck
 pnpm test
+pnpm sync:devices
+pnpm validate:devices
+pnpm generate:devices
 ```
+
+`sync:devices` / `validate:devices` / `generate:devices` は現時点ではスタブ実装です（[#12](https://github.com/gurezo/chirimen-certified-devices/issues/12) 基盤、本実装は #9–#11）。
 
 `pnpm test` は Vitest を実行します。テストファイルがまだ存在しない場合も、初期開発環境の検証として成功する設定です。
 
