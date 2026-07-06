@@ -56,7 +56,7 @@ export interface TempRepoOptions {
     string,
     {
       meta: MetaYamlContent | string;
-      readme?: boolean;
+      readme?: boolean | string;
     }
   >;
 }
@@ -82,7 +82,9 @@ export async function createTempRepo(options: TempRepoOptions): Promise<TempRepo
     await writeFile(path.join(deviceDir, "meta.yml"), metaContent, "utf8");
 
     if (device.readme !== false) {
-      await writeFile(path.join(deviceDir, "README.md"), `# ${dirName}\n`, "utf8");
+      const readmeContent =
+        typeof device.readme === "string" ? device.readme : `# ${dirName}\n`;
+      await writeFile(path.join(deviceDir, "README.md"), readmeContent, "utf8");
     }
   }
 
