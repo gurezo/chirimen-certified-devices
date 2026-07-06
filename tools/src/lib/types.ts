@@ -97,3 +97,38 @@ export interface AliasesConfig {
 export interface ParsedPartslistDeviceWithId extends ParsedPartslistDevice {
   id: string;
 }
+
+export type SyncDeviceKind = "single" | "composite" | "remote";
+
+export interface SyncDeviceEntry extends ParsedPartslistDevice {
+  id: string;
+  kind: SyncDeviceKind;
+}
+
+export interface MetaExample {
+  platform: PlatformId;
+  status: ExampleStatus;
+  upstreamRepository: string;
+  upstreamPath: string;
+  upstreamPathUrl: string;
+  circuitUrl: string | null;
+  verified: boolean;
+}
+
+export interface MetaYamlContent {
+  id: string;
+  model: string;
+  tag: DeviceTag;
+  category: string;
+  description: string;
+  image: string;
+  productUrl: string;
+  examples: MetaExample[];
+  circuit: string | null;
+  datasheet: string | null;
+  reference: string | null;
+  packages: string[];
+  platform: PlatformId;
+  status: ExampleStatus;
+  verified: boolean;
+}
