@@ -12,16 +12,20 @@ minimumReleaseAgeExclude:
   - "@types/*"
   - "@typescript-eslint/*"
   - "@vitest/*"
+  - ajv
   - brace-expansion
   - es-module-lexer
+  - esbuild
   - eslint
   - picomatch
   - postcss
   - rolldown
+  - tsx
   - typescript
   - typescript-eslint
   - vite
   - vitest
+  - yaml
   - '@commitlint/cli@21.2.0'
   - '@commitlint/config-conventional@21.2.0'
   - '@commitlint/config-validator@21.2.0'
