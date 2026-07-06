@@ -1,0 +1,83 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`generateDevices > matches snapshot for a minimal fixture 1`] = `
+{
+  "aliases": {
+    "compositeDevices": {},
+    "remoteDevices": {},
+  },
+  "devices": [
+    {
+      "directory": "devices/TEST001",
+      "id": "TEST001",
+      "meta": {
+        "category": "Test",
+        "circuit": null,
+        "datasheet": null,
+        "description": "Test device",
+        "examples": [
+          {
+            "circuitUrl": null,
+            "platform": "pizero-esm",
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)",
+            "status": "primary",
+            "upstreamPath": "pizero/src/esm-examples/test",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/test",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "verified": false,
+          },
+        ],
+        "id": "TEST001",
+        "image": "https://example.com/image.jpg",
+        "model": "TEST001",
+        "packages": [
+          "@chirimen/test",
+        ],
+        "platform": "pizero-esm",
+        "productUrl": "https://example.com/product",
+        "reference": null,
+        "status": "primary",
+        "tag": "I2C",
+        "verified": false,
+      },
+      "readme": {
+        "frontmatter": {
+          "model": "TEST001",
+          "title": "TEST001",
+        },
+        "path": "devices/TEST001/README.md",
+      },
+    },
+  ],
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "platforms": {
+    "platforms": {
+      "pizero-esm": {
+        "allowedStatuses": [
+          "primary",
+          "special",
+        ],
+        "defaultStatus": "primary",
+        "id": "pizero-esm",
+        "label": "Pi Zero / Raspberry Pi (ESM)",
+        "legacyCodeUrlPatterns": [],
+        "upstreamBasePath": "pizero/src/esm-examples",
+        "upstreamRepository": "chirimen-oh/chirimen.org",
+      },
+      "remote-connection": {
+        "allowedStatuses": [
+          "incubator",
+          "special",
+        ],
+        "defaultStatus": "incubator",
+        "id": "remote-connection",
+        "label": "Remote Connection",
+        "legacyCodeUrlPatterns": [],
+        "upstreamBasePath": "examples",
+        "upstreamRepository": "chirimen-oh/remote-connection",
+      },
+    },
+  },
+  "version": 1,
+}
+`;

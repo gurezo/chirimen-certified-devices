@@ -80,10 +80,44 @@ pnpm validate:devices --devices-dir devices/
 
 エラー時は `path: message` 形式で stderr に出力します。
 
-## その他のコマンド
+## generate:devices
 
-`generate:devices` は現時点ではスタブ実装です。
+`devices/` 配下の `meta.yml` / `README.md` と `data/*.yml` を集約し、`generated/devices.json` を生成します。dashboard 等の参照元として利用する集約 JSON です。
 
 ```sh
 pnpm generate:devices
 ```
+
+### オプション
+
+| オプション | デフォルト | 説明 |
+| --- | --- | --- |
+| `--dry-run` | off | JSON を stdout に出力のみ（ファイルは書き込まない） |
+| `--devices-dir <path>` | `devices/` | 入力ディレクトリ |
+| `--output <path>` | `generated/devices.json` | 出力ファイル |
+
+例:
+
+```sh
+pnpm generate:devices --dry-run
+pnpm generate:devices --output generated/devices.json
+```
+
+### 出力形式
+
+`generated/devices.json` は以下の集約形式です。
+
+- `platforms` — `data/platforms.yml` の内容
+- `aliases` — `data/aliases.yml` の内容
+- `devices[]` — 各デバイスの正規化済み `meta.yml`、README front matter、相対パス
+
+`devices[]` は `id` 順にソートされます。`meta.examples[]` には `platformLabel` が付与されます。
+
+### 終了コード
+
+| コード | 意味 |
+| --- | --- |
+| `0` | 生成成功 |
+| `1` | 入力エラーあり、または実行時エラー |
+
+エラー時は `path: message` 形式で stderr に出力します。
