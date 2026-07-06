@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gurezo/chirimen-certified-devices/schema/meta.schema.json",
+  "title": "CHIRIMEN Certified Device meta.yml",
+  "description": "JSON Schema for devices/**/meta.yml machine-readable device metadata.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "model",
+    "tag",
+    "category",
+    "description",
+    "image",
+    "productUrl",
+    "examples",
+    "circuit",
+    "datasheet",
+    "reference",
+    "packages",
+    "platform",
+    "status",
+    "verified"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Device directory name under devices/ (e.g. ADS1015, PCA9685_MX1508, remote_ADT7410).",
+      "pattern": "^(remote_)?[A-Za-z0-9][A-Za-z0-9_-]*$"
+    },
+    "model": {
+      "type": "string",
+      "description": "Model number from partslist.csv. Composite devices use underscore-separated model names.",
+      "minLength": 1
+    },
+    "tag": {
+      "type": "string",
+      "description": "Interface tag (e.g. I2C, GPIO).",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "description": "Device category from partslist.csv.",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "Short device description.",
+      "minLength": 1
+    },
+    "image": {
+      "type": "string",
+      "format": "uri",
+      "description": "Device image URL."
+    },
+    "productUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Product purchase or catalog URL."
+    },
+    "examples": {
+      "type": "array",
+      "description": "Platform-specific Example entries.",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/example"
+      }
+    },
+    "circuit": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Schematic or circuit diagram URL."
+    },
+    "datasheet": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Datasheet URL."
+    },
+    "reference": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Reference documentation URL."
+    },
+    "packages": {
+      "type": "array",
+      "description": "npm packages used by Examples for this device.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "platform": {
+      "$ref": "#/$defs/platformId",
+      "description": "Primary platform for this device metadata."
+    },
+    "status": {
+      "$ref": "#/$defs/exampleStatus",
+      "description": "Primary Example status for this device metadata."
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether the primary Example has been verified on real hardware."
+    }
+  },
+  "$defs": {
+    "platformId": {
+      "type": "string",
+      "enum": [
+        "pizero-esm",
+        "legacy-gc-i2c",
+        "legacy-gc-gpio",
+        "microbit-driver",
+        "remote-connection"
+      ],
+      "description": "Platform identifier. See data/platforms.yml for definitions."
+    },
+    "exampleStatus": {
+      "type": "string",
+      "enum": ["primary", "archive", "legacy", "incubator", "special"],
+      "description": "Example lifecycle status."
+    },
+    "example": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "platform",
+        "status",
+        "upstreamRepository",
+        "upstreamPath",
+        "upstreamPathUrl",
+        "verified"
+      ],
+      "properties": {
+        "platform": {
+          "$ref": "#/$defs/platformId"
+        },
+        "status": {
+          "$ref": "#/$defs/exampleStatus"
+        },
+        "upstreamRepository": {
+          "type": "string",
+          "description": "GitHub repository in owner/name format.",
+          "pattern": "^[\\w.-]+/[\\w.-]+$"
+        },
+        "upstreamPath": {
+          "type": "string",
+          "description": "Path within the upstream repository.",
+          "minLength": 1
+        },
+        "upstreamPathUrl": {
+          "type": "string",
+          "format": "uri",
+          "description": "GitHub tree URL for the upstream path."
+        },
+        "circuitUrl": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Circuit diagram URL for this Example."
+        },
+        "verified": {
+          "type": "boolean",
+          "description": "Whether this Example has been verified on real hardware."
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "ADS1015",
+      "model": "ADS1015",
+      "tag": "I2C",
+      "category": "ADC(アナログ電圧測定)",
+      "description": "アナログ電圧を 12bit 精度のデジタル信号に変換する部品で、アナログセンサ等を利用する際に必要です",
+      "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ADS1015.jpg",
+      "productUrl": "https://www.switch-science.com/catalog/1136/",
+      "examples": [
+        {
+          "platform": "pizero-esm",
+          "status": "primary",
+          "upstreamRepository": "chirimen-oh/chirimen.org",
+          "upstreamPath": "pizero/src/esm-examples/ads1015",
+          "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1015",
+          "circuitUrl": "https://github.com/chirimen-oh/chirimen/master/gc/i2c/i2c-ADS1015/schematic.png",
+          "verified": false
+        },
+        {
+          "platform": "legacy-gc-i2c",
+          "status": "archive",
+          "upstreamRepository": "chirimen-oh/chirimen",
+          "upstreamPath": "gc/i2c/i2c-ADS1015",
+          "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1015",
+          "circuitUrl": "https://github.com/chirimen-oh/chirimen/master/gc/i2c/i2c-ADS1015/schematic.png",
+          "verified": false
+        }
+      ],
+      "circuit": "https://github.com/chirimen-oh/chirimen/master/gc/i2c/i2c-ADS1015/schematic.png",
+      "datasheet": "https://cdn-shop.adafruit.com/datasheets/ads1015.pdf",
+      "reference": "https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs",
+      "packages": ["@chirimen/ads1x15"],
+      "platform": "pizero-esm",
+      "status": "primary",
+      "verified": false
+    },
+    {
+      "id": "PCA9685_MX1508",
+      "model": "PCA9685_MX1508",
+      "tag": "I2C",
+      "category": "サーボモータ・DCモータ コントローラ",
+      "description": "PCA9685 (I2C PWM ドライバ) と MX1508 (DC モータドライバ) を組み合わせた複合デバイス構成",
+      "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/PCA9685.jpg",
+      "productUrl": "https://www.switch-science.com/catalog/961/",
+      "examples": [
+        {
+          "platform": "pizero-esm",
+          "status": "primary",
+          "upstreamRepository": "chirimen-oh/chirimen.org",
+          "upstreamPath": "pizero/src/esm-examples/pca9685",
+          "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685",
+          "circuitUrl": null,
+          "verified": false
+        },
+        {
+          "platform": "legacy-gc-i2c",
+          "status": "archive",
+          "upstreamRepository": "chirimen-oh/chirimen",
+          "upstreamPath": "gc/i2c/i2c-PCA9685",
+          "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
+          "circuitUrl": null,
+          "verified": false
+        }
+      ],
+      "circuit": null,
+      "datasheet": "https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf",
+      "reference": null,
+      "packages": ["@chirimen/pca9685"],
+      "platform": "pizero-esm",
+      "status": "primary",
+      "verified": false
+    }
+  ]
+}

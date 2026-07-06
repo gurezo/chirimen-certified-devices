@@ -1,0 +1,56 @@
+# Device alias and directory naming definitions.
+# Aligns with README.md directory rules and partslist.csv model numbers.
+
+# Directory naming rules (devices/ prefix omitted):
+#
+#   Single device:     <型番>/
+#   Composite device:  <型番>_<型番>/
+#   Remote single:     remote_<型番>/
+#   Remote composite:  remote_<型番>_<型番>/
+
+directoryRules:
+  single: "<model>/"
+  composite: "<model>_<model>/"
+  remoteSingle: "remote_<model>/"
+  remoteComposite: "remote_<model>_<model>/"
+
+# Composite devices: partslist.csv lists components separately,
+# but Examples treat them as a combined unit.
+compositeDevices:
+  PCA9685_MX1508:
+    models:
+      - PCA9685
+      - MX1508
+    description: PCA9685 (I2C PWM driver) + MX1508 (DC motor driver) composite Example
+
+# Remote devices: remote_ prefix indicates remote-connection Examples.
+# Base model maps to the corresponding partslist.csv entry.
+remoteDevices:
+  remote_ADT7410:
+    baseModel: ADT7410
+    description: ADT7410 over remote connection
+  remote_PCA9685_MX1508:
+    baseModel: PCA9685_MX1508
+    models:
+      - PCA9685
+      - MX1508
+    description: PCA9685 + MX1508 composite over remote connection
+
+# Example name aliases: absorb naming variations across
+# partslist.csv, legacy Examples, and dashboard exampleDeviceId.
+exampleNameAliases:
+  ADS1015:
+    directoryId: ADS1015
+    exampleDeviceId: ads1015
+    legacyExampleNames:
+      - I2C-ADS1015
+      - ads1015
+      - ADS1015
+  PCA9685_MX1508:
+    directoryId: PCA9685_MX1508
+    exampleDeviceId: pca9685_mx1508
+    legacyExampleNames:
+      - I2C-PCA9685
+      - GPIO-I2C-PWMHBridge-1
+      - pca9685
+      - PCA9685_MX1508

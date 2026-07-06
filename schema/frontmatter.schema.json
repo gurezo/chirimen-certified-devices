@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gurezo/chirimen-certified-devices/schema/frontmatter.schema.json",
+  "title": "CHIRIMEN Certified Device README Front Matter",
+  "description": "Minimal JSON Schema for optional YAML front matter in devices/**/README.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Human-readable device name.",
+      "minLength": 1
+    },
+    "model": {
+      "type": "string",
+      "description": "Model number. Composite devices use underscore-separated names (e.g. PCA9685_MX1508).",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "description": "Device category from partslist.csv.",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "description": "Short device summary for front matter."
+    }
+  },
+  "examples": [
+    {
+      "title": "ADS1015",
+      "model": "ADS1015",
+      "category": "ADC(アナログ電圧測定)",
+      "description": "12bit ADC for analog voltage measurement over I2C."
+    },
+    {
+      "title": "PCA9685 + MX1508",
+      "model": "PCA9685_MX1508",
+      "category": "サーボモータ・DCモータ コントローラ",
+      "description": "Composite setup using PCA9685 PWM driver and MX1508 motor driver."
+    }
+  ]
+}
