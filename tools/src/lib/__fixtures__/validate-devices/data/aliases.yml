@@ -1,0 +1,19 @@
+compositeDevices:
+  PCA9685_MX1508:
+    models:
+      - PCA9685
+      - MX1508
+    description: composite example for validation tests
+  MISSING_COMPOSITE:
+    models:
+      - MISSING_A
+      - MISSING_B
+    description: intentionally missing composite device
+
+remoteDevices:
+  remote_ADT7410:
+    baseModel: ADT7410
+    description: remote example for validation tests
+  remote_MISSING:
+    baseModel: MISSING
+    description: intentionally missing remote device

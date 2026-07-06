@@ -1,0 +1,22 @@
+platforms:
+  pizero-esm:
+    id: pizero-esm
+    label: Pi Zero / Raspberry Pi (ESM)
+    defaultStatus: primary
+    allowedStatuses:
+      - primary
+      - special
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamBasePath: pizero/src/esm-examples
+    legacyCodeUrlPatterns: []
+
+  remote-connection:
+    id: remote-connection
+    label: Remote Connection
+    defaultStatus: incubator
+    allowedStatuses:
+      - incubator
+      - special
+    upstreamRepository: chirimen-oh/remote-connection
+    upstreamBasePath: examples
+    legacyCodeUrlPatterns: []
