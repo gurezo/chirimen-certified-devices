@@ -1,0 +1,37 @@
+id: AMG8833
+model: AMG8833
+tag: I2C
+category: サーモグラフィ
+description: センサから見て上下左右のおよそ 60 度の範囲を 8x8 ピクセルに分割し、それぞれのエリアについて 0℃ ～ 80℃ の範囲で測定可能なサーモグラフィです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/AMG8833.JPG
+productUrl: https://www.switch-science.com/catalog/3395/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/amg8833
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/amg8833
+    circuitUrl: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_AMG8833
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_AMG8833
+    circuitUrl: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-AMG8833
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-AMG8833
+    circuitUrl: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+    verified: false
+circuit: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+datasheet: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/PANA-S-A0002141979-1.pdf
+reference: null
+packages:
+  - "@chirimen/amg8833"
+platform: pizero-esm
+status: primary
+verified: false

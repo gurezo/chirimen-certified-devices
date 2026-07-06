@@ -1,0 +1,30 @@
+id: GP2Y0E03
+model: GP2Y0E03
+tag: I2C
+category: 距離センサ
+description: センサから対象物までの距離を測定できるセンサです( 50cm 程度まで)
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/gp2y0e03.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g107547/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/gp2y0e03
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gp2y0e03
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-GP2Y0E03
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-GP2Y0E03
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://akizukidenshi.com/download/ds/sharp/gp2y0e03_e.pdf
+reference: null
+packages:
+  - "@chirimen/gp2y0e03"
+platform: pizero-esm
+status: primary
+verified: false

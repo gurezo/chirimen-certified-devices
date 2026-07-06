@@ -1,0 +1,37 @@
+id: S11059
+model: S11059
+tag: I2C
+category: カラーセンサ
+description: RGB 各色と赤外線の強度を測定するセンサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/S11059.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g108316/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/s11059
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/s11059
+    circuitUrl: null
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C4_S11059
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C4_S11059
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-S11059
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-S11059
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: http://akizukidenshi.com/download/ds/hamamatsu/s11059-02dt.pdf
+reference: null
+packages:
+  - "@chirimen/s11059"
+platform: pizero-esm
+status: primary
+verified: false

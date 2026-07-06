@@ -1,0 +1,23 @@
+id: AHT20
+model: AHT20
+tag: I2C
+category: 温湿度複合センサ
+description: 温度と湿度の両方が測定可能なセンサ
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ENS160_AHT20.jpg
+productUrl: https://www.amazon.co.jp/dp/B0D2WVHPDN?th=1
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/aht20
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/aht20
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://files.seeedstudio.com/wiki/Grove-AHT20_I2C_Industrial_Grade_Temperature_and_Humidity_Sensor/AHT20-datasheet-2020-4-16.pdf
+reference: null
+packages:
+  - "@chirimen/aht20"
+platform: pizero-esm
+status: primary
+verified: false

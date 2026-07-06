@@ -1,0 +1,37 @@
+id: BMP280
+model: BMP280
+tag: I2C
+category: 温度, 圧力 複合センサ
+description: 温度と気圧の測定ができる複合センサです(BMP180の後継品で精度が向上しています)
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/BMP280.jpeg
+productUrl: http://www.aitendo.com/product/10760
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/bmp280
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bmp280
+    circuitUrl: null
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C2_BMP280
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C2_BMP280
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-BMP280
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BMP280
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/BMP280/BST-BMP280-DS001-11.pdf
+reference: null
+packages:
+  - "@chirimen/bmp280"
+platform: pizero-esm
+status: primary
+verified: false

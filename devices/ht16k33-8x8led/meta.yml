@@ -1,0 +1,30 @@
+id: ht16k33-8x8led
+model: HT16K33搭載 8x8LEDモジュール（その１）
+tag: I2C
+category: LED マトリックス
+description: マトリクス LED 制御可能なコントローラが搭載されたLEDモジュールです(詳細はExamplesをご覧ください)。 Adafruitの8x8LED搭載品と　Keyestudio KS0336 8*8 Matrix Module I2Cはピン配置を除き同等品です
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/HT16K33.jpg
+productUrl: https://www.switch-science.com/products/1493
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/ht16k33
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-HT16K33
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://cdn-shop.adafruit.com/datasheets/ht16K33v110.pdf
+reference: https://www.adafruit.com/product/870
+packages:
+  - "@chirimen/ht16k33"
+platform: pizero-esm
+status: primary
+verified: false

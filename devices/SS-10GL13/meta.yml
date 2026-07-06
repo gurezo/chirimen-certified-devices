@@ -1,0 +1,37 @@
+id: SS-10GL13
+model: SS-10GL13
+tag: GPIO
+category: マイクロスイッチ
+description: 小型のスイッチです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/microSw.jpeg
+productUrl: https://akizukidenshi.com/catalog/g/g114659/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/gpio-onchange
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
+    circuitUrl: null
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/GPIO0
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO0
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/gpio-Button
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Button
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages:
+  - "@chirimen/gpio-onchange"
+platform: pizero-esm
+status: primary
+verified: false

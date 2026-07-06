@@ -1,0 +1,37 @@
+id: device-5
+model: フレキシブルＬＥＤ　ピンク色
+tag: GPIO
+category: LED
+description: 通電すると光る部品です(必ず抵抗を挟んで利用してください)
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/M-18009.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g118009/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/hello-real-world
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world
+    circuitUrl: null
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/GPIO1
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/gpio-Blink
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages:
+  - "@chirimen/hello-real-world"
+platform: pizero-esm
+status: primary
+verified: false

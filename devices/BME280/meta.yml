@@ -1,0 +1,37 @@
+id: BME280
+model: BME280
+tag: I2C
+category: 温度, 圧力, 湿度 複合センサ
+description: 温度、湿度、気圧の測定ができる複合センサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/BME280.jpg
+productUrl: http://www.aitendo.com/product/15535
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/bme280
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme280
+    circuitUrl: null
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C6_BME280
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C6_BME280
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-BME280
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BME280
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf
+reference: null
+packages:
+  - "@chirimen/bme280"
+platform: pizero-esm
+status: primary
+verified: false

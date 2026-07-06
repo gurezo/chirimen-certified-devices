@@ -1,0 +1,23 @@
+id: grove
+model: Grove水位センサ
+tag: I2C
+category: 水位センサ
+description: 水位を測定するI2C接続のセンサ
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/GroveWaterLevel.jpg
+productUrl: https://www.switch-science.com/products/6282
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/grove-water-level-sensor
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/grove-water-level-sensor
+    circuitUrl: https://raw.githubusercontent.com/SeeedDocument/Grove-Water-LEVER-Sensor/master/res/Grove%20-%20Water%20Level%20Sensor%20(10CM)_SCH%26PCB.zip
+    verified: false
+circuit: https://raw.githubusercontent.com/SeeedDocument/Grove-Water-LEVER-Sensor/master/res/Grove%20-%20Water%20Level%20Sensor%20(10CM)_SCH%26PCB.zip
+datasheet: https://github.com/SeeedDocument/Grove-Water-LEVER-Sensor/raw/master/res/ATtiny1616-1617-Automotive-Data-Sheet.pdf
+reference: null
+packages:
+  - "@chirimen/grove-water-level-sensor"
+platform: pizero-esm
+status: primary
+verified: false

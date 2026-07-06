@@ -1,0 +1,37 @@
+id: MPU6050
+model: MPU6050
+tag: I2C
+category: 3軸加速度+ジャイロ 複合センサ
+description: 3軸の加速度に加え、ジャイロの測定も可能な複合センサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MPU6050.jpg
+productUrl: https://www.switch-science.com/catalog/5025/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/mpu6050
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu6050
+    circuitUrl: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/MPU6050-sch.jpg
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_MPU6050
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU6050
+    circuitUrl: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/MPU6050-sch.jpg
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-MPU6050
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU6050
+    circuitUrl: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/MPU6050-sch.jpg
+    verified: false
+circuit: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/MPU6050-sch.jpg
+datasheet: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/PS-MPU-6000A-00_v1.0.pdf
+reference: null
+packages:
+  - "@chirimen/mpu6050"
+platform: pizero-esm
+status: primary
+verified: false

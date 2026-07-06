@@ -1,0 +1,23 @@
+id: m5-rfid-2-ws1850s
+model: m5 RFID 2 (WS1850S)
+tag: I2C
+category: RFIDリーダ
+description: 13.56MHzのRFIDのリーダ/ライターです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/RFID2_WS1850S.jpg
+productUrl: https://www.switch-science.com/products/8301
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/ws1850s
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ws1850s
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: https://docs.m5stack.com/en/unit/rfid2
+packages:
+  - "@chirimen/ws1850s"
+platform: pizero-esm
+status: primary
+verified: false

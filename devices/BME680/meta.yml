@@ -1,0 +1,30 @@
+id: BME680
+model: BME680
+tag: I2C
+category: 温度, 湿度, 気圧, ガス 複合センサ
+description: 温度、湿度、気圧さらにガスが測れる複合センサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/BME680.jpg
+productUrl: https://akizukidenshi.com/catalog/g/gK-14469/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_BME680
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BME680
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-BME680
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BME680
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages:
+  - "@chirimen/bme680"
+platform: microbit-driver
+status: incubator
+verified: false

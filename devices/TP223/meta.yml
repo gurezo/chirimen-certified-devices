@@ -1,0 +1,23 @@
+id: TP223
+model: TP223
+tag: GPIO
+category: タッチセンサ/スイッチ
+description: タッチセンサ(スイッチ)です。金属の近接(1-2mm程度の接近)も感知でき応用が利きます。
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/TP223.jpg
+productUrl: https://www.amazon.co.jp/dp/B0829VBS5L/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/gpio-onchange
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
+    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/index.html#gpio
+    verified: false
+circuit: https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/index.html#gpio
+datasheet: https://files.seeedstudio.com/wiki/Grove-Touch_Sensor/res/TTP223.pdf
+reference: null
+packages:
+  - "@chirimen/gpio-onchange"
+platform: pizero-esm
+status: primary
+verified: false

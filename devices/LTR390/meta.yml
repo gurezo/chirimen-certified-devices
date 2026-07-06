@@ -1,0 +1,23 @@
+id: LTR390
+model: LTR390
+tag: I2C
+category: 紫外線(UV)センサ
+description: 紫外線の強度を測定できるセンサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/LTR390.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g116365/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/ltr390
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ltr390
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-ltr390-uv-sensor.pdf
+reference: null
+packages:
+  - "@chirimen/ltr390"
+platform: pizero-esm
+status: primary
+verified: false
