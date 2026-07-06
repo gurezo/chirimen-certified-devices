@@ -1,0 +1,22 @@
+id: grove-accelerometer-adxl345
+model: Grove-Accelerometer (ADXL345)
+tag: I2C
+category: 3軸加速度センサ
+description: 3軸の加速度を検出できるセンサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+productUrl: https://www.switch-science.com/catalog/972/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-Grove-Accelerometer
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Accelerometer
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: http://wiki.seeedstudio.com/Grove-3-Axis_Digital_Accelerometer-16g/
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

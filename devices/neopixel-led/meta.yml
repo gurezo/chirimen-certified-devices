@@ -1,0 +1,29 @@
+id: neopixel-led
+model: Neopixel LEDコントローラ
+tag: I2C
+category: フルカラーLED アレイ
+description: 多数のフルカラー LED を個々に制御可能なコントローラです(詳細はExamplesをご覧ください)
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/neopixelI2c.jpg
+productUrl: https://chirimen.org/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C5_NEOPIXEL
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C5_NEOPIXEL
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-NEOPIXEL_I2C
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-NEOPIXEL_I2C
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

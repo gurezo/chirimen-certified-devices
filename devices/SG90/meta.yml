@@ -1,0 +1,22 @@
+id: SG90
+model: SG90
+tag: Actuator
+category: サーボモータ
+description: Tower Pro 製の小型サーボモータです　同一型番の互換品も多数流通しています
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g108761/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-PCA9685
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: http://akizukidenshi.com/download/ds/towerpro/SG90_a.pdf
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

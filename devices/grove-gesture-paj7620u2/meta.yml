@@ -1,0 +1,22 @@
+id: grove-gesture-paj7620u2
+model: Grove-Gesture (PAJ7620U2)
+tag: I2C
+category: ジェスチャーセンサ
+description: 手を「上、下、左、右、遠ざかる、近づく、時計回り、反時計回り、手を振る」と動かしたときにそれらを検出するセンサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/Grove-Gesture.jpg
+productUrl: https://www.switch-science.com/catalog/2645/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-Grove-Gesture
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Gesture
+    circuitUrl: https://github.com/SeeedDocument/Grove_Gesture_V_1.0/raw/master/res/Grove_-_Gesture_v1.0_sch_pcb.zip
+    verified: false
+circuit: https://github.com/SeeedDocument/Grove_Gesture_V_1.0/raw/master/res/Grove_-_Gesture_v1.0_sch_pcb.zip
+datasheet: https://github.com/SeeedDocument/Grove_Gesture_V_1.0/raw/master/res/PAJ7620U2_Datasheet_V0.8_20140611.pdf
+reference: http://wiki.seeedstudio.com/Grove-Gesture_v1.0/
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

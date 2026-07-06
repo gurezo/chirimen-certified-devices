@@ -1,0 +1,29 @@
+id: ts3692n65
+model: 多種(例はTS3692N65)
+tag: Actuator
+category: 2相バイポーラステッピングモータ
+description: A4988をご確認ください
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/StepperMotor.jpg
+productUrl: https://wakamatsu.co.jp/biz/products/detail.php?product_id=62020023
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/GPIO_HBridge
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge
+    circuitUrl: https://r.chirimen.org/examples/#GPIO-A4988
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/gpio-A4988
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-A4988
+    circuitUrl: https://r.chirimen.org/examples/#GPIO-A4988
+    verified: false
+circuit: https://r.chirimen.org/examples/#GPIO-A4988
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

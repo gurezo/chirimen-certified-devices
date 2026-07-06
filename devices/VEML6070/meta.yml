@@ -1,0 +1,29 @@
+id: VEML6070
+model: VEML6070
+tag: I2C
+category: 紫外線(UV)センサ
+description: 紫外線の強度を測定できるセンサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/VEML6070.jpg
+productUrl: https://www.switch-science.com/catalog/2748/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_VEML6070
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VEML6070
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-VEML6070
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VEML6070
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://cdn-shop.adafruit.com/product-files/2899/C4170_veml6070.pdf
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

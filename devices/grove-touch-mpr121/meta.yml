@@ -1,0 +1,22 @@
+id: grove-touch-mpr121
+model: Grove-Touch (MPR121)
+tag: I2C
+category: タッチセンサ
+description: 指などの接触を検出するセンサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+productUrl: https://www.switch-science.com/catalog/825/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-Grove-Touch
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Touch
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://www.sparkfun.com/datasheets/Components/MPR121.pdf
+reference: http://wiki.seeedstudio.com/Grove-I2C_Touch_Sensor/
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

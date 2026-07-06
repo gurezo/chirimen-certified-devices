@@ -1,0 +1,22 @@
+id: SSD1306
+model: SSD1306
+tag: I2C
+category: 小型ディスプレイ
+description: 0.96inch、128x64dot の小型 OLED (有機 EL) ディスプレイです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/SSD1306.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g112031/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-Grove-OledDisplay
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-OledDisplay
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://akizukidenshi.com/catalog/g/g112031/
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

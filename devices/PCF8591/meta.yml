@@ -1,0 +1,22 @@
+id: PCF8591
+model: PCF8591
+tag: I2C
+category: ADC, DAC(アナログ電圧出力) 複合
+description: ADC と DAC が一つになった部品です(デジタル側は 8bit)
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/PCF8591.jpg
+productUrl: http://www.aitendo.com/product/10938
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-PCF8591
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCF8591
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

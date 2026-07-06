@@ -1,0 +1,22 @@
+id: ht16k33-7-led
+model: HT16K33搭載 7セグメントLEDモジュール
+tag: I2C
+category: LED マトリックス
+description: 上記と同等のコントローラが載った、7セグメントLEDのモジュールです。
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/HT16K33_7seg.jpg
+productUrl: https://www.aitendo.com/product/14540
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-HT16K33
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://cdn-shop.adafruit.com/datasheets/ht16K33v110.pdf
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

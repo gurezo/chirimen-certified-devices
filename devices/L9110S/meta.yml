@@ -1,0 +1,22 @@
+id: L9110S
+model: L9110S
+tag: GPIO
+category: DCモータ 正逆転コントローラ
+description: L9110を使用したDCモータコントローラです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/L9110S.jpeg
+productUrl: https://www.amazon.co.jp/HiLetgo-L9110S-H%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8-%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96-%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%9C%E3%83%BC%E3%83%89/dp/B011DT3OAY
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/GPIO_HBridge
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://www.elecrow.com/download/datasheet-l9110.pdf
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

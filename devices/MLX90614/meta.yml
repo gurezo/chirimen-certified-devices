@@ -1,0 +1,29 @@
+id: MLX90614
+model: MLX90614
+tag: I2C
+category: 非接触温度センサ
+description: 赤外線を利用した非接触型温度センサー
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MLX90614.jpg
+productUrl: https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-4EZP
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_MLX90614
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MLX90614
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-MLX90614
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MLX90614
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

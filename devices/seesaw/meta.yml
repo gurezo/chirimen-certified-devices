@@ -1,0 +1,22 @@
+id: seesaw
+model: seesaw
+tag: I2C
+category: 多目的インターフェース
+description: デジタル・アナログ入力・PWM出力・NeopixelLEDドライブ等の機能を持つ多目的ボード
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/seesaw.jpg
+productUrl: https://www.switch-science.com/catalog/3551/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-seesaw
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-seesaw
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

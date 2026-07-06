@@ -1,0 +1,29 @@
+id: device
+model: ジェネリック品多種
+tag: Analog
+category: ロードセル
+description: 加重により抵抗値が微少に変化する素子。差動入力にしたADS1115で利用可能です
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/LoadCell.jpg
+productUrl: https://chirimen.org/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_ADS1115_LoadCell
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_ADS1115_LoadCell
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-ADS1115-LoadCell
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1115-LoadCell
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://akizukidenshi.com/catalog/c/cloadcell/
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

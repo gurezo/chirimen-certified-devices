@@ -1,0 +1,29 @@
+id: CCS811
+model: CCS811
+tag: I2C
+category: CO2+TVOCセンサ
+description: CO2+TVOCセンサ
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/CCS811.jpg
+productUrl: https://www.amazon.co.jp/dp/B086HCSM6N/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_CCS811
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_CCS811
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-CCS811
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-CCS811
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

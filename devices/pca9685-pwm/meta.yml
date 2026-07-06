@@ -1,0 +1,22 @@
+id: pca9685-pwm
+model: PCA9685 PWM
+tag: I2C
+category: サーボモータ・DCモータ コントローラ
+description: 詳細はExamplesをご覧ください
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/PCA9685.jpg
+productUrl: https://www.switch-science.com/catalog/961/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/gpio-I2C-PWMHBridge-1
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-I2C-PWMHBridge-1
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

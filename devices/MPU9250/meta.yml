@@ -1,0 +1,29 @@
+id: MPU9250
+model: MPU9250
+tag: I2C
+category: 3軸加速度+ジャイロ+磁気 複合センサ
+description: 3軸の加速度、ジャイロのほか、磁気も測定可能な複合センサです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MPU9250_.jpg
+productUrl: https://www.amazon.co.jp/HiLetgo%C2%AE-MPU9250-9%E8%87%AA%E7%94%B1%E5%BA%A61-%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97-%E7%A3%81%E6%B0%97%E3%82%BB%E3%83%B3%E3%82%B5/dp/B0154PM102/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_MPU9250
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU9250
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-MPU9250
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU9250
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

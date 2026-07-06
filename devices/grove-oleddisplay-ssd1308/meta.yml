@@ -1,0 +1,22 @@
+id: grove-oleddisplay-ssd1308
+model: Grove-OledDisplay (SSD1308)
+tag: I2C
+category: 小型ディスプレイ
+description: 0.96inch、128x64dot の小型 OLED (有機 EL) ディスプレイです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+productUrl: https://www.switch-science.com/catalog/829/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-Grove-OledDisplay
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-OledDisplay
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: http://wiki.seeedstudio.com/Grove-OLED_Display_0.96inch/
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

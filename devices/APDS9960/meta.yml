@@ -1,0 +1,22 @@
+id: APDS9960
+model: APDS9960
+tag: I2C
+category: 近接・環境光・ジェスチャーセンサー
+description: 近接・環境光・ジェスチャーを読み取るセンサー
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/APDS9960.jpg
+productUrl: https://www.switch-science.com/catalog/3531/
+examples:
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-APDS9960
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-APDS9960
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: legacy-gc-i2c
+status: archive
+verified: false

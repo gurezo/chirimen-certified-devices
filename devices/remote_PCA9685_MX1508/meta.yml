@@ -1,0 +1,44 @@
+id: remote_PCA9685_MX1508
+model: PCA9685_MX1508
+tag: I2C
+category: サーボモータ・DCモータ コントローラ
+description: PCA9685 + MX1508 composite over remote connection
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/PCA9685.jpg
+productUrl: https://www.switch-science.com/catalog/961/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/pca9685_mx1508
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685_mx1508
+    circuitUrl: null
+    verified: false
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/GPIO_HBridge
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-PCA9685
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685
+    circuitUrl: null
+    verified: false
+  - platform: remote-connection
+    status: incubator
+    upstreamRepository: chirimen-oh/remote-connection
+    upstreamPath: examples/pca9685_mx1508
+    upstreamPathUrl: https://github.com/chirimen-oh/remote-connection/tree/master/examples/pca9685_mx1508
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf
+reference: null
+packages:
+  - "@chirimen/pca9685"
+platform: pizero-esm
+status: primary
+verified: false

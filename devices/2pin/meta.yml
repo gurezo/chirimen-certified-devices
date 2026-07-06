@@ -1,0 +1,29 @@
+id: 2pin
+model: 2pin
+tag: GPIO
+category: タクトスイッチ
+description: ボタンを押している間だけ電気を流す部品です(chirimen チュートリアルでは 2pin のものを採用しています)
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/tactSwitch.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g108078/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/GPIO0
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO0
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/gpio-Button
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Button
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false

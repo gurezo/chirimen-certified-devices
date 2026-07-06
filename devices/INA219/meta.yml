@@ -1,0 +1,29 @@
+id: INA219
+model: INA219
+tag: I2C
+category: 電流センサ
+description: 比較的大きなDC電流を測定するセンサ
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/INA219.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g108221/
+examples:
+  - platform: microbit-driver
+    status: incubator
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamPath: microbit-examples/I2C_INA219
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_INA219
+    circuitUrl: null
+    verified: false
+  - platform: legacy-gc-i2c
+    status: archive
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamPath: gc/i2c/i2c-INA219
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-INA219
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages: []
+platform: microbit-driver
+status: incubator
+verified: false
