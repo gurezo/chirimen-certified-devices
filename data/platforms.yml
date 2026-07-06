@@ -1,0 +1,75 @@
+# Platform definitions for CHIRIMEN certified device Examples.
+# Used by meta.yml validation and future generate-devices / validate-devices tools.
+#
+# Example status values (see README.md):
+#   primary   - current main Example
+#   archive   - old layout, reference only
+#   legacy    - past layout with reference value
+#   incubator - work in progress / under review
+#   special   - special purpose or environment
+
+platforms:
+  pizero-esm:
+    id: pizero-esm
+    label: Pi Zero / Raspberry Pi (ESM)
+    defaultStatus: primary
+    allowedStatuses:
+      - primary
+      - special
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamBasePath: pizero/src/esm-examples
+    legacyCodeUrlPatterns:
+      - tutorial.chirimen.org/pizero/esm-examples
+      - tutorial.chirimen.org/pizero/
+
+  legacy-gc-i2c:
+    id: legacy-gc-i2c
+    label: Legacy CHIRIMEN GC (I2C)
+    defaultStatus: archive
+    allowedStatuses:
+      - archive
+      - legacy
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamBasePath: gc/i2c
+    legacyCodeUrlPatterns:
+      - r.chirimen.org/examples
+      - chirimen.org/chirimen/gc/top/examples
+
+  legacy-gc-gpio:
+    id: legacy-gc-gpio
+    label: Legacy CHIRIMEN GC (GPIO)
+    defaultStatus: archive
+    allowedStatuses:
+      - archive
+      - legacy
+    upstreamRepository: chirimen-oh/chirimen
+    upstreamBasePath: gc/gpio
+    legacyCodeUrlPatterns:
+      - r.chirimen.org/examples
+      - tutorial.chirimen.org/raspi
+
+  microbit-driver:
+    id: microbit-driver
+    label: micro:bit (chirimen-drivers)
+    defaultStatus: legacy
+    allowedStatuses:
+      - legacy
+      - incubator
+      - special
+    upstreamRepository: chirimen-oh/chirimen-drivers
+    upstreamBasePath: microbit-examples
+    legacyCodeUrlPatterns:
+      - chirimen.org/chirimen-micro-bit/examples
+      - tutorial.chirimen.org/microbit
+
+  remote-connection:
+    id: remote-connection
+    label: Remote Connection
+    defaultStatus: incubator
+    allowedStatuses:
+      - incubator
+      - special
+      - primary
+    upstreamRepository: chirimen-oh/remote-connection
+    upstreamBasePath: examples
+    legacyCodeUrlPatterns: []
