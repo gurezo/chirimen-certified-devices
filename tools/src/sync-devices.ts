@@ -2,10 +2,10 @@ import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Ajv2020 } from "ajv/dist/2020.js";
-import { parse as parseYaml } from "yaml";
 import { buildMetaYamlContent } from "./lib/build-examples.js";
 import { assignUniqueDeviceIds } from "./lib/device-id.js";
 import { groupSyncDevices } from "./lib/group-sync-devices.js";
+import { loadYamlFile } from "./lib/load-yaml.js";
 import { parsePartslistDevices } from "./lib/parse-partslist.js";
 import { toImageUrl } from "./lib/to-image-url.js";
 import type {
@@ -75,12 +75,6 @@ Options:
 `);
 }
 
-async function loadYamlFile<T>(relativePath: string): Promise<T> {
-  const filePath = path.join(REPO_ROOT, relativePath);
-  const content = await readFile(filePath, "utf8");
-  return parseYaml(content) as T;
-}
-
 async function fetchCsv(url: string): Promise<string> {
   const response = await fetch(url);
   if (!response.ok) {
@@ -143,8 +137,8 @@ async function writeDeviceOutputs(
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
   const [aliases, platforms, csvText] = await Promise.all([
-    loadYamlFile<AliasesConfig>("data/aliases.yml"),
-    loadYamlFile<PlatformsConfig>("data/platforms.yml"),
+    loadYamlFile<AliasesConfig>(path.join(REPO_ROOT, "data/aliases.yml")),
+    loadYamlFile<PlatformsConfig>(path.join(REPO_ROOT, "data/platforms.yml")),
     fetchCsv(options.csvUrl),
   ]);
 

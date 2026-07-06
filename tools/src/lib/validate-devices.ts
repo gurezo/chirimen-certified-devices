@@ -1,7 +1,7 @@
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { Ajv2020, type ValidateFunction } from "ajv/dist/2020.js";
-import { parse as parseYaml } from "yaml";
+import { loadYamlFile } from "./load-yaml.js";
 import type {
   AliasesConfig,
   ExampleStatus,
@@ -37,11 +37,6 @@ export interface ValidateDevicesResult {
 
 function issue(devicePath: string, message: string): ValidationIssue {
   return { path: devicePath, message };
-}
-
-async function loadYamlFile<T>(filePath: string): Promise<T> {
-  const text = await readFile(filePath, "utf8");
-  return parseYaml(text) as T;
 }
 
 async function compileMetaValidator(schemaPath: string): Promise<ValidateFunction> {
