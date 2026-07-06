@@ -42,11 +42,48 @@ pnpm sync:devices --devices-dir devices/
 
 Example URL が分類できないデバイスは警告を出してスキップします。
 
-## その他のコマンド
+## validate:devices
 
-`validate:devices` と `generate:devices` は現時点ではスタブ実装です。
+`devices/` 配下の `meta.yml` とディレクトリ構成を検証します。`sync:devices` 実行後の品質確認や CI 連携を想定しています。
 
 ```sh
 pnpm validate:devices
+```
+
+### オプション
+
+| オプション | デフォルト | 説明 |
+| --- | --- | --- |
+| `--devices-dir <path>` | `devices/` | 検証対象ディレクトリ |
+
+例:
+
+```sh
+pnpm validate:devices --devices-dir devices/
+```
+
+### 検証内容
+
+1. 各 `devices/<dir>/meta.yml` が `schema/meta.schema.json` に適合すること
+2. 各 `devices/<dir>/` に `README.md` と `meta.yml` が存在すること
+3. ディレクトリ名と `meta.yml` の `id` / `model` の整合性
+4. `data/aliases.yml` で定義された composite / remote デバイスが `devices/` に存在すること
+5. `examples[].platform` が `data/platforms.yml` に定義されていること
+6. `examples[].status` が許可値（`primary`, `archive`, `legacy`, `incubator`, `special`）であること
+
+### 終了コード
+
+| コード | 意味 |
+| --- | --- |
+| `0` | 検証成功 |
+| `1` | 検証エラーあり、または実行時エラー |
+
+エラー時は `path: message` 形式で stderr に出力します。
+
+## その他のコマンド
+
+`generate:devices` は現時点ではスタブ実装です。
+
+```sh
 pnpm generate:devices
 ```
