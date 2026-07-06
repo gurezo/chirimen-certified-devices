@@ -11,16 +11,22 @@
     "lint": "eslint .",
     "test": "vitest run --passWithNoTests",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sync:devices": "tsx tools/src/sync-devices.ts",
+    "validate:devices": "tsx tools/src/validate-devices.ts",
+    "generate:devices": "tsx tools/src/generate-devices.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.0",
     "@commitlint/config-conventional": "^21.2.0",
     "@eslint/js": "^10.0.1",
+    "ajv": "^8.20.0",
     "eslint": "^10.6.0",
     "husky": "^9.1.7",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.62.1",
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.9",
+    "yaml": "^2.9.0"
   }
 }

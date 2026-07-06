@@ -12,16 +12,20 @@ minimumReleaseAgeExclude:
   - "@types/*"
   - "@typescript-eslint/*"
   - "@vitest/*"
+  - ajv
   - brace-expansion
   - es-module-lexer
+  - esbuild
   - eslint
   - picomatch
   - postcss
   - rolldown
+  - tsx
   - typescript
   - typescript-eslint
   - vite
   - vitest
+  - yaml
   - '@commitlint/cli@21.2.0'
   - '@commitlint/config-conventional@21.2.0'
   - '@commitlint/config-validator@21.2.0'
@@ -41,3 +45,6 @@ minimumReleaseAgeExclude:
 # 悪意のあるリリースは1週間以内に発見され、レジストリから削除される為
 # config = 7 day x 24h x 60 min
 minimumReleaseAge: 10080
+
+allowBuilds:
+  esbuild: true
