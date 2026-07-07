@@ -1,0 +1,39 @@
+name: Generate devices.json
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate devices.json
+        run: |
+          cp generated/devices.json /tmp/devices.json.committed
+          pnpm generate:devices
+
+      - name: Check devices.json drift
+        run: |
+          if ! diff <(jq 'del(.generatedAt)' /tmp/devices.json.committed) <(jq 'del(.generatedAt)' generated/devices.json); then
+            echo "::error::generated/devices.json is out of date. Run pnpm generate:devices locally and commit the changes."
+            exit 1
+          fi
