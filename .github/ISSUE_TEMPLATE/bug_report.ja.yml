@@ -1,0 +1,96 @@
+name: 🐛 バグ報告
+description: chirimen-certified-devices の不具合報告
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ありがとうございます！再現可能な情報があると調査が速くなります。
+
+  - type: input
+    id: environment
+    attributes:
+      label: 環境（Node / pnpm など）
+      description: '例: Node 24.x, pnpm 10.x'
+      placeholder: 'Node x.x / pnpm x.x'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 対象領域
+      options:
+        - devices（README / meta.yml）
+        - tools（生成・検証スクリプト）
+        - schema（JSON Schema）
+        - data（aliases.yml / platforms.yml）
+        - generated（devices.json）
+        - ci（GitHub Actions）
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: 'macOS / Windows / Linux'
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 何が起きましたか？
+      description: 実際に起きたこと（エラー内容や挙動）
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 再現手順（番号付きで）
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログ / エラースタック
+      description: コンソールログ、スタックトレース、スクリーンショット（あれば）を貼ってください
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: チェックリスト
+      options:
+        - label: README の開発環境・検証コマンドを確認しました
+          required: false
+        - label: CONTRIBUTING のコミットメッセージ規約を確認しました
+          required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 作業上の留意点
+
+        - 作業を実施する時は、Conventional Commits に準拠したブランチを作成して作業を開始してください
+        - 差分を Conventional Commits に準拠したコミットメッセージで、コミットしてください
+        - プッシュして Conventional Commits に準拠したプルリクエストの概要とタイトルを作成してください

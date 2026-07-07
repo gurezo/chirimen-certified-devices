@@ -1,0 +1,81 @@
+name: 📦 デバイス追加・更新依頼
+description: partslist.csv や upstream example を元に認定デバイス情報を追加・更新する依頼
+title: '[Device]: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        `chirimen.org/_data/partslist.csv` に登録済みのデバイス、または upstream example の追加内容を、このリポジトリへ反映したい場合に使います。
+
+        `meta.yml` の編集に不安がある場合は、README.md 本文だけの修正依頼でも構いません。必要なメタデータ調整はメンテナが対応します。
+
+  - type: input
+    id: device_id
+    attributes:
+      label: デバイス ID / 型番
+      description: '例: ADS1015, PCA9685_MX1508, remote_ADT7410'
+      placeholder: 'ADS1015'
+    validations:
+      required: true
+
+  - type: textarea
+    id: partslist
+    attributes:
+      label: partslist.csv の該当情報
+      description: 型番、カテゴリ、画像 URL、関連 URL など、partslist.csv 上の情報を記載してください。
+      placeholder: |
+        例:
+        - 型番:
+        - カテゴリ:
+        - 画像 URL:
+        - upstream PR / commit:
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: 追加・更新した example
+      description: 追加・更新した example の repository、path、PR / commit などを記載してください。
+      placeholder: |
+        例:
+        - repository:
+        - example path:
+        - platform:
+        - upstream PR / commit:
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される反映内容
+      description: このリポジトリ上でどのように追加・更新されることを期待するかを記載してください。
+      placeholder: |
+        例:
+        - devices/ADS1015/ を新規追加したい
+        - 既存デバイスの example 情報を更新したい
+        - README.md の説明を修正したい
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考リンク
+      description: 関連する upstream の PR、commit、issue、ドキュメントなどがあれば記載してください。
+      placeholder: |
+        - https://github.com/...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: チェックリスト
+      options:
+        - label: 対象デバイスは partslist.csv に登録済みです
+          required: false
+        - label: README のディレクトリ名ルールを確認しました
+          required: false
