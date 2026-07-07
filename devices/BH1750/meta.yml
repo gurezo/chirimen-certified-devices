@@ -11,14 +11,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/bh1750
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bh1750
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bh1750/schematic.png
     verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_BH1750
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BH1750
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/bh1750/imgs/pinbit_BH1750.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive

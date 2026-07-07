@@ -11,14 +11,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/amg8833
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/amg8833
-    circuitUrl: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/amg8833/schematic.png
     verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_AMG8833
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_AMG8833
-    circuitUrl: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/amg8833/imgs/pinbit_AMG8833.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive

@@ -11,7 +11,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/ads1x15
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1x15
-    circuitUrl: null
+    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#I2C_ads1x15
     verified: false
 circuit: null
 datasheet: http://akizukidenshi.com/download/ds/suntan/tsr-3386.pdf
