@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 README / ドキュメント
+    url: https://github.com/gurezo/chirimen-certified-devices#readme
+    about: まずは README（認定デバイスの定義、ディレクトリ構成、開発コマンド）をご確認ください
+  - name: 📖 CONTRIBUTING
+    url: https://github.com/gurezo/chirimen-certified-devices/blob/main/CONTRIBUTING.md
+    about: コミットメッセージ規約や Git フックのセットアップは CONTRIBUTING をご確認ください
