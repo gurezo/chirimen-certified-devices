@@ -11,7 +11,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/gpio-onchange
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
-    circuitUrl: null
+    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#GPIO_gpio-onchange
     verified: false
 circuit: null
 datasheet: null

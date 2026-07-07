@@ -11,7 +11,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/a4988
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/a4988
-    circuitUrl: https://r.chirimen.org/examples/#GPIO-A4988
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/a4988/Schematic.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive

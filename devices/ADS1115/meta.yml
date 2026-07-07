@@ -18,7 +18,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_ADS1115
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_ADS1115
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/ads1115/imgs/pinbit_ADS1115.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive

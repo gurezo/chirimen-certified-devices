@@ -11,14 +11,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/hello-real-world
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world
-    circuitUrl: null
+    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#GPIO_hello-real-world
     verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/GPIO1
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1
-    circuitUrl: null
+    circuitUrl: https://chirimen.org/chirimen-micro-bit/examples/#GPIO1
     verified: false
   - platform: legacy-gc-i2c
     status: archive

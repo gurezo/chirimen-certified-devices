@@ -11,7 +11,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/waveshare20471
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/waveshare20471
-    circuitUrl: null
+    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#I2C_waveshare20471
     verified: false
 circuit: null
 datasheet: null
