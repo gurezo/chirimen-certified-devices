@@ -123,11 +123,57 @@ function buildUpstreamPathUrl(
   return `https://github.com/${upstreamRepository}/tree/master/${upstreamPath}`;
 }
 
+function buildCircuitBlobUrl(
+  upstreamRepository: string,
+  upstreamPath: string,
+  filename: string,
+): string {
+  return `https://github.com/${upstreamRepository}/blob/master/${upstreamPath}/${filename}`;
+}
+
+function circuitFilenameCandidates(
+  platform: PlatformId,
+  model: string,
+  exampleDeviceId: string | undefined,
+): string[] {
+  switch (platform) {
+    case "legacy-gc-i2c":
+    case "legacy-gc-gpio":
+      return ["schematic.png"];
+    case "pizero-esm":
+      return ["schematic.png", `PiZero_${model}.png`];
+    case "microbit-driver": {
+      if (!exampleDeviceId) return [];
+      return [
+        `imgs/pinbit_${exampleDeviceId}.png`,
+        `imgs/pinbit_${model}.png`,
+      ];
+    }
+    default:
+      return [];
+  }
+}
+
+export function resolveExampleCircuitUrl(
+  platform: PlatformId,
+  upstreamRepository: string,
+  upstreamPath: string,
+  model: string,
+  exampleDeviceId: string | undefined,
+): string | null {
+  if (platform === "remote-connection") return null;
+
+  const candidates = circuitFilenameCandidates(platform, model, exampleDeviceId);
+  if (candidates.length === 0) return null;
+
+  return buildCircuitBlobUrl(upstreamRepository, upstreamPath, candidates[0]);
+}
+
 function classifiedToMetaExample(
   classified: ClassifiedExample,
   platforms: PlatformsConfig,
   exampleDeviceId: string | undefined,
-  circuitUrl: string | null,
+  model: string,
 ): MetaExample | null {
   const platform = platforms.platforms[classified.platform];
   if (!platform) return null;
@@ -141,7 +187,13 @@ function classifiedToMetaExample(
     upstreamRepository: platform.upstreamRepository,
     upstreamPath,
     upstreamPathUrl: buildUpstreamPathUrl(platform.upstreamRepository, upstreamPath),
-    circuitUrl,
+    circuitUrl: resolveExampleCircuitUrl(
+      classified.platform,
+      platform.upstreamRepository,
+      upstreamPath,
+      model,
+      exampleDeviceId,
+    ),
     verified: false,
   };
 }
@@ -152,7 +204,6 @@ export function buildMetaExamples(
   aliases: AliasesConfig,
 ): MetaExample[] {
   const exampleDeviceId = deriveExampleDeviceId(device, aliases);
-  const circuitUrl = device.circuitUrl ?? null;
 
   const classified = classifyExampleUrls(device.rawExampleUrls, platforms);
   const examples: MetaExample[] = [];
@@ -163,7 +214,7 @@ export function buildMetaExamples(
       item,
       platforms,
       exampleDeviceId,
-      circuitUrl,
+      device.model,
     );
     if (!metaExample || seenPlatforms.has(metaExample.platform)) continue;
     seenPlatforms.add(metaExample.platform);
@@ -184,7 +235,7 @@ export function buildMetaExamples(
           remotePlatform.upstreamRepository,
           upstreamPath,
         ),
-        circuitUrl,
+        circuitUrl: null,
         verified: false,
       });
     }

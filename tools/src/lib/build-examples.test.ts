@@ -5,6 +5,7 @@ import {
   buildPackages,
   deriveExampleDeviceId,
   pickPrimaryExample,
+  resolveExampleCircuitUrl,
 } from "./build-examples.js";
 import type { AliasesConfig, PlatformsConfig, SyncDeviceEntry } from "./types.js";
 
@@ -120,15 +121,21 @@ describe("buildMetaExamples", () => {
     );
 
     const pizero = examples.find((example) => example.platform === "pizero-esm");
+    const legacy = examples.find((example) => example.platform === "legacy-gc-i2c");
     expect(pizero).toMatchObject({
       platform: "pizero-esm",
       status: "primary",
       upstreamPath: "pizero/src/esm-examples/adt7410",
+      circuitUrl:
+        "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/adt7410/schematic.png",
     });
+    expect(legacy?.circuitUrl).toBe(
+      "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADT7410/schematic.png",
+    );
     expect(examples).toHaveLength(3);
   });
 
-  it("builds pizero-esm and legacy-gc-i2c examples for ADS1015", () => {
+  it("derives per-platform circuitUrl for ADS1015", () => {
     const examples = buildMetaExamples(makeDevice(), platforms, aliases);
 
     expect(examples).toHaveLength(2);
@@ -137,12 +144,16 @@ describe("buildMetaExamples", () => {
       status: "primary",
       upstreamRepository: "chirimen-oh/chirimen.org",
       upstreamPath: "pizero/src/esm-examples/ads1015",
+      circuitUrl:
+        "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1015/schematic.png",
       verified: false,
     });
     expect(examples[1]).toMatchObject({
       platform: "legacy-gc-i2c",
       status: "archive",
       upstreamPath: "gc/i2c/i2c-ADS1015",
+      circuitUrl:
+        "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADS1015/schematic.png",
     });
   });
 
@@ -171,6 +182,20 @@ describe("buildMetaExamples", () => {
     expect(examples.some((example) => example.platform === "remote-connection")).toBe(
       true,
     );
+  });
+});
+
+describe("resolveExampleCircuitUrl", () => {
+  it("returns null for remote-connection", () => {
+    expect(
+      resolveExampleCircuitUrl(
+        "remote-connection",
+        "chirimen-oh/remote-connection",
+        "examples/adt7410",
+        "ADT7410",
+        "adt7410",
+      ),
+    ).toBeNull();
   });
 });
 
