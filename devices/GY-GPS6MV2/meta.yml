@@ -11,7 +11,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/serial_gps
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/serial_gps
-    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#GPIO_serial_gps
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/serial_gps/schematic.png
     verified: false
 circuit: null
 datasheet: https://content.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf

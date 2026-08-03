@@ -18,7 +18,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-Grove-OledDisplay
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-OledDisplay
-    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-grove-oledDisplay/schematic.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-OledDisplay/schematic.png
     verified: false
 circuit: null
 datasheet: null

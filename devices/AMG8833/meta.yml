@@ -18,14 +18,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_AMG8833
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_AMG8833
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/amg8833/imgs/pinbit_AMG8833.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_AMG8833/imgs/pinbit_amg8833.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-AMG8833
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-AMG8833
-    circuitUrl: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-AMG8833/schematic.png
     verified: false
 circuit: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/AMG8833_breakout.pdf
 datasheet: https://docid81hrs3j1.cloudfront.net/medialibrary/2017/11/PANA-S-A0002141979-1.pdf

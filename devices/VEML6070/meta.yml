@@ -18,7 +18,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_VEML6070
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VEML6070
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/veml6070/imgs/pinbit_veml6070.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_VEML6070/imgs/pinbit_veml6070.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
