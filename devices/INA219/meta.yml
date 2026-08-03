@@ -18,14 +18,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_INA219
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_INA219
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/ina219/imgs/pinbit_INA219.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_INA219/imgs/pinbit_ina219.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-INA219
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-INA219
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-INA219/schematic.png
     verified: false
 circuit: null
 datasheet: null

@@ -18,7 +18,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-Grove-Touch
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Touch
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-Touch/schematic.png
     verified: false
 circuit: null
 datasheet: https://www.sparkfun.com/datasheets/Components/MPR121.pdf

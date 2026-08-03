@@ -11,21 +11,21 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/gpio-onchange
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
-    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#GPIO_gpio-onchange
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png
     verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/GPIO_PYR
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_PYR
-    circuitUrl: https://chirimen.org/chirimen-micro-bit/examples/#GPIO_PYR
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_PYR/imgs/pinbit_gpio-onchange.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/gpio-pirSensor
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-pirSensor
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-pirSensor/schematic.png
     verified: false
 circuit: null
 datasheet: null

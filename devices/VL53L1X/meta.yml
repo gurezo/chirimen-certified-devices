@@ -18,14 +18,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_VL53L1X
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VL53L1X
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/vl53l1x/imgs/pinbit_VL53L1X.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_VL53L1X/imgs/pinbit_vl53l1x.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-VL53L1X
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VL53L1X
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-VL53L1X/schematic.png
     verified: false
 circuit: null
 datasheet: null

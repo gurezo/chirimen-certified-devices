@@ -11,21 +11,21 @@ examples:
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamPath: pizero/src/esm-examples/ads1115-loadcell
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1115-loadcell
-    circuitUrl: https://tutorial.chirimen.org/pizero/esm-examples/#I2C_ads1115-loadcell
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1115-loadcell/schematic.png
     verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C_ADS1115_LoadCell
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_ADS1115_LoadCell
-    circuitUrl: https://chirimen.org/chirimen-micro-bit/examples/#I2C_ADS1115_LoadCell
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_ADS1115_LoadCell/imgs/pinbit_ads1115-loadcell.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-ADS1115-LoadCell
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1115-LoadCell
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADS1115-LoadCell/schematic.png
     verified: false
 circuit: null
 datasheet: https://akizukidenshi.com/catalog/c/cloadcell/

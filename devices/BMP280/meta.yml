@@ -18,14 +18,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C2_BMP280
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C2_BMP280
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/bmp280/imgs/pinbit_bmp280.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C2_BMP280/imgs/pinbit_bmp280.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-BMP280
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BMP280
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BMP280/schematic.png
     verified: false
 circuit: null
 datasheet: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/BMP280/BST-BMP280-DS001-11.pdf

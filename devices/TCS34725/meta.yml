@@ -11,7 +11,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-TCS34725
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-TCS34725
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-TCS34725/schematic.png
     verified: false
 circuit: null
 datasheet: null

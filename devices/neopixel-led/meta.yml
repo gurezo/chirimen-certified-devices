@@ -18,14 +18,14 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C5_NEOPIXEL
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C5_NEOPIXEL
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/neopixel/imgs/CMMB_I2C_example5.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C5_NEOPIXEL/imgs/pinbit_neopixel-i2c.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-NEOPIXEL_I2C
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-NEOPIXEL_I2C
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-NEOPIXEL_I2C/schematic.png
     verified: false
 circuit: null
 datasheet: null

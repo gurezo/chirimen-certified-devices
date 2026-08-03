@@ -1,0 +1,23 @@
+id: AS7341
+model: AS7341
+tag: I2C
+category: カラーセンサ
+description: ams-OSRAM製の11チャンネル分光カラーセンサ。可視光8チャンネルとClear・NIRを測定できます
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/as7341.jpg
+productUrl: https://akizukidenshi.com/catalog/g/g131479/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/as7341
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/as7341
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/as7341/schematic.png
+    verified: false
+circuit: null
+datasheet: https://www.mouser.jp/datasheet/3/5912/1/AS7341_DS000504_3_00.pdf
+reference: null
+packages:
+  - "@chirimen/as7341"
+platform: pizero-esm
+status: primary
+verified: false

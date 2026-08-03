@@ -18,7 +18,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen
     upstreamPath: gc/i2c/i2c-HTU21D
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HTU21D
-    circuitUrl: null
+    circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HTU21D/schematic.png
     verified: false
 circuit: null
 datasheet: https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf

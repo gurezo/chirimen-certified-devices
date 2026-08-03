@@ -18,7 +18,7 @@ examples:
     upstreamRepository: chirimen-oh/chirimen-drivers
     upstreamPath: microbit-examples/I2C7_SHT30
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C7_SHT30
-    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/sht30/imgs/pinbit_sht30.png
+    circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C7_SHT30/imgs/pinbit_sht30.png
     verified: false
   - platform: legacy-gc-i2c
     status: archive
