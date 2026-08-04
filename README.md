@@ -163,70 +163,59 @@ Example は、環境や履歴に応じて状態を分けます。
 ## ディレクトリ構成
 
 ```text
-chirimen-certified-devices
-  ├── README.md
-  ├── CONTRIBUTING.md
-  ├── .github
-  │   └── workflows
-  │       ├── validate.yml
-  │       └── generate.yml
-  │
-  ├── devices
-  │   ├── ADS1015
-  │   │   ├── README.md
-  │   │   └── meta.yml
-  │   │
-  │   └── PCA9685_MX1508
-  │       ├── README.md
-  │       └── meta.yml
-  │
-  ├── data
-  │   ├── aliases.yml
-  │   └── platforms.yml
-  │
-  ├── generated
-  │   ├── README.md
-  │   └── devices.json
-  │
-  ├── schema
-  │   ├── frontmatter.schema.json
-  │   └── meta.schema.json
-  │
-  └── tools
-      ├── README.md
-      └── src
-          ├── generate-devices.ts
-          └── validate-devices.ts
+chirimen-certified-devices/
+├── .github/
+│   └── workflows/
+├── data/
+│   ├── aliases.yml
+│   └── platforms.yml
+├── devices/
+│   └── <device-id>/
+│       ├── README.md
+│       └── meta.yml
+├── generated/
+│   ├── README.md
+│   └── devices.json
+├── schema/
+├── tools/
+│   ├── README.md
+│   └── src/
+│       ├── sync-devices.ts
+│       ├── validate-devices.ts
+│       └── generate-devices.ts
+├── CONTRIBUTING.md
+├── package.json
+└── README.md
 ```
+
+個別デバイス名は列挙せず、収録内容は [`devices/`](devices/) を参照してください。
 
 ## 開発環境
 
 このリポジトリの開発環境は pnpm を主に使用します。
 
-依存パッケージをインストールします。
-
 ```sh
 pnpm install
 ```
 
-主な検証コマンドは以下です。
-
-```sh
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm sync:devices
-pnpm validate:devices
-pnpm generate:devices
-```
-
-`sync:devices` / `validate:devices` / `generate:devices` は現時点ではスタブ実装です（[#12](https://github.com/gurezo/chirimen-certified-devices/issues/12) 基盤、本実装は #9–#11）。
-
-`pnpm test` は Vitest を実行します。テストファイルがまだ存在しない場合も、初期開発環境の検証として成功する設定です。
-
-### コミットメッセージ
-
 コミットメッセージと PR タイトルは [Conventional Commits](https://www.conventionalcommits.org/) に準拠します。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
+
+## 同期・検証・生成コマンド
+
+| コマンド | 役割 |
+| --- | --- |
+| `pnpm sync:devices` | `partslist.csv` を取得し、`devices/**/README.md` と `meta.yml` を生成する |
+| `pnpm validate:devices` | `meta.yml`、ディレクトリ構成、aliases、platform、status などを検証する |
+| `pnpm generate:devices` | `devices/` と `data/*.yml` を集約して `generated/devices.json` を生成する |
+
+オプションや終了コードなどの詳細は [tools/README.md](tools/README.md) を参照してください。
+
+### sync:devices の注意
+
+`pnpm sync:devices` は対象の `devices/<dir>/` を削除してから再作成する洗い替え生成です。手動編集した `README.md` / `meta.yml` は上書きされる可能性があります。手動編集を保護する機能はありません。
+
+- 初期移行・再同期向けのコマンドです。通常のコントリビューション確認では実行しないでください
+- 実行前に差分を確認する場合は `pnpm sync:devices --dry-run` を利用できます
 
 ## 編集方針
 
