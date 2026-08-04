@@ -217,9 +217,44 @@ pnpm install
 - 初期移行・再同期向けのコマンドです。通常のコントリビューション確認では実行しないでください
 - 実行前に差分を確認する場合は `pnpm sync:devices --dry-run` を利用できます
 
-## 編集方針
+## デバイス情報の修正方法
 
-このリポジトリでは、Markdown での参加を優先します。
+通常の修正では、次のファイルを編集してください。
 
-`meta.yml` の編集に不安がある場合は、`README.md` 本文だけを修正してください。  
-必要なメタデータ調整はメンテナが対応します。
+- `devices/**/README.md`
+- `devices/**/meta.yml`
+- `data/aliases.yml` / `data/platforms.yml`
+
+`meta.yml` を変更した場合は、必要に応じて `pnpm generate:devices` を実行し、`generated/devices.json` の差分をコミットしてください。
+
+`pnpm sync:devices` は洗い替え生成のため、通常のデバイス修正では実行しないでください。手動編集内容が失われる可能性があります。
+
+このリポジトリでは、Markdown での参加を優先します。`meta.yml` の編集に不安がある場合は、`README.md` 本文だけを修正して Pull Request を作成してください。必要なメタデータ調整はメンテナが対応します。
+
+## コントリビューション
+
+Pull Request を作成する前に、次のコマンドで確認してください。
+
+```sh
+pnpm lint
+pnpm typecheck
+pnpm test
+pnpm validate:devices
+pnpm generate:devices
+```
+
+`pnpm sync:devices` は破壊的な洗い替え処理を含むため、通常の確認コマンドには含めません。
+
+コミットメッセージと PR タイトルは [Conventional Commits](https://www.conventionalcommits.org/) に準拠してください。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
+
+## 移行方針・今後の構成
+
+現時点では `partslist.csv` を同期元として利用しています。一方で、将来的には本リポジトリ (`devices/` および関連データ) を認定デバイス情報の正本とし、`partslist.csv` は互換性維持または移行元として扱う方針も検討しています。
+
+この方針は確定事項ではありません。移行の進捗に合わせて README と運用を更新します。
+
+## 関連ドキュメント
+
+- [CONTRIBUTING.md](CONTRIBUTING.md) — コントリビューションと Conventional Commits
+- [tools/README.md](tools/README.md) — `sync` / `validate` / `generate` の詳細
+- [generated/README.md](generated/README.md) — 自動生成物の扱い
