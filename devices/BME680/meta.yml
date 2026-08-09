@@ -6,6 +6,13 @@ description: 温度、湿度、気圧さらにガスが測れる複合センサ�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/BME680.jpg
 productUrl: https://akizukidenshi.com/catalog/g/gK-14469/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/bme680
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme680
+    circuitUrl: null
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -25,6 +32,6 @@ datasheet: null
 reference: null
 packages:
   - "@chirimen/bme680"
-platform: microbit-driver
-status: incubator
+platform: pizero-esm
+status: primary
 verified: false
