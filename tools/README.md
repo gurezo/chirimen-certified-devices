@@ -23,6 +23,7 @@ pnpm sync:devices
 | オプション | デフォルト | 説明 |
 | --- | --- | --- |
 | `--dry-run` | off | 作成予定のディレクトリを表示のみ（ファイルは書き込まない） |
+| `--only-supplemental` | off | `data/supplemental-devices.yml` のデバイスだけを書き込む（partslist 由来は触らない） |
 | `--csv-url <url>` | chirimen.org の `partslist.csv` | CSV 取得 URL を上書き |
 | `--devices-dir <path>` | `devices/` | 出力先ディレクトリ |
 
@@ -31,16 +32,24 @@ pnpm sync:devices
 ```sh
 pnpm sync:devices --dry-run
 pnpm sync:devices --devices-dir devices/
+pnpm sync:devices --only-supplemental
 ```
 
 ### 動作
 
-1. `partslist.csv` をパースし、`data/aliases.yml` に基づいて単体・複合・remote デバイスにグルーピング
-2. 各デバイスについて `meta.yml` と `README.md` を生成
-3. 生成前に `schema/meta.schema.json` で検証
-4. 対象の `devices/<dir>/` を削除してから再作成（洗い替え）
+1. `partslist.csv` をパースし、`data/supplemental-devices.yml` をマージ（同型番は partslist 優先）
+2. `data/aliases.yml` に基づいて単体・複合・remote デバイスにグルーピング
+3. 各デバイスについて `meta.yml` と `README.md` を生成
+4. 生成前に `schema/meta.schema.json` で検証
+5. 対象の `devices/<dir>/` を削除してから再作成（洗い替え）
+
+`--only-supplemental` では partslist の取得・洗い替えを行わず、supplemental に定義したデバイスのみを書き込みます。upstream example はあるが partslist 未登録のデバイスを登録する用途です。
 
 Example URL が分類できないデバイスは警告を出してスキップします。
+
+### supplemental-devices.yml
+
+`data/supplemental-devices.yml` は partslist にまだ無いが upstream example があるデバイスを定義します。`qrcodescanner` のような汎用デモは含めません。
 
 ## validate:devices
 

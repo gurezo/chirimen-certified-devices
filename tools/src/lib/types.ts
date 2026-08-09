@@ -43,6 +43,31 @@ export interface ParsedPartslistDevice {
   instructionsUrl?: string;
   guideUrl?: string;
   rawExampleUrls: RawExampleUrls;
+  /** Prefer null circuitUrl over guessed schematic paths when building meta. */
+  omitGuessedCircuitUrl?: boolean;
+}
+
+/** Upstream-backed device entry not present in partslist.csv. */
+export interface SupplementalDeviceEntry {
+  model: string;
+  tag: DeviceTag;
+  category: string;
+  description: string;
+  imagePath?: string;
+  productUrl: string;
+  circuitUrl?: string | null;
+  datasheetUrl?: string | null;
+  referenceUrl?: string | null;
+  rawExampleUrls: RawExampleUrls;
+  /**
+   * When true, generated examples keep circuitUrl as null instead of a guessed
+   * schematic.png path (use for upstream dirs without schematic assets).
+   */
+  omitGuessedCircuitUrl?: boolean;
+}
+
+export interface SupplementalDevicesConfig {
+  devices: Record<string, SupplementalDeviceEntry>;
 }
 
 export interface ClassifiedExample {
