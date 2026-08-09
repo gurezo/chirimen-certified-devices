@@ -1,0 +1,42 @@
+# Supplemental devices that have upstream examples but are not yet listed in
+# chirimen.org/_data/partslist.csv.
+#
+# When a model appears in both partslist.csv and this file, partslist wins and
+# the supplemental entry is ignored.
+#
+# Used by `pnpm sync:devices` (merged with partslist) and
+# `pnpm sync:devices --only-supplemental` (writes these devices only).
+
+devices:
+  MCP9808:
+    model: MCP9808
+    tag: I2C
+    category: 温度センサ
+    description: GROVE MCP9808 搭載の I2C 高精度温度センサ
+    imagePath: ""
+    productUrl: https://www.switch-science.com/products/3986
+    referenceUrl: https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html
+    rawExampleUrls:
+      piZero: https://tutorial.chirimen.org/pizero/esm-examples/#I2C_mcp9808
+
+  MMA7660:
+    model: MMA7660
+    tag: I2C
+    category: 加速度センサ
+    description: MMA7660 ３軸加速度センサー
+    imagePath: ""
+    productUrl: https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5g.html
+    referenceUrl: https://github.com/Seeed-Studio/Accelerometer_MMA7660
+    rawExampleUrls:
+      piZero: https://tutorial.chirimen.org/pizero/esm-examples/#I2C_mma7660
+
+  APDS9930:
+    model: APDS9930
+    tag: I2C
+    category: 近接・環境光センサー
+    description: APDS9930 近接・環境光センサー
+    imagePath: partsImgs/APDS9930.jpg
+    productUrl: https://chirimen.org/
+    omitGuessedCircuitUrl: true
+    rawExampleUrls:
+      piZero: https://tutorial.chirimen.org/pizero/esm-examples/#I2C_apds9930

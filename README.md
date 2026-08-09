@@ -12,13 +12,14 @@ CHIRIMEN 関連の認定デバイス情報、Example、ドライバー、画像�
 
 このリポジトリでは、以下を **CHIRIMEN 認定デバイス** とします。
 
-> `chirimen.org/_data/partslist.csv` に登録されているデバイス
+> `chirimen.org/_data/partslist.csv` に登録されているデバイス、または `data/supplemental-devices.yml` に登録されている upstream example 由来のデバイス
 
 現時点では、各データの役割を次のように区別しています。
 
 | データ | 現時点の役割 |
 | --- | --- |
 | `chirimen.org/_data/partslist.csv` | 同期元。認定デバイスの一次情報として参照する |
+| `data/supplemental-devices.yml` | partslist 未登録だが upstream example があるデバイスの補完定義 |
 | `devices/**/README.md` / `meta.yml` | デバイス単位に整理した説明とメタデータ |
 | `generated/devices.json` | `devices/` と `data/*.yml` を集約した JSON。dashboard などが参照する |
 
@@ -30,6 +31,7 @@ CHIRIMEN 関連の認定デバイス情報、Example、ドライバー、画像�
 
 ```text
 chirimen.org/_data/partslist.csv
+data/supplemental-devices.yml
         |
         | pnpm sync:devices
         v

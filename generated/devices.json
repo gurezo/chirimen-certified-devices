@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-03T12:30:19.713Z",
+  "generatedAt": "2026-08-09T01:58:14.683Z",
   "platforms": {
     "platforms": {
       "pizero-esm": {
@@ -892,6 +892,49 @@
       }
     },
     {
+      "id": "APDS9930",
+      "directory": "devices/APDS9930",
+      "meta": {
+        "id": "APDS9930",
+        "model": "APDS9930",
+        "tag": "I2C",
+        "category": "近接・環境光センサー",
+        "description": "APDS9930 近接・環境光センサー",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/APDS9930.jpg",
+        "productUrl": "https://chirimen.org/",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/apds9930",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9930",
+            "circuitUrl": null,
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": null,
+        "reference": null,
+        "packages": [
+          "@chirimen/apds9930"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/APDS9930/README.md",
+        "frontmatter": {
+          "title": "APDS9930",
+          "model": "APDS9930",
+          "category": "近接・環境光センサー",
+          "description": "APDS9930 近接・環境光センサー"
+        }
+      }
+    },
+    {
       "id": "APDS9960",
       "directory": "devices/APDS9960",
       "meta": {
@@ -912,6 +955,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-APDS9960/schematic.png",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/apds9960",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9960",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/apds9960/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -920,8 +973,8 @@
         "packages": [
           "@chirimen/apds9960"
         ],
-        "platform": "legacy-gc-i2c",
-        "status": "archive",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -1220,6 +1273,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_BME680/imgs/pinbit_bme680.png",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/bme680",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme680",
+            "circuitUrl": null,
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -1228,8 +1291,8 @@
         "packages": [
           "@chirimen/bme680"
         ],
-        "platform": "microbit-driver",
-        "status": "incubator",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -1399,6 +1462,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_CCS811/imgs/pinbit_ccs811.png",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/ccs811",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ccs811",
+            "circuitUrl": null,
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -1407,8 +1480,8 @@
         "packages": [
           "@chirimen/ccs811"
         ],
-        "platform": "microbit-driver",
-        "status": "incubator",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -3668,6 +3741,49 @@
       }
     },
     {
+      "id": "MCP9808",
+      "directory": "devices/MCP9808",
+      "meta": {
+        "id": "MCP9808",
+        "model": "MCP9808",
+        "tag": "I2C",
+        "category": "温度センサ",
+        "description": "GROVE MCP9808 搭載の I2C 高精度温度センサ",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg",
+        "productUrl": "https://www.switch-science.com/products/3986",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/mcp9808",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mcp9808",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mcp9808/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": null,
+        "reference": "https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html",
+        "packages": [
+          "@chirimen/mcp9808"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/MCP9808/README.md",
+        "frontmatter": {
+          "title": "MCP9808",
+          "model": "MCP9808",
+          "category": "温度センサ",
+          "description": "GROVE MCP9808 搭載の I2C 高精度温度センサ"
+        }
+      }
+    },
+    {
       "id": "MG90S",
       "directory": "devices/MG90S",
       "meta": {
@@ -3833,6 +3949,49 @@
           "model": "MLX90614",
           "category": "非接触温度センサ",
           "description": "赤外線を利用した非接触型温度センサー"
+        }
+      }
+    },
+    {
+      "id": "MMA7660",
+      "directory": "devices/MMA7660",
+      "meta": {
+        "id": "MMA7660",
+        "model": "MMA7660",
+        "tag": "I2C",
+        "category": "加速度センサ",
+        "description": "MMA7660 ３軸加速度センサー",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg",
+        "productUrl": "https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5g.html",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/mma7660",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mma7660",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mma7660/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": null,
+        "reference": "https://github.com/Seeed-Studio/Accelerometer_MMA7660",
+        "packages": [
+          "@chirimen/mma7660"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/MMA7660/README.md",
+        "frontmatter": {
+          "title": "MMA7660",
+          "model": "MMA7660",
+          "category": "加速度センサ",
+          "description": "MMA7660 ３軸加速度センサー"
         }
       }
     },
@@ -4563,6 +4722,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-seesaw/schematic.png",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/seesaw",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/seesaw",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/seesaw/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -4571,8 +4740,8 @@
         "packages": [
           "@chirimen/seesaw"
         ],
-        "platform": "legacy-gc-i2c",
-        "status": "archive",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -4900,6 +5069,49 @@
           "model": "SSD1306",
           "category": "小型ディスプレイ",
           "description": "0.96inch、128x64dot の小型 OLED (有機 EL) ディスプレイです"
+        }
+      }
+    },
+    {
+      "id": "TB6612FNG",
+      "directory": "devices/TB6612FNG",
+      "meta": {
+        "id": "TB6612FNG",
+        "model": "TB6612FNG",
+        "tag": "GPIO",
+        "category": "DCモータ 正逆転コントローラ",
+        "description": "TOSHIBA製 TB6612FNG を利用したモータドライバです",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/TB6612FNG.jpg",
+        "productUrl": "https://www.switch-science.com/catalog/385/",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/tb6612fng",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tb6612fng",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tb6612fng/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": "http://doc.switch-science.com/datasheets/TB6612FNG_datasheet_ja_20141001.pdf",
+        "reference": null,
+        "packages": [
+          "@chirimen/tb6612fng"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/TB6612FNG/README.md",
+        "frontmatter": {
+          "title": "TB6612FNG",
+          "model": "TB6612FNG",
+          "category": "DCモータ 正逆転コントローラ",
+          "description": "TOSHIBA製 TB6612FNG を利用したモータドライバです"
         }
       }
     },

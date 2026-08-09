@@ -7,11 +7,16 @@ import { assignUniqueDeviceIds } from "./lib/device-id.js";
 import { groupSyncDevices } from "./lib/group-sync-devices.js";
 import { loadYamlFile } from "./lib/load-yaml.js";
 import { parsePartslistDevices } from "./lib/parse-partslist.js";
+import {
+  mergeSupplementalDevices,
+  parseSupplementalDevices,
+} from "./lib/supplemental-devices.js";
 import { toImageUrl } from "./lib/to-image-url.js";
 import type {
   AliasesConfig,
   MetaYamlContent,
   PlatformsConfig,
+  SupplementalDevicesConfig,
 } from "./lib/types.js";
 import { renderMetaYml } from "./templates/meta-yml.js";
 import { renderReadme } from "./templates/readme.js";
@@ -26,6 +31,7 @@ interface CliOptions {
   dryRun: boolean;
   csvUrl: string;
   devicesDir: string;
+  onlySupplemental: boolean;
 }
 
 interface DeviceOutput {
@@ -40,11 +46,14 @@ function parseArgs(argv: string[]): CliOptions {
   let dryRun = false;
   let csvUrl = DEFAULT_CSV_URL;
   let devicesDir = "devices";
+  let onlySupplemental = false;
 
   for (let index = 0; index < argv.length; index++) {
     const arg = argv[index];
     if (arg === "--dry-run") {
       dryRun = true;
+    } else if (arg === "--only-supplemental") {
+      onlySupplemental = true;
     } else if (arg === "--csv-url") {
       const value = argv[++index];
       if (!value) throw new Error("Missing value for --csv-url");
@@ -61,7 +70,7 @@ function parseArgs(argv: string[]): CliOptions {
     }
   }
 
-  return { dryRun, csvUrl, devicesDir };
+  return { dryRun, csvUrl, devicesDir, onlySupplemental };
 }
 
 function printHelp(): void {
@@ -69,6 +78,7 @@ function printHelp(): void {
 
 Options:
   --dry-run              Show planned changes without writing files
+  --only-supplemental    Write only data/supplemental-devices.yml entries
   --csv-url <url>        Override partslist.csv URL
   --devices-dir <path>   Output directory (default: devices/)
   -h, --help             Show this help message
@@ -87,10 +97,13 @@ async function buildDeviceOutputs(
   options: CliOptions,
   aliases: AliasesConfig,
   platforms: PlatformsConfig,
-  csvText: string,
+  partslistDevices: ReturnType<typeof parsePartslistDevices>,
+  supplementalDevices: ReturnType<typeof parseSupplementalDevices>,
 ): Promise<{ outputs: DeviceOutput[]; skipped: string[] }> {
-  const parsed = parsePartslistDevices(csvText);
-  const withIds = assignUniqueDeviceIds(parsed, aliases);
+  const merged = options.onlySupplemental
+    ? supplementalDevices
+    : mergeSupplementalDevices(partslistDevices, supplementalDevices);
+  const withIds = assignUniqueDeviceIds(merged, aliases);
   const grouped = groupSyncDevices(withIds, aliases);
   const devicesRoot = path.resolve(REPO_ROOT, options.devicesDir);
   const outputs: DeviceOutput[] = [];
@@ -136,11 +149,19 @@ async function writeDeviceOutputs(
 
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
-  const [aliases, platforms, csvText] = await Promise.all([
+  const supplementalPath = path.join(REPO_ROOT, "data/supplemental-devices.yml");
+
+  const [aliases, platforms, supplementalConfig, csvText] = await Promise.all([
     loadYamlFile<AliasesConfig>(path.join(REPO_ROOT, "data/aliases.yml")),
     loadYamlFile<PlatformsConfig>(path.join(REPO_ROOT, "data/platforms.yml")),
-    fetchCsv(options.csvUrl),
+    loadYamlFile<SupplementalDevicesConfig>(supplementalPath),
+    options.onlySupplemental ? Promise.resolve("") : fetchCsv(options.csvUrl),
   ]);
+
+  const supplementalDevices = parseSupplementalDevices(supplementalConfig);
+  const partslistDevices = options.onlySupplemental
+    ? []
+    : parsePartslistDevices(csvText);
 
   const schema = await readFile(path.join(REPO_ROOT, "schema/meta.schema.json"), "utf8");
   const validateMeta = new Ajv2020({ allErrors: true, strict: false }).compile(
@@ -151,7 +172,8 @@ async function main(): Promise<void> {
     options,
     aliases,
     platforms,
-    csvText,
+    partslistDevices,
+    supplementalDevices,
   );
 
   for (const output of outputs) {
@@ -166,8 +188,9 @@ async function main(): Promise<void> {
   await writeDeviceOutputs(outputs, options.dryRun);
 
   const mode = options.dryRun ? "dry-run" : "wrote";
+  const scope = options.onlySupplemental ? " (supplemental only)" : "";
   console.log(
-    `sync-devices: ${mode} ${outputs.length} device(s)` +
+    `sync-devices: ${mode} ${outputs.length} device(s)${scope}` +
       (skipped.length > 0 ? `, skipped ${skipped.length}` : ""),
   );
 }

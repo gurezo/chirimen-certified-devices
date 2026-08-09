@@ -1,0 +1,23 @@
+id: MMA7660
+model: MMA7660
+tag: I2C
+category: 加速度センサ
+description: MMA7660 ３軸加速度センサー
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+productUrl: https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5g.html
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/mma7660
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mma7660
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mma7660/schematic.png
+    verified: false
+circuit: null
+datasheet: null
+reference: https://github.com/Seeed-Studio/Accelerometer_MMA7660
+packages:
+  - "@chirimen/mma7660"
+platform: pizero-esm
+status: primary
+verified: false

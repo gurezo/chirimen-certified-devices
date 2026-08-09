@@ -174,6 +174,7 @@ function classifiedToMetaExample(
   platforms: PlatformsConfig,
   exampleDeviceId: string | undefined,
   model: string,
+  omitGuessedCircuitUrl: boolean,
 ): MetaExample | null {
   const platform = platforms.platforms[classified.platform];
   if (!platform) return null;
@@ -187,13 +188,15 @@ function classifiedToMetaExample(
     upstreamRepository: platform.upstreamRepository,
     upstreamPath,
     upstreamPathUrl: buildUpstreamPathUrl(platform.upstreamRepository, upstreamPath),
-    circuitUrl: resolveExampleCircuitUrl(
-      classified.platform,
-      platform.upstreamRepository,
-      upstreamPath,
-      model,
-      exampleDeviceId,
-    ),
+    circuitUrl: omitGuessedCircuitUrl
+      ? null
+      : resolveExampleCircuitUrl(
+          classified.platform,
+          platform.upstreamRepository,
+          upstreamPath,
+          model,
+          exampleDeviceId,
+        ),
     verified: false,
   };
 }
@@ -208,6 +211,7 @@ export function buildMetaExamples(
   const classified = classifyExampleUrls(device.rawExampleUrls, platforms);
   const examples: MetaExample[] = [];
   const seenPlatforms = new Set<PlatformId>();
+  const omitGuessedCircuitUrl = device.omitGuessedCircuitUrl === true;
 
   for (const item of classified) {
     const metaExample = classifiedToMetaExample(
@@ -215,6 +219,7 @@ export function buildMetaExamples(
       platforms,
       exampleDeviceId,
       device.model,
+      omitGuessedCircuitUrl,
     );
     if (!metaExample || seenPlatforms.has(metaExample.platform)) continue;
     seenPlatforms.add(metaExample.platform);
