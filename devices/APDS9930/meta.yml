@@ -1,0 +1,23 @@
+id: APDS9930
+model: APDS9930
+tag: I2C
+category: 近接・環境光センサー
+description: APDS9930 近接・環境光センサー
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/APDS9930.jpg
+productUrl: https://chirimen.org/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/apds9930
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9930
+    circuitUrl: null
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages:
+  - "@chirimen/apds9930"
+platform: pizero-esm
+status: primary
+verified: false
