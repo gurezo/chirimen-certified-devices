@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-03T12:30:19.713Z",
+  "generatedAt": "2026-08-09T01:51:31.960Z",
   "platforms": {
     "platforms": {
       "pizero-esm": {
@@ -912,6 +912,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-APDS9960/schematic.png",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/apds9960",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9960",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/apds9960/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -920,8 +930,8 @@
         "packages": [
           "@chirimen/apds9960"
         ],
-        "platform": "legacy-gc-i2c",
-        "status": "archive",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -1220,6 +1230,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_BME680/imgs/pinbit_bme680.png",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/bme680",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme680",
+            "circuitUrl": null,
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -1228,8 +1248,8 @@
         "packages": [
           "@chirimen/bme680"
         ],
-        "platform": "microbit-driver",
-        "status": "incubator",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -1399,6 +1419,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_CCS811/imgs/pinbit_ccs811.png",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/ccs811",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ccs811",
+            "circuitUrl": null,
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -1407,8 +1437,8 @@
         "packages": [
           "@chirimen/ccs811"
         ],
-        "platform": "microbit-driver",
-        "status": "incubator",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -4563,6 +4593,16 @@
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-seesaw/schematic.png",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
+          },
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/seesaw",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/seesaw",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/seesaw/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
         ],
         "circuit": null,
@@ -4571,8 +4611,8 @@
         "packages": [
           "@chirimen/seesaw"
         ],
-        "platform": "legacy-gc-i2c",
-        "status": "archive",
+        "platform": "pizero-esm",
+        "status": "primary",
         "verified": false
       },
       "readme": {
@@ -4900,6 +4940,49 @@
           "model": "SSD1306",
           "category": "小型ディスプレイ",
           "description": "0.96inch、128x64dot の小型 OLED (有機 EL) ディスプレイです"
+        }
+      }
+    },
+    {
+      "id": "TB6612FNG",
+      "directory": "devices/TB6612FNG",
+      "meta": {
+        "id": "TB6612FNG",
+        "model": "TB6612FNG",
+        "tag": "GPIO",
+        "category": "DCモータ 正逆転コントローラ",
+        "description": "TOSHIBA製 TB6612FNG を利用したモータドライバです",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/TB6612FNG.jpg",
+        "productUrl": "https://www.switch-science.com/catalog/385/",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/tb6612fng",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tb6612fng",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tb6612fng/schematic.png",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": "http://doc.switch-science.com/datasheets/TB6612FNG_datasheet_ja_20141001.pdf",
+        "reference": null,
+        "packages": [
+          "@chirimen/tb6612fng"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/TB6612FNG/README.md",
+        "frontmatter": {
+          "title": "TB6612FNG",
+          "model": "TB6612FNG",
+          "category": "DCモータ 正逆転コントローラ",
+          "description": "TOSHIBA製 TB6612FNG を利用したモータドライバです"
         }
       }
     },
