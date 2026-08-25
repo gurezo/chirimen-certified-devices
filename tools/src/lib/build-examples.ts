@@ -1,4 +1,5 @@
 import { classifyExampleUrls } from "./classify-example-url.js";
+import { DRIVER_NONE, applyDriverToExamples } from "./chirimen-drivers.js";
 import type {
   AliasesConfig,
   ClassifiedExample,
@@ -197,6 +198,7 @@ function classifiedToMetaExample(
           model,
           exampleDeviceId,
         ),
+    driver: DRIVER_NONE,
     verified: false,
   };
 }
@@ -241,6 +243,7 @@ export function buildMetaExamples(
           upstreamPath,
         ),
         circuitUrl: null,
+        driver: DRIVER_NONE,
         verified: false,
       });
     }
@@ -284,12 +287,15 @@ export function buildMetaYamlContent(
   platforms: PlatformsConfig,
   aliases: AliasesConfig,
   imageUrl: string | null,
+  knownPackages: ReadonlySet<string> = new Set(),
 ): MetaYamlContent | null {
   const examples = buildMetaExamples(device, platforms, aliases);
   if (examples.length === 0) return null;
 
   const primary = pickPrimaryExample(examples);
   if (!primary) return null;
+
+  const packages = buildPackages(device, aliases);
 
   return {
     id: device.id,
@@ -302,11 +308,11 @@ export function buildMetaYamlContent(
       "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg",
     ),
     productUrl: requireUri(device.productUrl, "https://chirimen.org/"),
-    examples,
+    examples: applyDriverToExamples(examples, packages, knownPackages),
     circuit: device.circuitUrl ?? null,
     datasheet: device.datasheetUrl ?? null,
     reference: device.referenceUrl ?? null,
-    packages: buildPackages(device, aliases),
+    packages,
     platform: primary.platform,
     status: primary.status as ExampleStatus,
     verified: false,

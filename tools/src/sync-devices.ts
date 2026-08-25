@@ -12,8 +12,10 @@ import {
   parseSupplementalDevices,
 } from "./lib/supplemental-devices.js";
 import { toImageUrl } from "./lib/to-image-url.js";
+import { toKnownPackageSet } from "./lib/chirimen-drivers.js";
 import type {
   AliasesConfig,
+  ChirimenDriversConfig,
   MetaYamlContent,
   PlatformsConfig,
   SupplementalDevicesConfig,
@@ -99,6 +101,7 @@ async function buildDeviceOutputs(
   platforms: PlatformsConfig,
   partslistDevices: ReturnType<typeof parsePartslistDevices>,
   supplementalDevices: ReturnType<typeof parseSupplementalDevices>,
+  knownPackages: ReadonlySet<string>,
 ): Promise<{ outputs: DeviceOutput[]; skipped: string[] }> {
   const merged = options.onlySupplemental
     ? supplementalDevices
@@ -111,7 +114,13 @@ async function buildDeviceOutputs(
 
   for (const device of grouped) {
     const imageUrl = toImageUrl(device.imagePath);
-    const meta = buildMetaYamlContent(device, platforms, aliases, imageUrl);
+    const meta = buildMetaYamlContent(
+      device,
+      platforms,
+      aliases,
+      imageUrl,
+      knownPackages,
+    );
     if (!meta) {
       skipped.push(device.id);
       console.warn(`sync-devices: skip ${device.id} (no examples)`);
@@ -123,7 +132,7 @@ async function buildDeviceOutputs(
       dirPath: path.join(devicesRoot, device.id),
       meta,
       metaYml: renderMetaYml(meta),
-      readme: renderReadme(meta),
+      readme: renderReadme(meta, knownPackages),
     });
   }
 
@@ -151,12 +160,17 @@ async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
   const supplementalPath = path.join(REPO_ROOT, "data/supplemental-devices.yml");
 
-  const [aliases, platforms, supplementalConfig, csvText] = await Promise.all([
-    loadYamlFile<AliasesConfig>(path.join(REPO_ROOT, "data/aliases.yml")),
-    loadYamlFile<PlatformsConfig>(path.join(REPO_ROOT, "data/platforms.yml")),
-    loadYamlFile<SupplementalDevicesConfig>(supplementalPath),
-    options.onlySupplemental ? Promise.resolve("") : fetchCsv(options.csvUrl),
-  ]);
+  const [aliases, platforms, supplementalConfig, chirimenDrivers, csvText] =
+    await Promise.all([
+      loadYamlFile<AliasesConfig>(path.join(REPO_ROOT, "data/aliases.yml")),
+      loadYamlFile<PlatformsConfig>(path.join(REPO_ROOT, "data/platforms.yml")),
+      loadYamlFile<SupplementalDevicesConfig>(supplementalPath),
+      loadYamlFile<ChirimenDriversConfig>(
+        path.join(REPO_ROOT, "data/chirimen-drivers.yml"),
+      ),
+      options.onlySupplemental ? Promise.resolve("") : fetchCsv(options.csvUrl),
+    ]);
+  const knownPackages = toKnownPackageSet(chirimenDrivers.packages ?? []);
 
   const supplementalDevices = parseSupplementalDevices(supplementalConfig);
   const partslistDevices = options.onlySupplemental
@@ -174,6 +188,7 @@ async function main(): Promise<void> {
     platforms,
     partslistDevices,
     supplementalDevices,
+    knownPackages,
   );
 
   for (const output of outputs) {

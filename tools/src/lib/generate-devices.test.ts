@@ -71,6 +71,7 @@ describe("generateDevices", () => {
               upstreamPathUrl:
                 "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1015",
               circuitUrl: null,
+              driver: "none",
               verified: false,
             },
             {
@@ -81,6 +82,7 @@ describe("generateDevices", () => {
               upstreamPathUrl:
                 "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1015",
               circuitUrl: null,
+              driver: "none",
               verified: false,
             },
           ],
@@ -158,6 +160,7 @@ description: "Single device"
               upstreamPathUrl:
                 "https://github.com/chirimen-oh/remote-connection/tree/master/examples/adt7410",
               circuitUrl: null,
+              driver: "none",
               verified: false,
             },
           ],

@@ -18,6 +18,7 @@ exports[`generateDevices > matches snapshot for a minimal fixture 1`] = `
         "examples": [
           {
             "circuitUrl": null,
+            "driver": "none",
             "platform": "pizero-esm",
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)",
             "status": "primary",
