@@ -6,13 +6,6 @@ description: 3軸の加速度、ジャイロのほか、磁気も測定可能な
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MPU9250_.jpg
 productUrl: https://www.amazon.co.jp/HiLetgo%C2%AE-MPU9250-9%E8%87%AA%E7%94%B1%E5%BA%A61-%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AD%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97-%E7%A3%81%E6%B0%97%E3%82%BB%E3%83%B3%E3%82%B5/dp/B0154PM102/
 examples:
-  - platform: pizero-esm
-    status: primary
-    upstreamRepository: chirimen-oh/chirimen.org
-    upstreamPath: pizero/src/esm-examples/mpu9250
-    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu9250
-    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mpu9250/schematic.png
-    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -32,6 +25,6 @@ datasheet: null
 reference: null
 packages:
   - "@chirimen/mpu9250"
-platform: pizero-esm
-status: primary
+platform: microbit-driver
+status: incubator
 verified: false

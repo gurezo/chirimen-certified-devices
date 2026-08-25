@@ -19,7 +19,6 @@ GPIO
 
 ## Example
 
-- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/gpio-onchange](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange)
 - **micro:bit** (incubator): [microbit-examples/GPIO_PYR](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_PYR)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/gpio-pirSensor](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-pirSensor)
 

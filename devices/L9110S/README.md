@@ -19,7 +19,6 @@ GPIO
 
 ## Example
 
-- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/hbridge1](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hbridge1)
 - **micro:bit** (incubator): [microbit-examples/GPIO_HBridge](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge)
 
 ## 画像

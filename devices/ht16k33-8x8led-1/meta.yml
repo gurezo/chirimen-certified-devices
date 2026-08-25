@@ -6,13 +6,6 @@ description: 上記と同等のコントローラですが、LEDの論理配列�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/HT16K33_8x8ait.jpg
 productUrl: https://www.aitendo.com/product/12822
 examples:
-  - platform: pizero-esm
-    status: primary
-    upstreamRepository: chirimen-oh/chirimen.org
-    upstreamPath: pizero/src/esm-examples/ht16k33
-    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33
-    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png
-    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -25,6 +18,6 @@ datasheet: https://cdn-shop.adafruit.com/datasheets/ht16K33v110.pdf
 reference: null
 packages:
   - "@chirimen/ht16k33"
-platform: pizero-esm
-status: primary
+platform: legacy-gc-i2c
+status: archive
 verified: false

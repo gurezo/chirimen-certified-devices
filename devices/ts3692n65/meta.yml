@@ -6,13 +6,6 @@ description: A4988をご確認ください
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/StepperMotor.jpg
 productUrl: https://wakamatsu.co.jp/biz/products/detail.php?product_id=62020023
 examples:
-  - platform: pizero-esm
-    status: primary
-    upstreamRepository: chirimen-oh/chirimen.org
-    upstreamPath: pizero/src/esm-examples/a4988
-    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/a4988
-    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/a4988/schematic.png
-    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -32,6 +25,6 @@ datasheet: null
 reference: null
 packages:
   - "@chirimen/a4988"
-platform: pizero-esm
-status: primary
+platform: microbit-driver
+status: incubator
 verified: false

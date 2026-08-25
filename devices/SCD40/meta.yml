@@ -6,13 +6,6 @@ description: CO2センサ(CO2濃度がPPM値で高精度に計測できるセン
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/SCD40.jpg
 productUrl: https://www.switch-science.com/products/7169
 examples:
-  - platform: pizero-esm
-    status: primary
-    upstreamRepository: chirimen-oh/chirimen.org
-    upstreamPath: pizero/src/esm-examples/scd40
-    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/scd40
-    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/scd40/schematic.png
-    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -25,6 +18,6 @@ datasheet: https://cdn.sparkfun.com/assets/d/4/9/a/d/Sensirion_CO2_Sensors_SCD4x
 reference: null
 packages:
   - "@chirimen/scd40"
-platform: pizero-esm
-status: primary
+platform: legacy-gc-i2c
+status: archive
 verified: false

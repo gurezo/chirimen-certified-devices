@@ -19,7 +19,6 @@ I2C
 
 ## Example
 
-- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/vl53l1x](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/vl53l1x)
 - **micro:bit** (incubator): [microbit-examples/I2C_VL53L1X](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VL53L1X)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-VL53L1X](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VL53L1X)
 

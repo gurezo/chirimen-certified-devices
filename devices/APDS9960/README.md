@@ -19,7 +19,6 @@ I2C
 
 ## Example
 
-- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/apds9960](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9960)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-APDS9960](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-APDS9960)
 
 ## 画像

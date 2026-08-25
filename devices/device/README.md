@@ -19,7 +19,6 @@ Analog
 
 ## Example
 
-- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/ads1115-loadcell](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1115-loadcell)
 - **micro:bit** (incubator): [microbit-examples/I2C_ADS1115_LoadCell](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_ADS1115_LoadCell)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-ADS1115-LoadCell](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1115-LoadCell)
 

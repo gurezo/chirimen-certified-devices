@@ -19,7 +19,6 @@ I2C
 
 ## Example
 
-- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/bh1750](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bh1750)
 - **micro:bit** (incubator): [microbit-examples/I2C_BH1750](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BH1750)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-BH1750](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BH1750)
 
