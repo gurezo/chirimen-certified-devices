@@ -12,7 +12,13 @@ import {
   parseSupplementalDevices,
 } from "./lib/supplemental-devices.js";
 import { toImageUrl } from "./lib/to-image-url.js";
-import { toKnownPackageSet } from "./lib/chirimen-drivers.js";
+import {
+  DEFAULT_CHIRIMEN_DRIVERS_README_URL,
+  chirimenDriversPackagesDiffer,
+  parseDownloadPackages,
+  renderChirimenDriversYml,
+  toKnownPackageSet,
+} from "./lib/chirimen-drivers.js";
 import type {
   AliasesConfig,
   ChirimenDriversConfig,
@@ -34,6 +40,9 @@ interface CliOptions {
   csvUrl: string;
   devicesDir: string;
   onlySupplemental: boolean;
+  onlyChirimenDrivers: boolean;
+  skipChirimenDrivers: boolean;
+  chirimenDriversReadmeUrl: string;
 }
 
 interface DeviceOutput {
@@ -49,6 +58,9 @@ function parseArgs(argv: string[]): CliOptions {
   let csvUrl = DEFAULT_CSV_URL;
   let devicesDir = "devices";
   let onlySupplemental = false;
+  let onlyChirimenDrivers = false;
+  let skipChirimenDrivers = false;
+  let chirimenDriversReadmeUrl = DEFAULT_CHIRIMEN_DRIVERS_README_URL;
 
   for (let index = 0; index < argv.length; index++) {
     const arg = argv[index];
@@ -56,6 +68,10 @@ function parseArgs(argv: string[]): CliOptions {
       dryRun = true;
     } else if (arg === "--only-supplemental") {
       onlySupplemental = true;
+    } else if (arg === "--only-chirimen-drivers") {
+      onlyChirimenDrivers = true;
+    } else if (arg === "--skip-chirimen-drivers") {
+      skipChirimenDrivers = true;
     } else if (arg === "--csv-url") {
       const value = argv[++index];
       if (!value) throw new Error("Missing value for --csv-url");
@@ -64,6 +80,10 @@ function parseArgs(argv: string[]): CliOptions {
       const value = argv[++index];
       if (!value) throw new Error("Missing value for --devices-dir");
       devicesDir = value;
+    } else if (arg === "--chirimen-drivers-readme-url") {
+      const value = argv[++index];
+      if (!value) throw new Error("Missing value for --chirimen-drivers-readme-url");
+      chirimenDriversReadmeUrl = value;
     } else if (arg === "--help" || arg === "-h") {
       printHelp();
       process.exit(0);
@@ -72,25 +92,43 @@ function parseArgs(argv: string[]): CliOptions {
     }
   }
 
-  return { dryRun, csvUrl, devicesDir, onlySupplemental };
+  if (onlyChirimenDrivers && skipChirimenDrivers) {
+    throw new Error(
+      "Cannot combine --only-chirimen-drivers with --skip-chirimen-drivers",
+    );
+  }
+
+  return {
+    dryRun,
+    csvUrl,
+    devicesDir,
+    onlySupplemental,
+    onlyChirimenDrivers,
+    skipChirimenDrivers,
+    chirimenDriversReadmeUrl,
+  };
 }
 
 function printHelp(): void {
   console.log(`Usage: pnpm sync:devices [options]
 
 Options:
-  --dry-run              Show planned changes without writing files
-  --only-supplemental    Write only data/supplemental-devices.yml entries
-  --csv-url <url>        Override partslist.csv URL
-  --devices-dir <path>   Output directory (default: devices/)
-  -h, --help             Show this help message
+  --dry-run                         Show planned changes without writing files
+  --only-supplemental               Write only data/supplemental-devices.yml entries
+  --only-chirimen-drivers           Update data/chirimen-drivers.yml only
+  --skip-chirimen-drivers           Keep the committed chirimen-drivers allowlist
+  --csv-url <url>                   Override partslist.csv URL
+  --chirimen-drivers-readme-url <url>
+                                    Override chirimen-drivers README URL
+  --devices-dir <path>              Output directory (default: devices/)
+  -h, --help                        Show this help message
 `);
 }
 
-async function fetchCsv(url: string): Promise<string> {
+async function fetchText(url: string, label: string): Promise<string> {
   const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`Failed to fetch partslist.csv (${response.status} ${response.statusText})`);
+    throw new Error(`Failed to fetch ${label} (${response.status} ${response.statusText})`);
   }
   return response.text();
 }
@@ -156,20 +194,65 @@ async function writeDeviceOutputs(
   }
 }
 
+async function syncChirimenDriversAllowlist(
+  options: CliOptions,
+  current: ChirimenDriversConfig,
+  outputPath: string,
+): Promise<ChirimenDriversConfig> {
+  if (options.skipChirimenDrivers) {
+    return current;
+  }
+
+  const readme = await fetchText(
+    options.chirimenDriversReadmeUrl,
+    "chirimen-drivers README",
+  );
+  const remotePackages = parseDownloadPackages(readme);
+  const currentPackages = current.packages ?? [];
+
+  if (!chirimenDriversPackagesDiffer(currentPackages, remotePackages)) {
+    console.log("sync-devices: data/chirimen-drivers.yml is up to date");
+    return { packages: remotePackages };
+  }
+
+  const relativePath = path.relative(REPO_ROOT, outputPath);
+  if (options.dryRun) {
+    console.log(`[update] ${relativePath}`);
+    return { packages: remotePackages };
+  }
+
+  await writeFile(outputPath, renderChirimenDriversYml(remotePackages), "utf8");
+  console.log(`sync-devices: updated ${relativePath}`);
+  return { packages: remotePackages };
+}
+
 async function main(): Promise<void> {
   const options = parseArgs(process.argv.slice(2));
   const supplementalPath = path.join(REPO_ROOT, "data/supplemental-devices.yml");
+  const chirimenDriversPath = path.join(REPO_ROOT, "data/chirimen-drivers.yml");
+  const skipPartslist = options.onlySupplemental || options.onlyChirimenDrivers;
 
-  const [aliases, platforms, supplementalConfig, chirimenDrivers, csvText] =
+  const [aliases, platforms, supplementalConfig, localChirimenDrivers, csvText] =
     await Promise.all([
       loadYamlFile<AliasesConfig>(path.join(REPO_ROOT, "data/aliases.yml")),
       loadYamlFile<PlatformsConfig>(path.join(REPO_ROOT, "data/platforms.yml")),
       loadYamlFile<SupplementalDevicesConfig>(supplementalPath),
-      loadYamlFile<ChirimenDriversConfig>(
-        path.join(REPO_ROOT, "data/chirimen-drivers.yml"),
-      ),
-      options.onlySupplemental ? Promise.resolve("") : fetchCsv(options.csvUrl),
+      loadYamlFile<ChirimenDriversConfig>(chirimenDriversPath),
+      skipPartslist
+        ? Promise.resolve("")
+        : fetchText(options.csvUrl, "partslist.csv"),
     ]);
+
+  const chirimenDrivers = await syncChirimenDriversAllowlist(
+    options,
+    localChirimenDrivers,
+    chirimenDriversPath,
+  );
+
+  if (options.onlyChirimenDrivers) {
+    return;
+  }
+
   const knownPackages = toKnownPackageSet(chirimenDrivers.packages ?? []);
 
   const supplementalDevices = parseSupplementalDevices(supplementalConfig);
