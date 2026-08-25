@@ -39,13 +39,18 @@ pnpm sync:devices --only-supplemental
 
 1. `partslist.csv` をパースし、`data/supplemental-devices.yml` をマージ（同型番は partslist 優先）
 2. `data/aliases.yml` に基づいて単体・複合・remote デバイスにグルーピング
-3. 各デバイスについて `meta.yml` と `README.md` を生成
-4. 生成前に `schema/meta.schema.json` で検証
-5. 対象の `devices/<dir>/` を削除してから再作成（洗い替え）
+3. `data/chirimen-drivers.yml` の許可リストに基づき、`examples[].driver` と README の jsDelivr リンクを付与
+4. 各デバイスについて `meta.yml` と `README.md` を生成
+5. 生成前に `schema/meta.schema.json` で検証
+6. 対象の `devices/<dir>/` を削除してから再作成（洗い替え）
 
 `--only-supplemental` では partslist の取得・洗い替えを行わず、supplemental に定義したデバイスのみを書き込みます。upstream example はあるが partslist 未登録のデバイスを登録する用途です。
 
 Example URL が分類できないデバイスは警告を出してスキップします。
+
+### chirimen-drivers.yml
+
+`data/chirimen-drivers.yml` は [chirimen-drivers README](https://github.com/chirimen-oh/chirimen-drivers/blob/master/README.md) の Download セクションのスナップショットです。`packages` がこのリストにあるときだけ、README に jsDelivr リンクを付け、`pizero-esm` の `examples[].driver` にパッケージソース URL を入れます。chirimen-drivers 側でパッケージが増減したら、このファイルを更新してください。
 
 ### supplemental-devices.yml
 
