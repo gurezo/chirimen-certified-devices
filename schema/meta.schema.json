@@ -159,13 +159,12 @@
           "description": "Circuit diagram URL for this Example."
         },
         "driver": {
-          "oneOf": [
+          "type": "string",
+          "anyOf": [
             {
-              "type": "string",
               "format": "uri"
             },
             {
-              "type": "string",
               "const": "none"
             }
           ],
