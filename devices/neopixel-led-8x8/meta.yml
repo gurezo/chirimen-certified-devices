@@ -1,0 +1,23 @@
+id: neopixel-led-8x8
+model: Neopixel LED 8x8
+tag: I2C
+category: フルカラーLED アレイ
+description: NEOPIXEL対応の 8x8 LED パネルです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/neopixel64.jpg
+productUrl: https://www.amazon.co.jp/dp/B07KG3Y2BG/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/neopixel-i2c
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/neopixel-i2c/schematic.png
+    verified: false
+circuit: null
+datasheet: null
+reference: null
+packages:
+  - "@chirimen/neopixel-i2c"
+platform: pizero-esm
+status: primary
+verified: false

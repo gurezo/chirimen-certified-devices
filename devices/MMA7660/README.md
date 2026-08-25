@@ -1,13 +1,13 @@
 ---
 title: "MMA7660"
 model: "MMA7660"
-category: "加速度センサ"
-description: "MMA7660 ３軸加速度センサー"
+category: "3軸加速度センサ"
+description: "3軸の加速度を検出できるセンサです"
 ---
 
 ## 概要
 
-MMA7660 ３軸加速度センサー
+3軸の加速度を検出できるセンサです
 
 ## インターフェース
 
@@ -27,6 +27,4 @@ I2C
 
 ## リンク
 
-- [商品ページ](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5g.html)
-
-- [参考資料](https://github.com/Seeed-Studio/Accelerometer_MMA7660)
+- [商品ページ](https://chirimen.org/)

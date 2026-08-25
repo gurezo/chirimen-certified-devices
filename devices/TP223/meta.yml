@@ -13,7 +13,7 @@ examples:
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png
     verified: false
-circuit: https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/index.html#gpio
+circuit: https://chirimen.org/pizero/esm-examples/gpio-onchange/index.html#gpio
 datasheet: https://files.seeedstudio.com/wiki/Grove-Touch_Sensor/res/TTP223.pdf
 reference: null
 packages:

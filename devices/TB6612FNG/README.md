@@ -28,4 +28,5 @@ GPIO
 ## リンク
 
 - [商品ページ](https://www.switch-science.com/catalog/385/)
+
 - [データシート](http://doc.switch-science.com/datasheets/TB6612FNG_datasheet_ja_20141001.pdf)
