@@ -6,6 +6,13 @@ description: -55℃ から +150℃ まで測定できる温度センサです
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ADT7410.jpg
 productUrl: https://akizukidenshi.com/catalog/g/g106675/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/adt7410
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adt7410
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/adt7410/schematic.png
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -25,6 +32,6 @@ datasheet: null
 reference: https://cdn-shop.adafruit.com/datasheets/ads1115.pdf
 packages:
   - "@chirimen/adt7410"
-platform: microbit-driver
-status: incubator
+platform: pizero-esm
+status: primary
 verified: false

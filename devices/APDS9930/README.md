@@ -2,12 +2,12 @@
 title: "APDS9930"
 model: "APDS9930"
 category: "近接・環境光センサー"
-description: "APDS9930 近接・環境光センサー"
+description: "近接・環境光を読み取るセンサー"
 ---
 
 ## 概要
 
-APDS9930 近接・環境光センサー
+近接・環境光を読み取るセンサー
 
 ## インターフェース
 

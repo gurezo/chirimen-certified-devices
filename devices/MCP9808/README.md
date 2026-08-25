@@ -2,12 +2,12 @@
 title: "MCP9808"
 model: "MCP9808"
 category: "温度センサ"
-description: "GROVE MCP9808 搭載の I2C 高精度温度センサ"
+description: "高精度に温度を測定できるセンサです(分解能を0.0625℃〜0.5℃の4段階で設定可能)"
 ---
 
 ## 概要
 
-GROVE MCP9808 搭載の I2C 高精度温度センサ
+高精度に温度を測定できるセンサです(分解能を0.0625℃〜0.5℃の4段階で設定可能)
 
 ## インターフェース
 
@@ -27,6 +27,4 @@ I2C
 
 ## リンク
 
-- [商品ページ](https://www.switch-science.com/products/3986)
-
-- [参考資料](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html)
+- [商品ページ](https://chirimen.org/)

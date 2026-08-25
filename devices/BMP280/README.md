@@ -19,6 +19,7 @@ I2C
 
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/bmp280](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bmp280)
 - **micro:bit** (incubator): [microbit-examples/I2C2_BMP280](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C2_BMP280)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-BMP280](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BMP280)
 

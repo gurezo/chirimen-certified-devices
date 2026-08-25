@@ -6,6 +6,13 @@ description: 0.96inch、128x64dot の小型 OLED (有機 EL) ディスプレイ�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
 productUrl: https://www.switch-science.com/catalog/829/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/ssd1308
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ssd1308
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ssd1308/schematic.png
+    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -18,6 +25,6 @@ datasheet: null
 reference: http://wiki.seeedstudio.com/Grove-OLED_Display_0.96inch/
 packages:
   - "@chirimen/ssd1308"
-platform: legacy-gc-i2c
-status: archive
+platform: pizero-esm
+status: primary
 verified: false

@@ -6,6 +6,13 @@ description: 0.1lx から 40000lx まで測定可能な照度センサです
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/Grove-Light.jpg
 productUrl: https://www.switch-science.com/catalog/1174/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/tsl2561
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tsl2561
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tsl2561/schematic.png
+    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -18,6 +25,6 @@ datasheet: https://raw.githubusercontent.com/SeeedDocument/Grove-Digital_Light_S
 reference: https://wiki.seeedstudio.com/Grove-Digital_Light_Sensor/
 packages:
   - "@chirimen/tsl2561"
-platform: legacy-gc-i2c
-status: archive
+platform: pizero-esm
+status: primary
 verified: false

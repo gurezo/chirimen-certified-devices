@@ -6,6 +6,13 @@ description: 人体に反応するセンサです
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/pyro1.jpg
 productUrl: https://eleshop.jp/shop/g/gE3336G/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/gpio-onchange
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -25,6 +32,6 @@ datasheet: null
 reference: http://www.kyohritsu.sakura.ne.jp/prowiki/index.php?%BF%CD%C2%CE%C0%D6%B3%B0%C0%FE%B4%B6%C3%CE%C1%C7%BB%D2%2FKP-IR412
 packages:
   - "@chirimen/gpio-onchange"
-platform: microbit-driver
-status: incubator
+platform: pizero-esm
+status: primary
 verified: false

@@ -1,0 +1,23 @@
+id: SGP30
+model: SGP30
+tag: I2C
+category: CO2+TVOCセンサ
+description: Sensirion製のガスセンサ。eCO2(CO2相当値)とTVOC(総揮発性有機化合物)を測定できます
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/sgp30.jpg
+productUrl: https://www.switch-science.com/products/6619
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/sgp30
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sgp30
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sgp30/schematic.png
+    verified: false
+circuit: null
+datasheet: https://sensirion.com/media/documents/984E0DD5/61644B8B/Sensirion_Gas_Sensors_Datasheet_SGP30.pdf
+reference: null
+packages:
+  - "@chirimen/sgp30"
+platform: pizero-esm
+status: primary
+verified: false

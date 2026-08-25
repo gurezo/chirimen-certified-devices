@@ -27,7 +27,7 @@ GPIO
 
 ## 回路図
 
-![TP223 回路図](https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/index.html#gpio)
+![TP223 回路図](https://chirimen.org/pizero/esm-examples/gpio-onchange/index.html#gpio)
 
 ## リンク
 

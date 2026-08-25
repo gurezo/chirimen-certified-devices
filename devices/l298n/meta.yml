@@ -6,6 +6,13 @@ description: STマイクロ社のフルブリッジドライバである L298N �
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/L298N.jpg
 productUrl: https://akizukidenshi.com/catalog/g/g106680/
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/hbridge1
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hbridge1
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hbridge1/schematic.png
+    verified: false
   - platform: microbit-driver
     status: incubator
     upstreamRepository: chirimen-oh/chirimen-drivers
@@ -25,6 +32,6 @@ datasheet: null
 reference: null
 packages:
   - "@chirimen/hbridge1"
-platform: microbit-driver
-status: incubator
+platform: pizero-esm
+status: primary
 verified: false

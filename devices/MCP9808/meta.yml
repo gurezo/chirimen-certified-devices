@@ -2,9 +2,9 @@ id: MCP9808
 model: MCP9808
 tag: I2C
 category: 温度センサ
-description: GROVE MCP9808 搭載の I2C 高精度温度センサ
+description: 高精度に温度を測定できるセンサです(分解能を0.0625℃〜0.5℃の4段階で設定可能)
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
-productUrl: https://www.switch-science.com/products/3986
+productUrl: https://chirimen.org/
 examples:
   - platform: pizero-esm
     status: primary
@@ -15,7 +15,7 @@ examples:
     verified: false
 circuit: null
 datasheet: null
-reference: https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html
+reference: null
 packages:
   - "@chirimen/mcp9808"
 platform: pizero-esm

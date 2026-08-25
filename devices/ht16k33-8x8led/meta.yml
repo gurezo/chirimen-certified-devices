@@ -6,6 +6,13 @@ description: マトリクス LED 制御可能なコントローラが搭載さ�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/HT16K33.jpg
 productUrl: https://www.switch-science.com/products/1493
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/ht16k33
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png
+    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -18,6 +25,6 @@ datasheet: https://cdn-shop.adafruit.com/datasheets/ht16K33v110.pdf
 reference: https://www.adafruit.com/product/870
 packages:
   - "@chirimen/ht16k33"
-platform: legacy-gc-i2c
-status: archive
+platform: pizero-esm
+status: primary
 verified: false

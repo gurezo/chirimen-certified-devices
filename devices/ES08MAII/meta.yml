@@ -6,6 +6,13 @@ description: E-MAXの小型サーボモータです　メタルギヤが使わ�
 image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ES08MAII.jpg
 productUrl: https://www.kkhobby.com/SHOP/SV070.html
 examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/pca9685
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685/schematic.png
+    verified: false
   - platform: legacy-gc-i2c
     status: archive
     upstreamRepository: chirimen-oh/chirimen
@@ -18,6 +25,6 @@ datasheet: https://emax-usa.com/products/emx-sv-0275-es08ma-ii-metal-analog-serv
 reference: null
 packages:
   - "@chirimen/pca9685"
-platform: legacy-gc-i2c
-status: archive
+platform: pizero-esm
+status: primary
 verified: false

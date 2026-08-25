@@ -19,6 +19,7 @@ I2C
 
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/adt7410](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adt7410)
 - **micro:bit** (incubator): [microbit-examples/I2C1_ADT7410](https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C1_ADT7410)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-ADT7410](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADT7410)
 

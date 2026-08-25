@@ -19,6 +19,7 @@ I2C
 
 ## Example
 
+- **Pi Zero / Raspberry Pi (ESM)** (primary): [pizero/src/esm-examples/tsl2561](https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tsl2561)
 - **Legacy CHIRIMEN GC (I2C)** (archive): [gc/i2c/i2c-Grove-Light](https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Light)
 
 ## 画像
