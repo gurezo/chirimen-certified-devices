@@ -2,8 +2,11 @@ import { describe, expect, it } from "vitest";
 import {
   applyDriverToExamples,
   applyDriverToMeta,
+  chirimenDriversPackagesDiffer,
   DRIVER_NONE,
   jsdelivrPackageUrl,
+  parseDownloadPackages,
+  renderChirimenDriversYml,
   resolveDriver,
   toKnownPackageSet,
 } from "./chirimen-drivers.js";
@@ -122,6 +125,75 @@ describe("jsdelivrPackageUrl", () => {
   it("builds the jsDelivr npm package url", () => {
     expect(jsdelivrPackageUrl("@chirimen/ads1015")).toBe(
       "https://www.jsdelivr.com/package/npm/@chirimen/ads1015",
+    );
+  });
+});
+
+const SAMPLE_README = `# CHIRIMEN Drivers
+
+## Download
+
+<!-- downloads-start -->
+
+- [@chirimen/ads1015](https://www.jsdelivr.com/package/npm/@chirimen/ads1015)
+- [@chirimen/pca9685](https://www.jsdelivr.com/package/npm/@chirimen/pca9685)
+
+<!-- downloads-stop -->
+`;
+
+describe("parseDownloadPackages", () => {
+  it("extracts sorted @chirimen packages from the Download section", () => {
+    expect(parseDownloadPackages(SAMPLE_README)).toEqual([
+      "@chirimen/ads1015",
+      "@chirimen/pca9685",
+    ]);
+  });
+
+  it("throws when download markers are missing", () => {
+    expect(() => parseDownloadPackages("# no markers")).toThrow(
+      /downloads-start\/stop/,
+    );
+  });
+
+  it("throws when the Download section has no packages", () => {
+    expect(() =>
+      parseDownloadPackages(
+        "<!-- downloads-start -->\n\n<!-- downloads-stop -->",
+      ),
+    ).toThrow(/no @chirimen packages/);
+  });
+});
+
+describe("chirimenDriversPackagesDiffer", () => {
+  it("ignores order", () => {
+    expect(
+      chirimenDriversPackagesDiffer(
+        ["@chirimen/pca9685", "@chirimen/ads1015"],
+        ["@chirimen/ads1015", "@chirimen/pca9685"],
+      ),
+    ).toBe(false);
+  });
+
+  it("detects added or removed packages", () => {
+    expect(
+      chirimenDriversPackagesDiffer(
+        ["@chirimen/ads1015"],
+        ["@chirimen/ads1015", "@chirimen/pca9685"],
+      ),
+    ).toBe(true);
+  });
+});
+
+describe("renderChirimenDriversYml", () => {
+  it("renders a sorted yaml snapshot", () => {
+    const yaml = renderChirimenDriversYml([
+      "@chirimen/pca9685",
+      "@chirimen/ads1015",
+    ]);
+    expect(yaml).toContain("packages:");
+    expect(yaml).toContain('- "@chirimen/ads1015"');
+    expect(yaml.indexOf("@chirimen/ads1015")).toBeLessThan(
+      yaml.indexOf("@chirimen/pca9685"),
     );
   });
 });
