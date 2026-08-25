@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/ht16k33`
+- [@chirimen/ht16k33](https://www.jsdelivr.com/package/npm/@chirimen/ht16k33)
 
 ## Example
 

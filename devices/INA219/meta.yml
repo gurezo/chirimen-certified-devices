@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/ina219
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ina219
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ina219/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ina219
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C_INA219
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_INA219
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_INA219/imgs/pinbit_ina219.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-INA219
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-INA219
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-INA219/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: null

@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/sht40`
+- [@chirimen/sht40](https://www.jsdelivr.com/package/npm/@chirimen/sht40)
 
 ## Example
 

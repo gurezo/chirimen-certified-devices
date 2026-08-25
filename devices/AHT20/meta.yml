@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/aht20
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/aht20
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/aht20/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: https://files.seeedstudio.com/wiki/Grove-AHT20_I2C_Industrial_Grade_Temperature_and_Humidity_Sensor/AHT20-datasheet-2020-4-16.pdf

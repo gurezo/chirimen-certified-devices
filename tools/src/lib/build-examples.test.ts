@@ -249,6 +249,7 @@ describe("buildMetaYamlContent", () => {
       platforms,
       aliases,
       "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/ADS1015.jpg",
+      new Set(["@chirimen/ads1015"]),
     );
 
     expect(result).toMatchObject({
@@ -260,5 +261,14 @@ describe("buildMetaYamlContent", () => {
       verified: false,
     });
     expect(result?.examples).toHaveLength(2);
+    expect(result?.examples[0]).toMatchObject({
+      platform: "pizero-esm",
+      driver:
+        "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ads1015",
+    });
+    expect(result?.examples[1]).toMatchObject({
+      platform: "legacy-gc-i2c",
+      driver: "none",
+    });
   });
 });

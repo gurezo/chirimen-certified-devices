@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/htu21d`
+- [@chirimen/htu21d](https://www.jsdelivr.com/package/npm/@chirimen/htu21d)
 
 ## Example
 

@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/bmp280
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bmp280
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bmp280/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bmp280
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C2_BMP280
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C2_BMP280
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C2_BMP280/imgs/pinbit_bmp280.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-BMP280
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BMP280
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BMP280/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/BMP280/BST-BMP280-DS001-11.pdf

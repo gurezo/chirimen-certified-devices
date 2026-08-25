@@ -67,7 +67,7 @@ devices/<device-id>/
 
 - デバイス概要
 - 使用するインターフェース
-- 使用するパッケージ
+- 使用するパッケージ（chirimen-drivers Download にある `@chirimen/*` は jsDelivr リンク）
 - Example へのリンク
 - 画像
 - 回路図
@@ -95,7 +95,7 @@ devices/<device-id>/
 - description
 - image URL
 - product URL
-- Example 情報
+- Example 情報（各 Example の `driver`: chirimen-drivers パッケージソース URL または `none`）
 - 回路図 URL
 - datasheet URL
 - reference URL
@@ -138,6 +138,7 @@ devices/remote_PCA9685_MX1508/
 | --- | --- |
 | `data/aliases.yml` | 型番・ディレクトリ名・旧 Example 名の表記揺れ吸収 |
 | `data/platforms.yml` | `pizero-esm`, `legacy-gc-i2c` などの platform 定義 |
+| `data/chirimen-drivers.yml` | chirimen-drivers README Download セクションの npm パッケージ許可リスト。`pnpm sync:devices` で差分があれば更新 |
 
 ### generated/devices.json
 
@@ -170,7 +171,9 @@ chirimen-certified-devices/
 │   └── workflows/
 ├── data/
 │   ├── aliases.yml
-│   └── platforms.yml
+│   ├── platforms.yml
+│   ├── supplemental-devices.yml
+│   └── chirimen-drivers.yml
 ├── devices/
 │   └── <device-id>/
 │       ├── README.md

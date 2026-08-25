@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/tmp117`
+- [@chirimen/tmp117](https://www.jsdelivr.com/package/npm/@chirimen/tmp117)
 
 ## Example
 

@@ -6,7 +6,8 @@
 
 | コマンド | 用途 | 実装 issue |
 | --- | --- | --- |
-| `pnpm sync:devices` | `partslist.csv` から `devices/` を生成 | [#9](https://github.com/gurezo/chirimen-certified-devices/issues/9) |
+| `pnpm sync:devices` | `partslist.csv` から `devices/` を生成。Download セクションと差があれば `data/chirimen-drivers.yml` も更新 | [#9](https://github.com/gurezo/chirimen-certified-devices/issues/9) / [#45](https://github.com/gurezo/chirimen-certified-devices/issues/45) |
+| `pnpm sync:chirimen-drivers` | `data/chirimen-drivers.yml` だけを Download セクションと同期 | [#45](https://github.com/gurezo/chirimen-certified-devices/issues/45) |
 | `pnpm validate:devices` | `devices/**/meta.yml` とディレクトリ構成を検証 | [#10](https://github.com/gurezo/chirimen-certified-devices/issues/10) |
 | `pnpm generate:devices` | `generated/devices.json` を生成 | [#11](https://github.com/gurezo/chirimen-certified-devices/issues/11) |
 
@@ -24,7 +25,10 @@ pnpm sync:devices
 | --- | --- | --- |
 | `--dry-run` | off | 作成予定のディレクトリを表示のみ（ファイルは書き込まない） |
 | `--only-supplemental` | off | `data/supplemental-devices.yml` のデバイスだけを書き込む（partslist 由来は触らない） |
+| `--only-chirimen-drivers` | off | `data/chirimen-drivers.yml` だけを更新する（`devices/` は触らない） |
+| `--skip-chirimen-drivers` | off | リモート README を取得せず、コミット済みの許可リストを使う |
 | `--csv-url <url>` | chirimen.org の `partslist.csv` | CSV 取得 URL を上書き |
+| `--chirimen-drivers-readme-url <url>` | chirimen-drivers の README | Download セクションの取得 URL を上書き |
 | `--devices-dir <path>` | `devices/` | 出力先ディレクトリ |
 
 例:
@@ -33,19 +37,28 @@ pnpm sync:devices
 pnpm sync:devices --dry-run
 pnpm sync:devices --devices-dir devices/
 pnpm sync:devices --only-supplemental
+pnpm sync:chirimen-drivers
 ```
 
 ### 動作
 
-1. `partslist.csv` をパースし、`data/supplemental-devices.yml` をマージ（同型番は partslist 優先）
-2. `data/aliases.yml` に基づいて単体・複合・remote デバイスにグルーピング
-3. 各デバイスについて `meta.yml` と `README.md` を生成
-4. 生成前に `schema/meta.schema.json` で検証
-5. 対象の `devices/<dir>/` を削除してから再作成（洗い替え）
+1. [chirimen-drivers README](https://github.com/chirimen-oh/chirimen-drivers/blob/master/README.md#download) の Download セクションを取得し、差があれば `data/chirimen-drivers.yml` を更新
+2. `partslist.csv` をパースし、`data/supplemental-devices.yml` をマージ（同型番は partslist 優先）
+3. `data/aliases.yml` に基づいて単体・複合・remote デバイスにグルーピング
+4. 更新後の許可リストに基づき、`examples[].driver` と README の jsDelivr リンクを付与
+5. 各デバイスについて `meta.yml` と `README.md` を生成
+6. 生成前に `schema/meta.schema.json` で検証
+7. 対象の `devices/<dir>/` を削除してから再作成（洗い替え）
 
 `--only-supplemental` では partslist の取得・洗い替えを行わず、supplemental に定義したデバイスのみを書き込みます。upstream example はあるが partslist 未登録のデバイスを登録する用途です。
 
 Example URL が分類できないデバイスは警告を出してスキップします。
+
+### chirimen-drivers.yml
+
+`data/chirimen-drivers.yml` は [chirimen-drivers README](https://github.com/chirimen-oh/chirimen-drivers/blob/master/README.md#download) の Download セクションのスナップショットです。`packages` がこのリストにあるときだけ、README に jsDelivr リンクを付け、`pizero-esm` の `examples[].driver` にパッケージソース URL を入れます。
+
+`pnpm sync:devices` または `pnpm sync:chirimen-drivers` の実行時に、リモートの Download セクションと差があれば YAML を更新します。デバイスを洗い替えせず許可リストだけ直す場合は `pnpm sync:chirimen-drivers` を使ってください。取得をスキップするには `--skip-chirimen-drivers` を指定します。
 
 ### supplemental-devices.yml
 

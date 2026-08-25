@@ -1,3 +1,7 @@
+import {
+  isKnownChirimenPackage,
+  jsdelivrPackageUrl,
+} from "../lib/chirimen-drivers.js";
 import type { MetaExample, MetaYamlContent } from "../lib/types.js";
 
 const PLATFORM_LABELS: Record<string, string> = {
@@ -43,7 +47,20 @@ function renderOptionalLink(label: string, url: string | null): string {
   return `- [${label}](${url})\n`;
 }
 
-export function renderReadme(content: MetaYamlContent): string {
+function renderPackageItem(
+  pkg: string,
+  knownPackages: ReadonlySet<string>,
+): string {
+  if (isKnownChirimenPackage(pkg, knownPackages)) {
+    return `- [${pkg}](${jsdelivrPackageUrl(pkg)})`;
+  }
+  return `- \`${pkg}\``;
+}
+
+export function renderReadme(
+  content: MetaYamlContent,
+  knownPackages: ReadonlySet<string> = new Set(),
+): string {
   const sections = [
     renderFrontMatter(content),
     "## 概要",
@@ -57,7 +74,12 @@ export function renderReadme(content: MetaYamlContent): string {
   ];
 
   if (content.packages.length > 0) {
-    sections.push("## 使用パッケージ", "", ...content.packages.map((pkg) => `- \`${pkg}\``), "");
+    sections.push(
+      "## 使用パッケージ",
+      "",
+      ...content.packages.map((pkg) => renderPackageItem(pkg, knownPackages)),
+      "",
+    );
   }
 
   sections.push(renderExampleSection(content.examples));

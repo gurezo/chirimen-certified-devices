@@ -130,6 +130,10 @@ export interface SyncDeviceEntry extends ParsedPartslistDevice {
   kind: SyncDeviceKind;
 }
 
+export interface ChirimenDriversConfig {
+  packages: string[];
+}
+
 export interface MetaExample {
   platform: PlatformId;
   status: ExampleStatus;
@@ -137,6 +141,7 @@ export interface MetaExample {
   upstreamPath: string;
   upstreamPathUrl: string;
   circuitUrl: string | null;
+  driver: string;
   verified: boolean;
 }
 

@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/bme680
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme680
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bme680/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bme680
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C_BME680
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BME680
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_BME680/imgs/pinbit_bme680.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-BME680
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BME680
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BME680/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: null

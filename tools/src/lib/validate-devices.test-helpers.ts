@@ -37,6 +37,7 @@ export function makeValidMeta(overrides: Partial<MetaYamlContent> = {}): MetaYam
         upstreamPathUrl:
           "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/test",
         circuitUrl: null,
+        driver: "none",
         verified: false,
       },
     ],

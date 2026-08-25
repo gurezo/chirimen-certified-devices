@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/gpio-onchange
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png
+    driver: none
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/GPIO0
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO0
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO0/imgs/pinbit_gpio-onchange.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/gpio-Button
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Button
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Button/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: null

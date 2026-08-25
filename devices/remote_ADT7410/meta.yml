@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/adt7410
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adt7410
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/adt7410/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/adt7410
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C1_ADT7410
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C1_ADT7410
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C1_ADT7410/imgs/pinbit_adt7410.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-ADT7410
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADT7410
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADT7410/schematic.png
+    driver: none
     verified: false
   - platform: remote-connection
     status: incubator
@@ -33,6 +36,7 @@ examples:
     upstreamPath: examples/adt7410
     upstreamPathUrl: https://github.com/chirimen-oh/remote-connection/tree/master/examples/adt7410
     circuitUrl: null
+    driver: none
     verified: false
 circuit: https://github.com/adafruit/ADS1X15-Breakout-Board-PCBs
 datasheet: null

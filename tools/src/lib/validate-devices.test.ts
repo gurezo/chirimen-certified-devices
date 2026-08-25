@@ -50,6 +50,7 @@ describe("validateDevices", () => {
               upstreamPathUrl:
                 "https://github.com/chirimen-oh/remote-connection/tree/master/examples/adt7410",
               circuitUrl: null,
+              driver: "none",
               verified: false,
             },
           ],
@@ -143,6 +144,7 @@ describe("validateDevices", () => {
               upstreamPathUrl:
                 "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/test",
               circuitUrl: null,
+              driver: "none",
               verified: false,
             },
           ],
@@ -168,6 +170,7 @@ describe("validateDevices", () => {
               upstreamPathUrl:
                 "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/test",
               circuitUrl: null,
+              driver: "none",
               verified: false,
             },
           ],
@@ -197,6 +200,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/test
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/test
     circuitUrl: null
+    driver: none
     verified: false
 circuit: null
 datasheet: null

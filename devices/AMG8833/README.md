@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/amg8833`
+- [@chirimen/amg8833](https://www.jsdelivr.com/package/npm/@chirimen/amg8833)
 
 ## Example
 

@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/as3935`
+- [@chirimen/as3935](https://www.jsdelivr.com/package/npm/@chirimen/as3935)
 
 ## Example
 

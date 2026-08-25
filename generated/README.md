@@ -16,5 +16,6 @@
 - `devices/**/meta.yml`
 - `data/aliases.yml`
 - `data/platforms.yml`
+- `data/chirimen-drivers.yml`
 
 生成後は `generated/devices.json` の差分をコミットしてください。
