@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/ccs811`
+- [@chirimen/ccs811](https://www.jsdelivr.com/package/npm/@chirimen/ccs811)
 
 ## Example
 

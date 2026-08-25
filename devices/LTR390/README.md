@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/ltr390`
+- [@chirimen/ltr390](https://www.jsdelivr.com/package/npm/@chirimen/ltr390)
 
 ## Example
 

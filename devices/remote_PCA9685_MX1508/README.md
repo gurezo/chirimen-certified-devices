@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/pca9685`
+- [@chirimen/pca9685](https://www.jsdelivr.com/package/npm/@chirimen/pca9685)
 
 ## Example
 

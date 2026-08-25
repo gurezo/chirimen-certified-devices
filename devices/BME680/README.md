@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/bme680`
+- [@chirimen/bme680](https://www.jsdelivr.com/package/npm/@chirimen/bme680)
 
 ## Example
 

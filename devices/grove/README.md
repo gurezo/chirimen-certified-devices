@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/grove-water-level-sensor`
+- [@chirimen/grove-water-level-sensor](https://www.jsdelivr.com/package/npm/@chirimen/grove-water-level-sensor)
 
 ## Example
 

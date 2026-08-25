@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/ads1x15`
+- [@chirimen/ads1x15](https://www.jsdelivr.com/package/npm/@chirimen/ads1x15)
 
 ## Example
 

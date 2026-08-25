@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/ina219`
+- [@chirimen/ina219](https://www.jsdelivr.com/package/npm/@chirimen/ina219)
 
 ## Example
 

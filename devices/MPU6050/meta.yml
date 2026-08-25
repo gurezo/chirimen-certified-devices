@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/mpu6050
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu6050
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mpu6050/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/mpu6050
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C_MPU6050
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU6050
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_MPU6050/imgs/pinbit_mpu6050.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-MPU6050
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU6050
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-MPU6050/schematic.png
+    driver: none
     verified: false
 circuit: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/MPU6050-sch.jpg
 datasheet: http://aitendo3.sakura.ne.jp/aitendo_data/product_img/sensor/accelerometer/MPU6050/PS-MPU-6000A-00_v1.0.pdf

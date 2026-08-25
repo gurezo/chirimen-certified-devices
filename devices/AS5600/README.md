@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/as5600`
+- [@chirimen/as5600](https://www.jsdelivr.com/package/npm/@chirimen/as5600)
 
 ## Example
 

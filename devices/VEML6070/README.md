@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/veml6070`
+- [@chirimen/veml6070](https://www.jsdelivr.com/package/npm/@chirimen/veml6070)
 
 ## Example
 

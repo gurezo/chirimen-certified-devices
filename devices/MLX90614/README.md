@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/mlx90614`
+- [@chirimen/mlx90614](https://www.jsdelivr.com/package/npm/@chirimen/mlx90614)
 
 ## Example
 

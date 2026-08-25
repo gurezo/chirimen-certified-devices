@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/s11059
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/s11059
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/s11059/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/s11059
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C4_S11059
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C4_S11059
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C4_S11059/imgs/pinbit_s11059.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-S11059
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-S11059
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-S11059/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: http://akizukidenshi.com/download/ds/hamamatsu/s11059-02dt.pdf

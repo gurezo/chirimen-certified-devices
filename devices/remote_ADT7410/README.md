@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/adt7410`
+- [@chirimen/adt7410](https://www.jsdelivr.com/package/npm/@chirimen/adt7410)
 
 ## Example
 

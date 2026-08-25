@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/vl53l0x
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/vl53l0x
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/vl53l0x/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/vl53l0x
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/I2C3_VL53L0X
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C3_VL53L0X
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C3_VL53L0X/imgs/pinbit_vl53l0x.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-VL53L0X
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VL53L0X
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-VL53L0X/schematic.png
+    driver: none
     verified: false
 circuit: https://www.pololu.com/file/0J1188/vl53l0x-time-of-flight-distance-sensor-carrier-schematic.pdf
 datasheet: https://www.pololu.com/file/0J1187/VL53L0X.pdf

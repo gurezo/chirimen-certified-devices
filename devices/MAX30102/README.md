@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/max30102`
+- [@chirimen/max30102](https://www.jsdelivr.com/package/npm/@chirimen/max30102)
 
 ## Example
 

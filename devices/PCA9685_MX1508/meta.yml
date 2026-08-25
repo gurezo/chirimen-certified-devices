@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/pca9685_mx1508
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685_mx1508
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685_mx1508/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685
     verified: false
   - platform: microbit-driver
     status: incubator
@@ -19,6 +20,7 @@ examples:
     upstreamPath: microbit-examples/GPIO_HBridge
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge
     circuitUrl: https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_HBridge/imgs/pinbit_pca9685_mx1508.png
+    driver: none
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -26,6 +28,7 @@ examples:
     upstreamPath: gc/i2c/i2c-PCA9685
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf

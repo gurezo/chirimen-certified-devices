@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/qrcodescanner
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/qrcodescanner
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/qrcodescanner/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/qrcodescanner
     verified: false
 circuit: null
 datasheet: null

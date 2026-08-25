@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/sgp30
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sgp30
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sgp30/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/sgp30
     verified: false
 circuit: null
 datasheet: https://sensirion.com/media/documents/984E0DD5/61644B8B/Sensirion_Gas_Sensors_Datasheet_SGP30.pdf

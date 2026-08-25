@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/bmp180`
+- [@chirimen/bmp180](https://www.jsdelivr.com/package/npm/@chirimen/bmp180)
 
 ## Example
 

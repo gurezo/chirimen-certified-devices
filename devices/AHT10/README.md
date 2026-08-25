@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/aht10`
+- [@chirimen/aht10](https://www.jsdelivr.com/package/npm/@chirimen/aht10)
 
 ## Example
 

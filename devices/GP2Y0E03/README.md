@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/gp2y0e03`
+- [@chirimen/gp2y0e03](https://www.jsdelivr.com/package/npm/@chirimen/gp2y0e03)
 
 ## Example
 

@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/qrcodescanner`
+- [@chirimen/qrcodescanner](https://www.jsdelivr.com/package/npm/@chirimen/qrcodescanner)
 
 ## Example
 

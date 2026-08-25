@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/apds9960`
+- [@chirimen/apds9960](https://www.jsdelivr.com/package/npm/@chirimen/apds9960)
 
 ## Example
 

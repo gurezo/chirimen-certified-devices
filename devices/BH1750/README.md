@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/bh1750`
+- [@chirimen/bh1750](https://www.jsdelivr.com/package/npm/@chirimen/bh1750)
 
 ## Example
 

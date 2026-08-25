@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/mpu6050`
+- [@chirimen/mpu6050](https://www.jsdelivr.com/package/npm/@chirimen/mpu6050)
 
 ## Example
 

@@ -12,6 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/pca9685
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685/schematic.png
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685
     verified: false
   - platform: legacy-gc-i2c
     status: archive
@@ -19,6 +20,7 @@ examples:
     upstreamPath: gc/i2c/i2c-PCA9685
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685
     circuitUrl: https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png
+    driver: none
     verified: false
 circuit: null
 datasheet: https://emax-usa.com/products/emx-sv-0275-es08ma-ii-metal-analog-servo

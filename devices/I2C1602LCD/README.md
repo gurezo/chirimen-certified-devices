@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/i2c1602lcd`
+- [@chirimen/i2c1602lcd](https://www.jsdelivr.com/package/npm/@chirimen/i2c1602lcd)
 
 ## Example
 

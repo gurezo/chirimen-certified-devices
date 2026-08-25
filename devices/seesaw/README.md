@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/seesaw`
+- [@chirimen/seesaw](https://www.jsdelivr.com/package/npm/@chirimen/seesaw)
 
 ## Example
 

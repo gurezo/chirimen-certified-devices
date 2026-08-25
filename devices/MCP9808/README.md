@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/mcp9808`
+- [@chirimen/mcp9808](https://www.jsdelivr.com/package/npm/@chirimen/mcp9808)
 
 ## Example
 

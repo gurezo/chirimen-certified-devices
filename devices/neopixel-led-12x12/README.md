@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/neopixel-i2c`
+- [@chirimen/neopixel-i2c](https://www.jsdelivr.com/package/npm/@chirimen/neopixel-i2c)
 
 ## Example
 

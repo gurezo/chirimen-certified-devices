@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/ens160`
+- [@chirimen/ens160](https://www.jsdelivr.com/package/npm/@chirimen/ens160)
 
 ## Example
 
