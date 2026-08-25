@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-25T12:57:41.122Z",
+  "generatedAt": "2026-08-25T14:15:33.467Z",
   "platforms": {
     "platforms": {
       "pizero-esm": {
@@ -153,6 +153,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -163,6 +164,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -173,6 +175,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -216,6 +219,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -226,6 +230,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -236,6 +241,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -279,6 +285,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -289,6 +296,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -299,6 +307,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -342,6 +351,7 @@
             "upstreamPath": "gc/i2c/gpio-Button",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Button",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Button/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -352,6 +362,7 @@
             "upstreamPath": "microbit-examples/GPIO0",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO0",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO0/imgs/pinbit_gpio-onchange.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -362,6 +373,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -405,6 +417,7 @@
             "upstreamPath": "gc/gpio/section-9",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/gpio/section-9",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/gpio/section-9/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (GPIO)"
           },
@@ -415,6 +428,7 @@
             "upstreamPath": "microbit-examples/GPIO3",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO3",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO3/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -425,6 +439,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -468,6 +483,7 @@
             "upstreamPath": "gc/i2c/gpio-Button",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Button",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Button/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -478,6 +494,7 @@
             "upstreamPath": "microbit-examples/GPIO0",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO0",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO0/imgs/pinbit_gpio-onchange.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -488,6 +505,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -531,6 +549,7 @@
             "upstreamPath": "gc/i2c/gpio-A4988",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-A4988",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-A4988/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -541,6 +560,7 @@
             "upstreamPath": "pizero/src/esm-examples/a4988",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/a4988",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/a4988/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -584,6 +604,7 @@
             "upstreamPath": "gc/i2c/i2c-ADS1015",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1015",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADS1015/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -594,6 +615,7 @@
             "upstreamPath": "pizero/src/esm-examples/ads1015",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1015",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1015/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ads1015",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -637,6 +659,7 @@
             "upstreamPath": "gc/i2c/i2c-ADS1115",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1115",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADS1115/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -647,6 +670,7 @@
             "upstreamPath": "microbit-examples/I2C_ADS1115",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_ADS1115",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_ADS1115/imgs/pinbit_ads1x15.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -657,6 +681,7 @@
             "upstreamPath": "pizero/src/esm-examples/ads1x15",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1x15",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1x15/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ads1x15",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -700,6 +725,7 @@
             "upstreamPath": "gc/i2c/i2c-ADT7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADT7410",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADT7410/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -710,6 +736,7 @@
             "upstreamPath": "microbit-examples/I2C1_ADT7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C1_ADT7410",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C1_ADT7410/imgs/pinbit_adt7410.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -720,6 +747,7 @@
             "upstreamPath": "pizero/src/esm-examples/adt7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adt7410",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/adt7410/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/adt7410",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -763,6 +791,7 @@
             "upstreamPath": "pizero/src/esm-examples/aht10",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/aht10",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/aht10/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/aht10",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -806,6 +835,7 @@
             "upstreamPath": "pizero/src/esm-examples/aht20",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/aht20",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/aht20/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -849,6 +879,7 @@
             "upstreamPath": "gc/i2c/i2c-AMG8833",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-AMG8833",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-AMG8833/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -859,6 +890,7 @@
             "upstreamPath": "microbit-examples/I2C_AMG8833",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_AMG8833",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_AMG8833/imgs/pinbit_amg8833.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -869,6 +901,7 @@
             "upstreamPath": "pizero/src/esm-examples/amg8833",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/amg8833",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/amg8833/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/amg8833",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -912,6 +945,7 @@
             "upstreamPath": "pizero/src/esm-examples/apds9930",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9930",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/apds9930/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/apds9930",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -955,6 +989,7 @@
             "upstreamPath": "gc/i2c/i2c-APDS9960",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-APDS9960",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-APDS9960/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -965,6 +1000,7 @@
             "upstreamPath": "pizero/src/esm-examples/apds9960",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/apds9960",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/apds9960/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/apds9960",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1008,6 +1044,7 @@
             "upstreamPath": "pizero/src/esm-examples/as3935",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/as3935",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/as3935/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/as3935",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1051,6 +1088,7 @@
             "upstreamPath": "pizero/src/esm-examples/as5600",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/as5600",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/as5600/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/as5600",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1094,6 +1132,7 @@
             "upstreamPath": "pizero/src/esm-examples/as7341",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/as7341",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/as7341/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/as7341",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1137,6 +1176,7 @@
             "upstreamPath": "gc/i2c/i2c-BH1750",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BH1750",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BH1750/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1147,6 +1187,7 @@
             "upstreamPath": "microbit-examples/I2C_BH1750",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BH1750",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_BH1750/imgs/pinbit_bh1750.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1157,6 +1198,7 @@
             "upstreamPath": "pizero/src/esm-examples/bh1750",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bh1750",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bh1750/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bh1750",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1200,6 +1242,7 @@
             "upstreamPath": "gc/i2c/i2c-BME280",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BME280",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BME280/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1210,6 +1253,7 @@
             "upstreamPath": "microbit-examples/I2C6_BME280",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C6_BME280",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C6_BME280/imgs/pinbit_bme280.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1220,6 +1264,7 @@
             "upstreamPath": "pizero/src/esm-examples/bme280",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme280",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bme280/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bme280",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1263,6 +1308,7 @@
             "upstreamPath": "gc/i2c/i2c-BME680",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BME680",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BME680/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1273,6 +1319,7 @@
             "upstreamPath": "microbit-examples/I2C_BME680",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BME680",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_BME680/imgs/pinbit_bme680.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1283,6 +1330,7 @@
             "upstreamPath": "pizero/src/esm-examples/bme680",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bme680",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bme680/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bme680",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1326,6 +1374,7 @@
             "upstreamPath": "gc/i2c/i2c-BMP180",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BMP180",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BMP180/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1336,6 +1385,7 @@
             "upstreamPath": "microbit-examples/I2C_BMP180",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_BMP180",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_BMP180/imgs/pinbit_bmp180.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1346,6 +1396,7 @@
             "upstreamPath": "pizero/src/esm-examples/bmp180",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bmp180",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bmp180/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bmp180",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1389,6 +1440,7 @@
             "upstreamPath": "gc/i2c/i2c-BMP280",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-BMP280",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-BMP280/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1399,6 +1451,7 @@
             "upstreamPath": "microbit-examples/I2C2_BMP280",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C2_BMP280",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C2_BMP280/imgs/pinbit_bmp280.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1409,6 +1462,7 @@
             "upstreamPath": "pizero/src/esm-examples/bmp280",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/bmp280",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/bmp280/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/bmp280",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1452,6 +1506,7 @@
             "upstreamPath": "gc/i2c/i2c-CCS811",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-CCS811",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-CCS811/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1462,6 +1517,7 @@
             "upstreamPath": "microbit-examples/I2C_CCS811",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_CCS811",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_CCS811/imgs/pinbit_ccs811.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1472,6 +1528,7 @@
             "upstreamPath": "pizero/src/esm-examples/ccs811",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ccs811",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ccs811/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ccs811",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1515,6 +1572,7 @@
             "upstreamPath": "gc/gpio/section-9",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/gpio/section-9",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/gpio/section-9/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (GPIO)"
           },
@@ -1525,6 +1583,7 @@
             "upstreamPath": "microbit-examples/GPIO3",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO3",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO3/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1535,6 +1594,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1578,6 +1638,7 @@
             "upstreamPath": "gc/i2c/i2c-ADS1115-LoadCell",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADS1115-LoadCell",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADS1115-LoadCell/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1588,6 +1649,7 @@
             "upstreamPath": "microbit-examples/I2C_ADS1115_LoadCell",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_ADS1115_LoadCell",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_ADS1115_LoadCell/imgs/pinbit_ads1115-loadcell.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1598,6 +1660,7 @@
             "upstreamPath": "pizero/src/esm-examples/ads1115-loadcell",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1115-loadcell",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1115-loadcell/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1641,6 +1704,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-2",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-2",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-2/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1684,6 +1748,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1694,6 +1759,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1704,6 +1770,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1747,6 +1814,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1757,6 +1825,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1767,6 +1836,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1810,6 +1880,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1820,6 +1891,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1830,6 +1902,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1873,6 +1946,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -1883,6 +1957,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -1893,6 +1968,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1936,6 +2012,7 @@
             "upstreamPath": "pizero/src/esm-examples/dfplayer",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/dfplayer",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/dfplayer/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -1979,6 +2056,7 @@
             "upstreamPath": "pizero/src/esm-examples/ens160",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ens160",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ens160/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ens160",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2022,6 +2100,7 @@
             "upstreamPath": "gc/i2c/i2c-PCA9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2032,6 +2111,7 @@
             "upstreamPath": "pizero/src/esm-examples/pca9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2075,6 +2155,7 @@
             "upstreamPath": "pizero/src/esm-examples/ads1x15",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1x15",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1x15/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ads1x15",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2118,6 +2199,7 @@
             "upstreamPath": "gc/i2c/i2c-GP2Y0E03",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-GP2Y0E03",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-GP2Y0E03/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2128,6 +2210,7 @@
             "upstreamPath": "pizero/src/esm-examples/gp2y0e03",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gp2y0e03",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gp2y0e03/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/gp2y0e03",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2171,6 +2254,7 @@
             "upstreamPath": "pizero/src/esm-examples/grove-water-level-sensor",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/grove-water-level-sensor",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/grove-water-level-sensor/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/grove-water-level-sensor",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2214,6 +2298,7 @@
             "upstreamPath": "gc/i2c/i2c-Grove-Accelerometer",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Accelerometer",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-Accelerometer/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2224,6 +2309,7 @@
             "upstreamPath": "pizero/src/esm-examples/adxl345",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adxl345",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/adxl345/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2267,6 +2353,7 @@
             "upstreamPath": "gc/i2c/i2c-Grove-Gesture",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Gesture",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-Gesture/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2277,6 +2364,7 @@
             "upstreamPath": "pizero/src/esm-examples/paj7620",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/paj7620",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/paj7620/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2320,6 +2408,7 @@
             "upstreamPath": "gc/i2c/i2c-Grove-Light",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Light",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-Light/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2330,6 +2419,7 @@
             "upstreamPath": "pizero/src/esm-examples/tsl2561",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tsl2561",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tsl2561/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2373,6 +2463,7 @@
             "upstreamPath": "gc/i2c/i2c-Grove-OledDisplay",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-OledDisplay",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-OledDisplay/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2383,6 +2474,7 @@
             "upstreamPath": "pizero/src/esm-examples/ssd1308",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ssd1308",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ssd1308/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2426,6 +2518,7 @@
             "upstreamPath": "gc/i2c/i2c-Grove-Touch",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-Touch",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-Touch/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2436,6 +2529,7 @@
             "upstreamPath": "pizero/src/esm-examples/mpr121",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpr121",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mpr121/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2479,6 +2573,7 @@
             "upstreamPath": "pizero/src/esm-examples/serial_gps",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/serial_gps",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/serial_gps/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2522,6 +2617,7 @@
             "upstreamPath": "gc/i2c/gpio-pirSensor",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-pirSensor",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-pirSensor/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2532,6 +2628,7 @@
             "upstreamPath": "microbit-examples/GPIO_PYR",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_PYR",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_PYR/imgs/pinbit_gpio-onchange.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -2542,6 +2639,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2585,6 +2683,7 @@
             "upstreamPath": "gc/i2c/i2c-HT16K33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HT16K33/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2595,6 +2694,7 @@
             "upstreamPath": "pizero/src/esm-examples/ht16k33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ht16k33",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2638,6 +2738,7 @@
             "upstreamPath": "gc/i2c/i2c-HT16K33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HT16K33/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2648,6 +2749,7 @@
             "upstreamPath": "pizero/src/esm-examples/ht16k33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ht16k33",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2691,6 +2793,7 @@
             "upstreamPath": "gc/i2c/i2c-HT16K33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HT16K33/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2701,6 +2804,7 @@
             "upstreamPath": "pizero/src/esm-examples/ht16k33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ht16k33",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2744,6 +2848,7 @@
             "upstreamPath": "gc/i2c/i2c-HT16K33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HT16K33/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2754,6 +2859,7 @@
             "upstreamPath": "pizero/src/esm-examples/ht16k33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ht16k33",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2797,6 +2903,7 @@
             "upstreamPath": "gc/i2c/i2c-HT16K33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HT16K33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HT16K33/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2807,6 +2914,7 @@
             "upstreamPath": "pizero/src/esm-examples/ht16k33",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ht16k33",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ht16k33/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ht16k33",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2850,6 +2958,7 @@
             "upstreamPath": "gc/i2c/i2c-HTU21D",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-HTU21D",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-HTU21D/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2860,6 +2969,7 @@
             "upstreamPath": "pizero/src/esm-examples/htu21d",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/htu21d",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/htu21d/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/htu21d",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2903,6 +3013,7 @@
             "upstreamPath": "pizero/src/esm-examples/i2c1602lcd",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/i2c1602lcd",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/i2c1602lcd/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/i2c1602lcd",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2946,6 +3057,7 @@
             "upstreamPath": "pizero/src/esm-examples/icm20948",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/icm20948",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/icm20948/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/icm20948",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -2989,6 +3101,7 @@
             "upstreamPath": "gc/i2c/i2c-INA219",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-INA219",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-INA219/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -2999,6 +3112,7 @@
             "upstreamPath": "microbit-examples/I2C_INA219",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_INA219",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_INA219/imgs/pinbit_ina219.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3009,6 +3123,7 @@
             "upstreamPath": "pizero/src/esm-examples/ina219",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ina219",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ina219/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ina219",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3052,6 +3167,7 @@
             "upstreamPath": "gc/gpio/section-9",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/gpio/section-9",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/gpio/section-9/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (GPIO)"
           },
@@ -3062,6 +3178,7 @@
             "upstreamPath": "microbit-examples/GPIO3",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO3",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO3/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3072,6 +3189,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3115,6 +3233,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3125,6 +3244,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_isd1820.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3135,6 +3255,7 @@
             "upstreamPath": "pizero/src/esm-examples/isd1820",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/isd1820",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/isd1820/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3178,6 +3299,7 @@
             "upstreamPath": "gc/i2c/gpio-pirSensor",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-pirSensor",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-pirSensor/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3188,6 +3310,7 @@
             "upstreamPath": "microbit-examples/GPIO_PYR",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_PYR",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_PYR/imgs/pinbit_gpio-onchange.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3198,6 +3321,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3241,6 +3365,7 @@
             "upstreamPath": "gc/i2c/gpio-HBridge",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-HBridge",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-HBridge/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3251,6 +3376,7 @@
             "upstreamPath": "microbit-examples/GPIO_HBridge",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_HBridge/imgs/pinbit_hbridge1.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3261,6 +3387,7 @@
             "upstreamPath": "pizero/src/esm-examples/hbridge1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hbridge1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hbridge1/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3304,6 +3431,7 @@
             "upstreamPath": "microbit-examples/GPIO_HBridge",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_HBridge/imgs/pinbit_hbridge1.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3314,6 +3442,7 @@
             "upstreamPath": "pizero/src/esm-examples/hbridge1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hbridge1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hbridge1/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3357,6 +3486,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3367,6 +3497,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3377,6 +3508,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3420,6 +3552,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3430,6 +3563,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3440,6 +3574,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3483,6 +3618,7 @@
             "upstreamPath": "gc/i2c/gpio-Blink",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Blink",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Blink/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3493,6 +3629,7 @@
             "upstreamPath": "microbit-examples/GPIO1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO1/imgs/pinbit_hello-real-world.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3503,6 +3640,7 @@
             "upstreamPath": "pizero/src/esm-examples/hello-real-world",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hello-real-world",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hello-real-world/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3546,6 +3684,7 @@
             "upstreamPath": "pizero/src/esm-examples/ltr390",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ltr390",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ltr390/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ltr390",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3589,6 +3728,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3632,6 +3772,7 @@
             "upstreamPath": "pizero/src/esm-examples/qrcodescanner",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/qrcodescanner",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/qrcodescanner/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/qrcodescanner",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3675,6 +3816,7 @@
             "upstreamPath": "pizero/src/esm-examples/ws1850s",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ws1850s",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ws1850s/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3718,6 +3860,7 @@
             "upstreamPath": "pizero/src/esm-examples/max30102",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/max30102",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/max30102/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/max30102",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3761,6 +3904,7 @@
             "upstreamPath": "pizero/src/esm-examples/mcp9808",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mcp9808",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mcp9808/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/mcp9808",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3804,6 +3948,7 @@
             "upstreamPath": "gc/i2c/i2c-PCA9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3814,6 +3959,7 @@
             "upstreamPath": "pizero/src/esm-examples/pca9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3857,6 +4003,7 @@
             "upstreamPath": "gc/i2c/i2c-PCA9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3867,6 +4014,7 @@
             "upstreamPath": "pizero/src/esm-examples/pca9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3910,6 +4058,7 @@
             "upstreamPath": "gc/i2c/i2c-MLX90614",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MLX90614",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-MLX90614/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -3920,6 +4069,7 @@
             "upstreamPath": "microbit-examples/I2C_MLX90614",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MLX90614",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_MLX90614/imgs/pinbit_mlx90614.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -3930,6 +4080,7 @@
             "upstreamPath": "pizero/src/esm-examples/mlx90614",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mlx90614",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mlx90614/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/mlx90614",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -3973,6 +4124,7 @@
             "upstreamPath": "pizero/src/esm-examples/mma7660",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mma7660",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mma7660/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/mma7660",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4016,6 +4168,7 @@
             "upstreamPath": "gc/i2c/i2c-MPU6050",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU6050",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-MPU6050/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4026,6 +4179,7 @@
             "upstreamPath": "microbit-examples/I2C_MPU6050",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU6050",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_MPU6050/imgs/pinbit_mpu6050.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4036,6 +4190,7 @@
             "upstreamPath": "pizero/src/esm-examples/mpu6050",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu6050",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mpu6050/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/mpu6050",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4079,6 +4234,7 @@
             "upstreamPath": "gc/i2c/i2c-MPU9250",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-MPU9250",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-MPU9250/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4089,6 +4245,7 @@
             "upstreamPath": "microbit-examples/I2C_MPU9250",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_MPU9250",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_MPU9250/imgs/pinbit_mpu9250.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4099,6 +4256,7 @@
             "upstreamPath": "pizero/src/esm-examples/mpu9250",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/mpu9250",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/mpu9250/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4142,6 +4300,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-2",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-2",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-2/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4185,6 +4344,7 @@
             "upstreamPath": "gc/i2c/i2c-NEOPIXEL_I2C",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-NEOPIXEL_I2C",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-NEOPIXEL_I2C/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4195,6 +4355,7 @@
             "upstreamPath": "microbit-examples/I2C5_NEOPIXEL",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C5_NEOPIXEL",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C5_NEOPIXEL/imgs/pinbit_neopixel-i2c.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4205,6 +4366,7 @@
             "upstreamPath": "pizero/src/esm-examples/neopixel-i2c",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/neopixel-i2c/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/neopixel-i2c",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4248,6 +4410,7 @@
             "upstreamPath": "pizero/src/esm-examples/neopixel-i2c",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/neopixel-i2c/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/neopixel-i2c",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4291,6 +4454,7 @@
             "upstreamPath": "pizero/src/esm-examples/neopixel-i2c",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/neopixel-i2c/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/neopixel-i2c",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4334,6 +4498,7 @@
             "upstreamPath": "pizero/src/esm-examples/neopixel-i2c",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/neopixel-i2c",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/neopixel-i2c/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/neopixel-i2c",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4377,6 +4542,7 @@
             "upstreamPath": "gc/i2c/i2c-PCA9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4387,6 +4553,7 @@
             "upstreamPath": "microbit-examples/GPIO_HBridge",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_HBridge/imgs/pinbit_pca9685_mx1508.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4397,6 +4564,7 @@
             "upstreamPath": "pizero/src/esm-examples/pca9685_mx1508",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685_mx1508",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685_mx1508/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4440,6 +4608,7 @@
             "upstreamPath": "gc/i2c/gpio-I2C-PWMHBridge-1",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-I2C-PWMHBridge-1",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-I2C-PWMHBridge-1/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4450,6 +4619,7 @@
             "upstreamPath": "pizero/src/esm-examples/hbridge2-pca9685pwm",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/hbridge2-pca9685pwm",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/hbridge2-pca9685pwm/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4493,6 +4663,7 @@
             "upstreamPath": "gc/i2c/i2c-PCF8591",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCF8591",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCF8591/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4503,6 +4674,7 @@
             "upstreamPath": "pizero/src/esm-examples/pcf8591",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pcf8591",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pcf8591/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pcf8591",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4546,6 +4718,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4589,6 +4762,7 @@
             "upstreamPath": "gc/i2c/i2c-ADT7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-ADT7410",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-ADT7410/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4599,6 +4773,7 @@
             "upstreamPath": "microbit-examples/I2C1_ADT7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C1_ADT7410",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C1_ADT7410/imgs/pinbit_adt7410.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4609,6 +4784,7 @@
             "upstreamPath": "pizero/src/esm-examples/adt7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/adt7410",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/adt7410/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/adt7410",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           },
@@ -4619,6 +4795,7 @@
             "upstreamPath": "examples/adt7410",
             "upstreamPathUrl": "https://github.com/chirimen-oh/remote-connection/tree/master/examples/adt7410",
             "circuitUrl": null,
+            "driver": "none",
             "verified": false,
             "platformLabel": "Remote Connection"
           }
@@ -4662,6 +4839,7 @@
             "upstreamPath": "gc/i2c/i2c-PCA9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4672,6 +4850,7 @@
             "upstreamPath": "microbit-examples/GPIO_HBridge",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_HBridge/imgs/pinbit_pca9685_mx1508.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4682,6 +4861,7 @@
             "upstreamPath": "pizero/src/esm-examples/pca9685_mx1508",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685_mx1508",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685_mx1508/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           },
@@ -4692,6 +4872,7 @@
             "upstreamPath": "examples/pca9685_mx1508",
             "upstreamPathUrl": "https://github.com/chirimen-oh/remote-connection/tree/master/examples/pca9685_mx1508",
             "circuitUrl": null,
+            "driver": "none",
             "verified": false,
             "platformLabel": "Remote Connection"
           }
@@ -4735,6 +4916,7 @@
             "upstreamPath": "gc/i2c/i2c-S11059",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-S11059",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-S11059/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4745,6 +4927,7 @@
             "upstreamPath": "microbit-examples/I2C4_S11059",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C4_S11059",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C4_S11059/imgs/pinbit_s11059.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -4755,6 +4938,7 @@
             "upstreamPath": "pizero/src/esm-examples/s11059",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/s11059",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/s11059/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/s11059",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4798,6 +4982,7 @@
             "upstreamPath": "gc/i2c/i2c-SCD40",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-SCD40",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-SCD40/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4808,6 +4993,7 @@
             "upstreamPath": "pizero/src/esm-examples/scd40",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/scd40",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/scd40/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/scd40",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4851,6 +5037,7 @@
             "upstreamPath": "gc/i2c/i2c-seesaw",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-seesaw",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-seesaw/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4861,6 +5048,7 @@
             "upstreamPath": "pizero/src/esm-examples/seesaw",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/seesaw",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/seesaw/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/seesaw",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4904,6 +5092,7 @@
             "upstreamPath": "gc/i2c/i2c-PCA9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-PCA9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-PCA9685/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -4914,6 +5103,7 @@
             "upstreamPath": "pizero/src/esm-examples/pca9685",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/pca9685",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/pca9685/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/pca9685",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -4957,6 +5147,7 @@
             "upstreamPath": "pizero/src/esm-examples/sgp30",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sgp30",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sgp30/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/sgp30",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5000,6 +5191,7 @@
             "upstreamPath": "pizero/src/esm-examples/sgp40",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sgp40",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sgp40/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/sgp40",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5043,6 +5235,7 @@
             "upstreamPath": "gc/i2c/i2c-SHT30",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-SHT30",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-SHT30/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5053,6 +5246,7 @@
             "upstreamPath": "microbit-examples/I2C7_SHT30",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C7_SHT30",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C7_SHT30/imgs/pinbit_sht30.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -5063,6 +5257,7 @@
             "upstreamPath": "pizero/src/esm-examples/sht30",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sht30",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sht30/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/sht30",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5106,6 +5301,7 @@
             "upstreamPath": "pizero/src/esm-examples/sht40",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sht40",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sht40/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/sht40",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5149,6 +5345,7 @@
             "upstreamPath": "gc/i2c/gpio-Button",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-Button",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-Button/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5159,6 +5356,7 @@
             "upstreamPath": "microbit-examples/GPIO0",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO0",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO0/imgs/pinbit_gpio-onchange.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -5169,6 +5367,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5212,6 +5411,7 @@
             "upstreamPath": "gc/i2c/i2c-Grove-OledDisplay",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-Grove-OledDisplay",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-Grove-OledDisplay/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5222,6 +5422,7 @@
             "upstreamPath": "pizero/src/esm-examples/ssd1306",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ssd1306",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ssd1306/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5265,6 +5466,7 @@
             "upstreamPath": "pizero/src/esm-examples/tb6612fng",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tb6612fng",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tb6612fng/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5308,6 +5510,7 @@
             "upstreamPath": "gc/i2c/i2c-TCS34725",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-TCS34725",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-TCS34725/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5318,6 +5521,7 @@
             "upstreamPath": "pizero/src/esm-examples/tcs34725",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tcs34725",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tcs34725/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/tcs34725",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5361,6 +5565,7 @@
             "upstreamPath": "pizero/src/esm-examples/tmp117",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tmp117",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tmp117/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/tmp117",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5404,6 +5609,7 @@
             "upstreamPath": "pizero/src/esm-examples/gpio-onchange",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/gpio-onchange",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/gpio-onchange/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5447,6 +5653,7 @@
             "upstreamPath": "gc/i2c/gpio-A4988",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/gpio-A4988",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/gpio-A4988/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5457,6 +5664,7 @@
             "upstreamPath": "microbit-examples/GPIO_HBridge",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/GPIO_HBridge",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/GPIO_HBridge/imgs/pinbit_a4988.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -5467,6 +5675,7 @@
             "upstreamPath": "pizero/src/esm-examples/a4988",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/a4988",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/a4988/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5510,6 +5719,7 @@
             "upstreamPath": "pizero/src/esm-examples/tsl2591",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/tsl2591",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/tsl2591/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/tsl2591",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5553,6 +5763,7 @@
             "upstreamPath": "pizero/src/esm-examples/ads1x15",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/ads1x15",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/ads1x15/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/ads1x15",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5596,6 +5807,7 @@
             "upstreamPath": "gc/i2c/i2c-VEML6070",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VEML6070",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-VEML6070/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5606,6 +5818,7 @@
             "upstreamPath": "microbit-examples/I2C_VEML6070",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VEML6070",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_VEML6070/imgs/pinbit_veml6070.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -5616,6 +5829,7 @@
             "upstreamPath": "pizero/src/esm-examples/veml6070",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/veml6070",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/veml6070/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/veml6070",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5659,6 +5873,7 @@
             "upstreamPath": "gc/i2c/i2c-VL53L0X",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VL53L0X",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-VL53L0X/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5669,6 +5884,7 @@
             "upstreamPath": "microbit-examples/I2C3_VL53L0X",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C3_VL53L0X",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C3_VL53L0X/imgs/pinbit_vl53l0x.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -5679,6 +5895,7 @@
             "upstreamPath": "pizero/src/esm-examples/vl53l0x",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/vl53l0x",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/vl53l0x/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/vl53l0x",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5722,6 +5939,7 @@
             "upstreamPath": "gc/i2c/i2c-VL53L1X",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen/tree/master/gc/i2c/i2c-VL53L1X",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen/blob/master/gc/i2c/i2c-VL53L1X/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Legacy CHIRIMEN GC (I2C)"
           },
@@ -5732,6 +5950,7 @@
             "upstreamPath": "microbit-examples/I2C_VL53L1X",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/microbit-examples/I2C_VL53L1X",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen-drivers/blob/master/microbit-examples/I2C_VL53L1X/imgs/pinbit_vl53l1x.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "micro:bit (chirimen-drivers)"
           },
@@ -5742,6 +5961,7 @@
             "upstreamPath": "pizero/src/esm-examples/vl53l1x",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/vl53l1x",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/vl53l1x/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/vl53l1x",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5785,6 +6005,7 @@
             "upstreamPath": "pizero/src/esm-examples/vl6180x",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/vl6180x",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/vl6180x/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/vl6180x",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
@@ -5828,6 +6049,7 @@
             "upstreamPath": "pizero/src/esm-examples/waveshare20471",
             "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/waveshare20471",
             "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/waveshare20471/schematic.png",
+            "driver": "none",
             "verified": false,
             "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
           }
