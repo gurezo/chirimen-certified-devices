@@ -138,7 +138,7 @@ devices/remote_PCA9685_MX1508/
 | --- | --- |
 | `data/aliases.yml` | 型番・ディレクトリ名・旧 Example 名の表記揺れ吸収 |
 | `data/platforms.yml` | `pizero-esm`, `legacy-gc-i2c` などの platform 定義 |
-| `data/chirimen-drivers.yml` | chirimen-drivers README Download セクションの npm パッケージ許可リスト |
+| `data/chirimen-drivers.yml` | chirimen-drivers README Download セクションの npm パッケージ許可リスト。`pnpm sync:devices` で差分があれば更新 |
 
 ### generated/devices.json
 
