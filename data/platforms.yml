@@ -18,7 +18,10 @@ platforms:
       - special
     upstreamRepository: chirimen-oh/chirimen.org
     upstreamBasePath: pizero/src/esm-examples
+    # Current partslist uses chirimen.org; keep tutorial.chirimen.org for older links.
     legacyCodeUrlPatterns:
+      - chirimen.org/pizero/esm-examples
+      - chirimen.org/pizero/
       - tutorial.chirimen.org/pizero/esm-examples
       - tutorial.chirimen.org/pizero/
 
