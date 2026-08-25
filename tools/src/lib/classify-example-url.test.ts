@@ -1,6 +1,11 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { classifyExampleUrl } from "./classify-example-url.js";
+import { loadYamlFile } from "./load-yaml.js";
 import type { PlatformsConfig } from "./types.js";
+
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
 const platforms: PlatformsConfig = {
   platforms: {
@@ -12,6 +17,8 @@ const platforms: PlatformsConfig = {
       upstreamRepository: "chirimen-oh/chirimen.org",
       upstreamBasePath: "pizero/src/esm-examples",
       legacyCodeUrlPatterns: [
+        "chirimen.org/pizero/esm-examples",
+        "chirimen.org/pizero/",
         "tutorial.chirimen.org/pizero/esm-examples",
         "tutorial.chirimen.org/pizero/",
       ],
@@ -136,6 +143,76 @@ describe("classifyExampleUrl", () => {
       platform: "pizero-esm",
       status: "primary",
       codeUrl: "https://tutorial.chirimen.org/pizero/#gpio-2",
+    });
+  });
+
+  it("does not classify gc example urls as pizero-esm", () => {
+    expect(
+      classifyExampleUrl(
+        "http://chirimen.org/chirimen/gc/top/examples/#I2C-VL53L1X",
+        platforms,
+      ),
+    ).toEqual({
+      platform: "legacy-gc-i2c",
+      status: "archive",
+      codeUrl: "http://chirimen.org/chirimen/gc/top/examples/#I2C-VL53L1X",
+    });
+  });
+
+  it("classifies current chirimen.org pizero urls", () => {
+    expect(
+      classifyExampleUrl(
+        "https://chirimen.org/pizero/esm-examples/#I2C_vl53l1x",
+        platforms,
+      ),
+    ).toEqual({
+      platform: "pizero-esm",
+      status: "primary",
+      codeUrl: "https://chirimen.org/pizero/esm-examples/#I2C_vl53l1x",
+    });
+
+    expect(
+      classifyExampleUrl("https://chirimen.org/pizero/#gpio-2", platforms),
+    ).toEqual({
+      platform: "pizero-esm",
+      status: "primary",
+      codeUrl: "https://chirimen.org/pizero/#gpio-2",
+    });
+  });
+
+  it("classifies current chirimen.org pizero urls with production platforms.yml", async () => {
+    const production = await loadYamlFile<PlatformsConfig>(
+      path.join(REPO_ROOT, "data/platforms.yml"),
+    );
+
+    expect(
+      classifyExampleUrl(
+        "https://chirimen.org/pizero/esm-examples/#I2C_vl53l1x",
+        production,
+      ),
+    ).toEqual({
+      platform: "pizero-esm",
+      status: "primary",
+      codeUrl: "https://chirimen.org/pizero/esm-examples/#I2C_vl53l1x",
+    });
+
+    expect(
+      classifyExampleUrl("https://chirimen.org/pizero/#gpio-2", production),
+    ).toEqual({
+      platform: "pizero-esm",
+      status: "primary",
+      codeUrl: "https://chirimen.org/pizero/#gpio-2",
+    });
+
+    expect(
+      classifyExampleUrl(
+        "https://tutorial.chirimen.org/pizero/esm-examples/#I2C_mcp9808",
+        production,
+      ),
+    ).toEqual({
+      platform: "pizero-esm",
+      status: "primary",
+      codeUrl: "https://tutorial.chirimen.org/pizero/esm-examples/#I2C_mcp9808",
     });
   });
 
