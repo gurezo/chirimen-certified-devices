@@ -42,8 +42,14 @@ export function applyDriverToExamples(
   knownPackages: ReadonlySet<string>,
 ): MetaExample[] {
   return examples.map((example) => ({
-    ...example,
+    platform: example.platform,
+    status: example.status,
+    upstreamRepository: example.upstreamRepository,
+    upstreamPath: example.upstreamPath,
+    upstreamPathUrl: example.upstreamPathUrl,
+    circuitUrl: example.circuitUrl,
     driver: resolveDriver(packages, example.platform, knownPackages),
+    verified: example.verified,
   }));
 }
 
