@@ -1,10 +1,12 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  devicesJsonContentEquals,
   formatDevicesJson,
   generateDevices,
 } from "./lib/generate-devices.js";
+import type { DevicesJson } from "./lib/types.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, "../..");
@@ -77,12 +79,31 @@ async function main(): Promise<void> {
   }
 
   const outputPath = path.resolve(REPO_ROOT, options.outputPath);
+  const existing = await readExistingDevicesJson(outputPath);
+  if (existing && devicesJsonContentEquals(existing, devicesJson)) {
+    console.log(
+      `generate-devices: ${path.relative(REPO_ROOT, outputPath)} is up to date`,
+    );
+    return;
+  }
+
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, json, "utf8");
 
   console.log(
     `generate-devices: wrote ${deviceCount} device(s) to ${path.relative(REPO_ROOT, outputPath)}`,
   );
+}
+
+async function readExistingDevicesJson(
+  outputPath: string,
+): Promise<DevicesJson | undefined> {
+  try {
+    const text = await readFile(outputPath, "utf8");
+    return JSON.parse(text) as DevicesJson;
+  } catch {
+    return undefined;
+  }
 }
 
 main().catch((error: unknown) => {

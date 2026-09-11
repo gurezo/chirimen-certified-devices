@@ -1,5 +1,9 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { generateDevices } from "./generate-devices.js";
+import {
+  devicesJsonContentEquals,
+  generateDevices,
+} from "./generate-devices.js";
+import type { DevicesJson } from "./types.js";
 import {
   createTempRepo,
   fixturePaths,
@@ -215,5 +219,41 @@ model: "TEST001"
     });
 
     expect(result.devicesJson).toMatchSnapshot();
+  });
+});
+
+describe("devicesJsonContentEquals", () => {
+  const base: DevicesJson = {
+    version: 1,
+    generatedAt: "2026-01-01T00:00:00.000Z",
+    platforms: { platforms: {} },
+    aliases: {},
+    devices: [],
+  };
+
+  it("treats documents that differ only by generatedAt as equal", () => {
+    expect(
+      devicesJsonContentEquals(base, {
+        ...base,
+        generatedAt: "2026-09-11T00:00:00.000Z",
+      }),
+    ).toBe(true);
+  });
+
+  it("treats documents with different content as unequal", () => {
+    expect(
+      devicesJsonContentEquals(base, {
+        ...base,
+        aliases: {
+          exampleNameAliases: {
+            test: {
+              directoryId: "TEST001",
+              exampleDeviceId: "TEST001",
+              legacyExampleNames: ["test"],
+            },
+          },
+        },
+      }),
+    ).toBe(false);
   });
 });
