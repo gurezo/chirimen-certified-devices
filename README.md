@@ -237,7 +237,7 @@ pnpm update:devices
 
 `main` へは直接 push しません。同目的の Pull Request が複数作られないよう、固定ブランチ名を再利用します。
 
-自動 PR 上で他 workflow を発火させるため、リポジトリ Secret `SYNC_DEVICES_TOKEN`（`contents` と `pull-requests` 権限を持つ PAT または GitHub App token）を設定してください。詳細は [tools/README.md](tools/README.md#updatedevices) を参照してください。
+自動 PR 上で他 workflow を発火させるため、リポジトリ Secret `SYNC_DEVICES_TOKEN`（`contents` と `pull-requests` 権限を持つ PAT または GitHub App token）の設定を推奨します。未設定時は `github.token` にフォールバックします（PR 作成は可能ですが、他 workflow は発火しません）。詳細は [tools/README.md](tools/README.md#updatedevices) を参照してください。
 
 ### sync:devices の注意
 
