@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-25T14:15:33.467Z",
+  "generatedAt": "2026-09-11T16:55:26.992Z",
   "platforms": {
     "platforms": {
       "pizero-esm": {
@@ -2038,6 +2038,50 @@
       }
     },
     {
+      "id": "DRV2605L",
+      "directory": "devices/DRV2605L",
+      "meta": {
+        "id": "DRV2605L",
+        "model": "DRV2605L",
+        "tag": "I2C",
+        "category": "振動モータードライバ",
+        "description": "I2C接続でERM振動モーターを制御するハプティックモータードライバ",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/DRV2605L.jpg",
+        "productUrl": "https://www.amazon.co.jp/dp/B0G7ZDCMVN",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/drv2605l",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/drv2605l",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/drv2605l/schematic.png",
+            "driver": "https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/drv2605l",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": null,
+        "reference": null,
+        "packages": [
+          "@chirimen/drv2605l"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/DRV2605L/README.md",
+        "frontmatter": {
+          "title": "DRV2605L",
+          "model": "DRV2605L",
+          "category": "振動モータードライバ",
+          "description": "I2C接続でERM振動モーターを制御するハプティックモータードライバ"
+        }
+      }
+    },
+    {
       "id": "ENS160",
       "directory": "devices/ENS160",
       "meta": {
@@ -3894,7 +3938,7 @@
         "tag": "I2C",
         "category": "温度センサ",
         "description": "高精度に温度を測定できるセンサです(分解能を0.0625℃〜0.5℃の4段階で設定可能)",
-        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MCP9808.svg",
         "productUrl": "https://chirimen.org/",
         "examples": [
           {
@@ -4114,7 +4158,7 @@
         "tag": "I2C",
         "category": "3軸加速度センサ",
         "description": "3軸の加速度を検出できるセンサです",
-        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MMA7660.svg",
         "productUrl": "https://chirimen.org/",
         "examples": [
           {
@@ -5444,6 +5488,50 @@
           "model": "SSD1306",
           "category": "小型ディスプレイ",
           "description": "0.96inch、128x64dot の小型 OLED (有機 EL) ディスプレイです"
+        }
+      }
+    },
+    {
+      "id": "STHS34PF80",
+      "directory": "devices/STHS34PF80",
+      "meta": {
+        "id": "STHS34PF80",
+        "model": "STHS34PF80",
+        "tag": "I2C",
+        "category": "非接触温度センサ",
+        "description": "赤外線を利用して対象物の温度と周辺温度を測定できる非接触型温度センサーです。人感・動体検知機能も備えています",
+        "image": "https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/STHS34PF80.jpg",
+        "productUrl": "https://www.switch-science.com/products/9321",
+        "examples": [
+          {
+            "platform": "pizero-esm",
+            "status": "primary",
+            "upstreamRepository": "chirimen-oh/chirimen.org",
+            "upstreamPath": "pizero/src/esm-examples/sths34pf80",
+            "upstreamPathUrl": "https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/sths34pf80",
+            "circuitUrl": "https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/sths34pf80/schematic.png",
+            "driver": "none",
+            "verified": false,
+            "platformLabel": "Pi Zero / Raspberry Pi (ESM)"
+          }
+        ],
+        "circuit": null,
+        "datasheet": "https://www.st.com/resource/en/datasheet/sths34pf80.pdf",
+        "reference": "https://www.st.com/en/mems-and-sensors/sths34pf80.html",
+        "packages": [
+          "@chirimen/sths34pf80"
+        ],
+        "platform": "pizero-esm",
+        "status": "primary",
+        "verified": false
+      },
+      "readme": {
+        "path": "devices/STHS34PF80/README.md",
+        "frontmatter": {
+          "title": "STHS34PF80",
+          "model": "STHS34PF80",
+          "category": "非接触温度センサ",
+          "description": "赤外線を利用して対象物の温度と周辺温度を測定できる非接触型温度センサーです。人感・動体検知機能も備えています"
         }
       }
     },

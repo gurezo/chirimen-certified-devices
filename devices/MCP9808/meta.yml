@@ -3,7 +3,7 @@ model: MCP9808
 tag: I2C
 category: 温度センサ
 description: 高精度に温度を測定できるセンサです(分解能を0.0625℃〜0.5℃の4段階で設定可能)
-image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MCP9808.svg
 productUrl: https://chirimen.org/
 examples:
   - platform: pizero-esm

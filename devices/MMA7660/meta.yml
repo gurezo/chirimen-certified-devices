@@ -3,7 +3,7 @@ model: MMA7660
 tag: I2C
 category: 3軸加速度センサ
 description: 3軸の加速度を検出できるセンサです
-image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MMA7660.svg
 productUrl: https://chirimen.org/
 examples:
   - platform: pizero-esm

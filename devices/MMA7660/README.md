@@ -23,7 +23,7 @@ I2C
 
 ## 画像
 
-![MMA7660](https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg)
+![MMA7660](https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MMA7660.svg)
 
 ## リンク
 
