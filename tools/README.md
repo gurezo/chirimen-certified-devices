@@ -10,6 +10,7 @@
 | `pnpm sync:chirimen-drivers` | `data/chirimen-drivers.yml` だけを Download セクションと同期 | [#45](https://github.com/gurezo/chirimen-certified-devices/issues/45) |
 | `pnpm validate:devices` | `devices/**/meta.yml` とディレクトリ構成を検証 | [#10](https://github.com/gurezo/chirimen-certified-devices/issues/10) |
 | `pnpm generate:devices` | `generated/devices.json` を生成 | [#11](https://github.com/gurezo/chirimen-certified-devices/issues/11) |
+| `pnpm update:devices` | 同期・検証・生成を一括実行するメンテナ向けコマンド | [#48](https://github.com/gurezo/chirimen-certified-devices/issues/48) |
 
 ## sync:devices
 
@@ -143,3 +144,27 @@ pnpm generate:devices --output generated/devices.json
 | `1` | 入力エラーあり、または実行時エラー |
 
 エラー時は `path: message` 形式で stderr に出力します。
+
+## update:devices
+
+メンテナ向けに、同期・検証・生成を 1 コマンドで実行します。GitHub Actions とローカルで同じ更新手順を使うための統合スクリプトです。
+
+```sh
+pnpm update:devices
+```
+
+### 処理順
+
+```text
+pnpm sync:devices --skip-chirimen-drivers
+  ↓
+pnpm sync:chirimen-drivers
+  ↓
+pnpm validate:devices
+  ↓
+pnpm generate:devices
+```
+
+`sync:devices` は通常実行時に CHIRIMEN Drivers も同期するため、`--skip-chirimen-drivers` でデバイス洗い替えと許可リスト同期の責務を分けます。いずれかの処理が失敗した場合は後続を実行せず、終了コード `1` で停止します。
+
+`pnpm sync:devices` と同じ洗い替え処理を含むため、通常のコントリビューション確認では実行しないでください。

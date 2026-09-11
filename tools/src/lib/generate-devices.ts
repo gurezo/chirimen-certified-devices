@@ -80,6 +80,16 @@ export function formatDevicesJson(devicesJson: DevicesJson): string {
   return `${JSON.stringify(devicesJson, null, 2)}\n`;
 }
 
+export function devicesJsonContentEquals(
+  a: DevicesJson,
+  b: DevicesJson,
+): boolean {
+  return (
+    formatDevicesJson({ ...a, generatedAt: "" }) ===
+    formatDevicesJson({ ...b, generatedAt: "" })
+  );
+}
+
 export async function generateDevices(
   options: GenerateDevicesOptions,
 ): Promise<GenerateDevicesResult> {
