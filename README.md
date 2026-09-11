@@ -212,8 +212,11 @@ pnpm install
 | `pnpm sync:devices` | `partslist.csv` を取得し、`devices/**/README.md` と `meta.yml` を生成する |
 | `pnpm validate:devices` | `meta.yml`、ディレクトリ構成、aliases、platform、status などを検証する |
 | `pnpm generate:devices` | `devices/` と `data/*.yml` を集約して `generated/devices.json` を生成する |
+| `pnpm update:devices` | 上記の同期・検証・生成をメンテナ向けに一括実行する |
 
 オプションや終了コードなどの詳細は [tools/README.md](tools/README.md) を参照してください。
+
+`pnpm update:devices` は upstream の更新をこのリポジトリへ反映するメンテナ向けコマンドです。`sync:devices` と同じ洗い替え処理を含むため、通常のコントリビューション確認では実行しないでください。
 
 ### sync:devices の注意
 
@@ -248,7 +251,7 @@ pnpm validate:devices
 pnpm generate:devices
 ```
 
-`pnpm sync:devices` は破壊的な洗い替え処理を含むため、通常の確認コマンドには含めません。
+`pnpm sync:devices` および `pnpm update:devices` は破壊的な洗い替え処理を含むため、通常の確認コマンドには含めません。
 
 コミットメッセージと PR タイトルは [Conventional Commits](https://www.conventionalcommits.org/) に準拠してください。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
 
