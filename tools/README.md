@@ -167,4 +167,6 @@ pnpm generate:devices
 
 `sync:devices` は通常実行時に CHIRIMEN Drivers も同期するため、`--skip-chirimen-drivers` でデバイス洗い替えと許可リスト同期の責務を分けます。いずれかの処理が失敗した場合は後続を実行せず、終了コード `1` で停止します。
 
+GitHub Actions の [`.github/workflows/sync.yml`](../.github/workflows/sync.yml) も同じコマンドを実行します。手動実行は `workflow_dispatch`、定期実行は毎日 UTC 18:00（JST 03:00）です。差分の有無は job output `has_changes` に渡します。自動 Pull Request 作成は含みません。
+
 `pnpm sync:devices` と同じ洗い替え処理を含むため、通常のコントリビューション確認では実行しないでください。
