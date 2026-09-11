@@ -15,7 +15,8 @@
     "sync:devices": "tsx tools/src/sync-devices.ts",
     "sync:chirimen-drivers": "tsx tools/src/sync-devices.ts --only-chirimen-drivers",
     "validate:devices": "tsx tools/src/validate-devices.ts",
-    "generate:devices": "tsx tools/src/generate-devices.ts"
+    "generate:devices": "tsx tools/src/generate-devices.ts",
+    "update:devices": "pnpm sync:devices --skip-chirimen-drivers && pnpm sync:chirimen-drivers && pnpm validate:devices && pnpm generate:devices"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
