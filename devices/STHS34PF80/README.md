@@ -15,7 +15,7 @@ I2C
 
 ## 使用パッケージ
 
-- `@chirimen/sths34pf80`
+- [@chirimen/sths34pf80](https://www.jsdelivr.com/package/npm/@chirimen/sths34pf80)
 
 ## Example
 
