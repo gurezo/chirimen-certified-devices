@@ -218,6 +218,27 @@ pnpm install
 
 `pnpm update:devices` は upstream の更新をこのリポジトリへ反映するメンテナ向けコマンドです。`sync:devices` と同じ洗い替え処理を含むため、通常のコントリビューション確認では実行しないでください。
 
+### CI による自動更新フロー
+
+GitHub Actions の Sync devices workflow（[`.github/workflows/sync.yml`](.github/workflows/sync.yml)）が、定期実行（毎日 UTC 18:00 / JST 03:00）または Actions からの手動実行で `pnpm update:devices` を走らせます。
+
+```text
+schedule / workflow_dispatch
+        ↓
+pnpm update:devices
+        ↓
+差分なし → 終了
+差分あり → chore/update-certified-devices ブランチと Pull Request を作成または更新
+        ↓
+既存の validate.yml / generate.yml で再検証
+        ↓
+メンテナが内容を確認して merge
+```
+
+`main` へは直接 push しません。同目的の Pull Request が複数作られないよう、固定ブランチ名を再利用します。
+
+自動 PR 上で他 workflow を発火させるため、リポジトリ Secret `SYNC_DEVICES_TOKEN`（`contents` と `pull-requests` 権限を持つ PAT または GitHub App token）を設定してください。詳細は [tools/README.md](tools/README.md#updatedevices) を参照してください。
+
 ### sync:devices の注意
 
 `pnpm sync:devices` は対象の `devices/<dir>/` を削除してから再作成する洗い替え生成です。手動編集した `README.md` / `meta.yml` は上書きされる可能性があります。手動編集を保護する機能はありません。
