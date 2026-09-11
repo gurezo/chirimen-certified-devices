@@ -6,7 +6,8 @@ on:
     - cron: "0 18 * * *"
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 concurrency:
   group: sync-devices
@@ -48,3 +49,26 @@ jobs:
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
             echo "No device metadata changes"
           fi
+
+      - name: Create Pull Request
+        if: steps.diff.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.SYNC_DEVICES_TOKEN }}
+          branch: chore/update-certified-devices
+          title: "chore(devices): sync certified device metadata"
+          commit-message: "chore(devices): sync certified device metadata"
+          body: |
+            ## Summary
+
+            この Pull Request は GitHub Actions の Sync devices workflow によって自動生成されました。
+
+            - 実行コマンド: `pnpm update:devices`
+            - 変更元: upstream（`partslist.csv` / chirimen-drivers）由来の更新です
+            - 主な変更ファイル: この PR の Files changed を参照してください
+            - merge 前に内容を確認してください（`main` への直接反映は行いません）
+
+            ## Related issues
+
+            - Parent: #47
+            - Related: #50
