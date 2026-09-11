@@ -171,6 +171,6 @@ GitHub Actions の [`.github/workflows/sync.yml`](../.github/workflows/sync.yml)
 
 差分がある場合のみブランチ `chore/update-certified-devices` を作成または更新し、Conventional Commits 準拠のタイトルで Pull Request を作成します（同名 PR がある場合は更新し、増殖しません）。差分がない場合は commit / Pull Request を作成しません。
 
-自動 PR 上で既存の `validate.yml` / `generate.yml` を発火させるため、リポジトリ Secret `SYNC_DEVICES_TOKEN`（`contents` と `pull-requests` 権限を持つ PAT または GitHub App token）が必要です。未設定のまま差分ありで実行すると Create Pull Request ステップが失敗します。
+自動 PR 上で既存の `validate.yml` / `generate.yml` を発火させるため、リポジトリ Secret `SYNC_DEVICES_TOKEN`（`contents` と `pull-requests` 権限を持つ PAT または GitHub App token）の設定を推奨します。未設定の場合は `github.token` にフォールバックして PR 作成自体は成功しますが、その PR 上では他 workflow が発火しません。
 
 `pnpm sync:devices` と同じ洗い替え処理を含むため、通常のコントリビューション確認では実行しないでください。
