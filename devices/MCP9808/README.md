@@ -23,7 +23,7 @@ I2C
 
 ## 画像
 
-![MCP9808](https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/placeholder.jpg)
+![MCP9808](https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/MCP9808.svg)
 
 ## リンク
 
