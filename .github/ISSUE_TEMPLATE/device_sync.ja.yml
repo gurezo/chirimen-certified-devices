@@ -1,0 +1,47 @@
+name: 🔄 デバイス同期リクエスト
+description: 認定デバイスの upstream 同期を任意タイミングで依頼する
+title: '[Sync]: '
+labels: ['sync-devices']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        この Issue を作成すると、`sync-devices` ラベルが付与され、デバイス同期 workflow（`sync.yml`）が起動します。
+
+        - 差分がある場合: 自動で Pull Request が作成されます
+        - 差分がない場合: Issue に結果がコメントされ、Issue は close されます
+
+        定期実行や `workflow_dispatch` を待たずに同期したい場合に使ってください。
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 同期を実行する理由
+      description: なぜ今すぐ同期が必要か（upstream の更新確認、検証目的など）
+      placeholder: |
+        例:
+        - upstream の partslist / examples が更新されたため
+        - 特定デバイスの反映状況を確認したいため
+    validations:
+      required: true
+
+  - type: textarea
+    id: upstream_urls
+    attributes:
+      label: 関連する upstream の URL
+      description: 関連する PR、commit、issue、ドキュメントなどがあれば記載してください（任意）
+      placeholder: |
+        - https://github.com/...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: 確認事項
+      description: この Issue が同期 workflow を伴うことを確認してください
+      options:
+        - label: この Issue 作成によりデバイス同期 workflow が実行されることを理解しました
+          required: true
+        - label: 差分がある場合、自動で Pull Request が作成されることを理解しました
+          required: true
