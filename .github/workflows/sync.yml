@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 18 * * *"
+  issues:
+    types:
+      - opened
 
 permissions:
   contents: write
@@ -15,6 +18,9 @@ concurrency:
 
 jobs:
   sync:
+    if: >-
+      github.event_name != 'issues' ||
+      contains(github.event.issue.labels.*.name, 'sync-devices')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     outputs:
