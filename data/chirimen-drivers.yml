@@ -26,6 +26,7 @@ packages:
   - "@chirimen/canzasi"
   - "@chirimen/ccs811"
   - "@chirimen/drv2605l"
+  - "@chirimen/drv8830"
   - "@chirimen/ens160"
   - "@chirimen/gp2y0e03"
   - "@chirimen/grove-accelerometer"
