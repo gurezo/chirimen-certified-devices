@@ -1,0 +1,24 @@
+id: DRV8830
+model: DRV8830
+tag: I2C
+category: DCモータードライバ
+description: I2C接続で出力電圧を指定してブラシ付きDCモーターを制御できる低電圧モータードライバです
+image: https://raw.githubusercontent.com/chirimen-oh/chirimen.org/master/partsImgs/AE-DRV8830.svg
+productUrl: https://akizukidenshi.com/catalog/g/g106273/
+examples:
+  - platform: pizero-esm
+    status: primary
+    upstreamRepository: chirimen-oh/chirimen.org
+    upstreamPath: pizero/src/esm-examples/drv8830
+    upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/drv8830
+    circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/drv8830/schematic.png
+    driver: none
+    verified: false
+circuit: null
+datasheet: https://www.ti.com/lit/ds/symlink/drv8830.pdf
+reference: null
+packages:
+  - "@chirimen/drv8830"
+platform: pizero-esm
+status: primary
+verified: false
