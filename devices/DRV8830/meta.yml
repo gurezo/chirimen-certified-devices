@@ -12,7 +12,7 @@ examples:
     upstreamPath: pizero/src/esm-examples/drv8830
     upstreamPathUrl: https://github.com/chirimen-oh/chirimen.org/tree/master/pizero/src/esm-examples/drv8830
     circuitUrl: https://github.com/chirimen-oh/chirimen.org/blob/master/pizero/src/esm-examples/drv8830/schematic.png
-    driver: none
+    driver: https://github.com/chirimen-oh/chirimen-drivers/tree/master/packages/drv8830
     verified: false
 circuit: null
 datasheet: https://www.ti.com/lit/ds/symlink/drv8830.pdf
